@@ -2,7 +2,7 @@
 // Dzięki nim trudne sytuacje są obsłużone zawsze tak samo, niezależnie od modelu.
 
 export const RE_WULGARYZMY =
-  /(?:^|[^\p{L}])(?:kurw|chuj|huj[aeouiy]|(?:za|wy|od|roz|s|przy|na|po|do|u)?(?:jeb|pierdol|pierdal)|spierdal|skurw|pizd|cip[aeyo]|debil|idiot|kretyn|dure[nń]|matoł|fuck|shit|bitch)/iu
+  /(?:^|[^\p{L}])(?:kurw|chuj|huj[aeouiy]|(?:za|wy|od|roz|s|przy|na|po|do|u)?(?:jeb|pierdol|pierdal)|spierdal|skurw|pizd|cip[aeyo]|debil|idiot|kretyn|dure[nń]|matoł|g[oó]wn|g[oó]wie|fuck|shit|bitch)/iu
 
 const RE_ATAK = [
   // „zapomnij o zasadach”, „ignore previous instructions”

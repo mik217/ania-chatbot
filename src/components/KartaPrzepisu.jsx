@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { czasPrzepisu, opisSkladnika } from '../bot/jednostki.js'
+import Ilustracja from './Ilustracja.jsx'
 
 const odmienPorcje = (n) => (n === 1 ? 'porcja' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'porcje' : 'porcji')
 
@@ -12,7 +13,9 @@ export default function KartaPrzepisu({ przepis: p, onListaZakupow }) {
   return (
     <div className="karta-przepisu">
       <div className="karta-gora">
+        <Ilustracja rodzaj={p.ilustracja} kategoria={p.kategoria} rozmiar={68} />
         <div>
+          {p.kategoria && <div className="kategoria">{p.kategoria}</div>}
           <h3>{p.nazwa}</h3>
           <div className="etykiety">
             {czas != null && <span className="etykieta">{czas} min</span>}

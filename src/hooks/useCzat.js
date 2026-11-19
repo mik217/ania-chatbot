@@ -110,7 +110,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
         const systemPrompt = zbudujPrompt({
           baza: b,
           preferencje: u.preferencje,
-          ostatnieWiadomosci: s.historia.filter((m) => m.role === 'user').slice(-3).map((m) => m.content),
+          ostatnieWiadomosci: s.historia.slice(-4).map((m) => m.content),
           kanarek: KANAREK,
         })
         const { dostawca, model } = opisModelu(u)

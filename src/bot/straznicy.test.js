@@ -24,7 +24,7 @@ describe('prośba o człowieka', () => {
 })
 
 describe('wulgaryzmy', () => {
-  it.each(['ty debilu', 'kurwa przypaliło się', 'zajebisty przepis'])('wykrywa: %s', (t) => expect(jestWulgarne(t)).toBe(true))
+  it.each(['ty debilu', 'kurwa przypaliło się', 'zajebisty przepis', 'cos z gownem', 'nie z gównem lubię'])('wykrywa: %s', (t) => expect(jestWulgarne(t)).toBe(true))
   it.each(['sukces w kuchni', 'cebula i ciasto', 'przepis na huśtawkę smaków'])('przepuszcza: %s', (t) => expect(jestWulgarne(t)).toBe(false))
 })
 

@@ -74,7 +74,7 @@ export function opisPrzepisu(p, prefs) {
 }
 
 // Mała baza trafia do promptu w całości. Duża: proste wyszukiwanie po słowach (namiastka RAG).
-export function wybierzPrzepisy(baza, ostatnieWiadomosci, limit = 15) {
+export function wybierzPrzepisy(baza, ostatnieWiadomosci, limit = 8) {
   if (baza.przepisy.length <= limit) return baza.przepisy
   const tekst = ostatnieWiadomosci.join(' ').toLowerCase()
   const slowa = new Set(tekst.split(/[^\p{L}]+/u).filter((w) => w.length > 3).map((w) => w.slice(0, 5)))
@@ -90,7 +90,13 @@ export function wybierzPrzepisy(baza, ostatnieWiadomosci, limit = 15) {
 export function zbudujPrompt({ baza, preferencje, ostatnieWiadomosci, kanarek }) {
   const prefs = PREFERENCJE.filter((p) => preferencje.includes(p.id))
   const wybrane = wybierzPrzepisy(baza, ostatnieWiadomosci)
-  const pozostale = baza.przepisy.filter((p) => !wybrane.includes(p)).map((p) => `${p.nazwa} [${p.id}]`)
+  const pozostale = baza.przepisy
+    .filter((p) => !wybrane.includes(p))
+    .map((p) => {
+      const czas = czasPrzepisu(p)
+      const zgodny = prefs.length ? (prefs.every((pr) => pr.pasuje(p)) ? '' : ', NIEZGODNY z preferencjami') : ''
+      return `- [${p.id}] ${p.nazwa} (${p.kategoria}, ${czas == null ? 'czas nieznany' : czas + ' min'}, ${p.dieta.join('/') || 'mięsne/rybne'}${zgodny}): ${p.skladniki.map((x) => x.n).join(', ')}`
+    })
   return [
     '# Kim jesteś',
     'Jesteś Anią, asystentką kulinarną opartą na sztucznej inteligencji. Pomagasz osobom gotującym w domu, najczęściej początkującym: znajdujesz przepisy na konkretne dania i podpowiadasz, co ugotować ze składników, które rozmówca ma w domu. Nie zajmujesz się tematami niezwiązanymi z gotowaniem, na przykład polityką i sprawami prywatnymi rozmówcy.',
@@ -142,7 +148,9 @@ export function zbudujPrompt({ baza, preferencje, ostatnieWiadomosci, kanarek })
     '# Zatwierdzone informacje',
     'Przepisy (identyfikator w nawiasie kwadratowym):',
     wybrane.map((p) => opisPrzepisu(p, prefs)).join('\n\n'),
-    pozostale.length ? `\nInne przepisy w bazie (szczegóły pojawią się, gdy rozmówca o nie zapyta): ${pozostale.join(', ')}.` : '',
+    pozostale.length
+      ? '\nPozostałe przepisy w bazie (tylko krótki opis). Możesz je proponować, ale pełnego przepisu z ilościami i krokami nie podawaj, dopóki nie zobaczysz go powyżej w pełnym opisie. Gdy rozmówca wybierze jeden z nich, a nie masz pełnego opisu, odpowiedz krótko, że już podajesz, i dopisz [PRZEPIS:identyfikator]: aplikacja pokaże pełną kartę przepisu.\n' + pozostale.join('\n')
+      : '',
     '',
     'Zamienniki składników:',
     ...(baza.zamienniki || []).map((z) => `- ${z.skladnik}: ${z.zamiennik}`),

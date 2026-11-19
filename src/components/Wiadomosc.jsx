@@ -1,5 +1,7 @@
 import AniaAvatar from './AniaAvatar.jsx'
 import KartaPrzepisu from './KartaPrzepisu.jsx'
+import Ilustracja from './Ilustracja.jsx'
+import { czasPrzepisu } from '../bot/jednostki.js'
 
 const godz = (iso) => new Date(iso).toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit' })
 
@@ -75,7 +77,14 @@ export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onU
           <div className="katalog">
             {przepisy.map((p) => (
               <button key={p.id} className="kafelek" onClick={() => onWyslij(`Poproszę przepis: ${p.nazwa}`)}>
-                {p.nazwa}
+                <Ilustracja rodzaj={p.ilustracja} kategoria={p.kategoria} rozmiar={44} />
+                <span>
+                  <b>{p.nazwa}</b>
+                  <small>
+                    {p.kategoria}
+                    {czasPrzepisu(p) != null ? ` · ${czasPrzepisu(p)} min` : ''}
+                  </small>
+                </span>
               </button>
             ))}
           </div>

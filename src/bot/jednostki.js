@@ -9,6 +9,7 @@ const FORMY = {
   szklanka: ['szklanka', 'szklanki', 'szklanek', 'szklanki'],
   plaster: ['plaster', 'plastry', 'plastrów', 'plastra'],
   kromka: ['kromka', 'kromki', 'kromek', 'kromki'],
+  'liście': ['liść', 'liście', 'liści', 'liścia'],
   szt: ['szt.', 'szt.', 'szt.', 'szt.'],
 }
 
