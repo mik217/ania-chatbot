@@ -16,7 +16,9 @@ function Kciuk({ dol, ...props }) {
   )
 }
 
-export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onUstawienia, onNowa, onWyslij, onListaZakupow }) {
+export const nastrojWiadomosci = (m) => (m.przepisy?.length ? 'radosc' : m.brak || m.katalog ? 'oops' : 'wita')
+
+export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onUstawienia, onNowa, onWyslij, onListaZakupow, onGotuj, start }) {
   if (m.kto === 'system')
     return (
       <div className="systemowa">
@@ -67,12 +69,13 @@ export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onU
 
   return (
     <div className="wiersz ania">
-      <AniaAvatar rozmiar={32} />
+      <AniaAvatar rozmiar={32} nastroj={nastrojWiadomosci(m)} />
       <div className="tresc-ani">
         <div className={`dymek${m.strumien ? ' pisze-teraz' : ''}`}>{m.tekst}</div>
         {(m.przepisy || []).map((id) =>
-          bazaPoId[id] ? <KartaPrzepisu key={id} przepis={bazaPoId[id]} onListaZakupow={onListaZakupow} /> : null,
+          bazaPoId[id] ? <KartaPrzepisu key={id} przepis={bazaPoId[id]} onListaZakupow={onListaZakupow} onGotuj={onGotuj} /> : null,
         )}
+        {start}
         {m.katalog && (
           <div className="katalog">
             {przepisy.map((p) => (

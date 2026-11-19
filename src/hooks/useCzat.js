@@ -16,8 +16,8 @@ export const PODPOWIEDZI_STARTOWE = ['Co zrobić z tego, co mam?', 'Coś szybkie
 export function powitanie() {
   return (
     'Cześć! Jestem Ania, Twoja asystentka kulinarna. Od razu uczciwie: jestem programem AI, a nie człowiekiem.\n' +
-    'Podpowiem Ci, co ugotować z tego, co masz w lodówce, albo dam przepis na konkretne danie. Przeliczę porcje, podsunę zamiennik składnika, a potem poprowadzę Cię krok po kroku z minutnikiem.\n' +
-    'Znam się tylko na gotowaniu, za to porządnie. Co dziś jemy?'
+    'Podpowiem, co ugotować z tego, co masz w lodówce, albo dam przepis na konkretne danie. Przeliczę porcje, podsunę zamiennik składnika i poprowadzę Cię krok po kroku z minutnikiem.\n' +
+    'Znam się tylko na gotowaniu, za to porządnie. Wybierz coś poniżej albo po prostu napisz, co dziś jemy.'
   )
 }
 
@@ -69,7 +69,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
       if (powod !== 'bezczynnosc') setWiadomosci([])
       if (powod === 'bezczynnosc')
         dodajSystem(`Rozmowa zakończyła się po ${limity().bezczynnoscMin} min bez aktywności i Ania już jej nie pamięta. Zaczynamy od nowa, a Twoje preferencje zostały.`)
-      dodajAnie(powitanie(), { zrodlo: 'powitanie', podpowiedzi: PODPOWIEDZI_STARTOWE })
+      dodajAnie(powitanie(), { zrodlo: 'powitanie', start: true })
     },
     [dodajAnie, dodajSystem],
   )
@@ -143,6 +143,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
           przepisy: o.przepisy,
           podpowiedzi: o.podpowiedzi,
           czlowiek: o.czlowiek,
+          brak: o.brak,
         }
         if (idOdp) zmien(idOdp, koncowe)
         else dodaj({ kto: 'ania', zrodlo: `model: ${dostawca.nazwa} / ${model}`, ocenialna: true, ...koncowe })
@@ -183,7 +184,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
   )
 
   const wyslij = useCallback(
-    (tekstOryginalny, { odRazu = false } = {}) => {
+    (tekstOryginalny, { odRazu = false, dopisek = '' } = {}) => {
       const s = r.current
       s.aktywnosc = Date.now()
       const { tekst, usunieto } = maskujDane(tekstOryginalny.trim())
@@ -223,7 +224,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
           akcja: 'nowa-rozmowa',
         })
       }
-      s.bufor.push(tekst)
+      s.bufor.push(dopisek ? `${tekst}\n${dopisek}` : tekst)
       zaplanuj(odRazu ? 0 : KONFIG.opoznienieLaczeniaMs)
     },
     [dodaj, dodajAnie, dodajSystem, zaplanuj],

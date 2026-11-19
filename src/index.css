@@ -690,3 +690,399 @@ dialog.okno::backdrop {
   font-size: 12px;
   font-weight: 600;
 }
+
+/* Maskotka */
+.naglowek .ania-avatar {
+  transition: transform 0.3s;
+}
+.naglowek .ania-mysli {
+  animation: kiwanie 1.4s ease-in-out infinite;
+}
+.naglowek .ania-radosc {
+  animation: podskok 0.6s ease-out;
+}
+@keyframes kiwanie {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+@keyframes podskok {
+  30% { transform: translateY(-5px) scale(1.06); }
+}
+
+/* Kafelki startowe */
+.kafelki-startowe {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 520px;
+  animation: wjazd 0.4s 0.1s ease-out both;
+}
+.kafelek-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  text-align: left;
+  border: 1.5px solid var(--linia);
+  background: var(--karta);
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: var(--cien);
+  transition: transform 0.15s, border-color 0.15s;
+}
+.kafelek-start:hover {
+  border-color: var(--akcent);
+  transform: translateY(-2px);
+}
+.kafelek-start .emoji {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.kafelek-start b {
+  font-size: 15px;
+  line-height: 1.25;
+}
+.kafelek-start small {
+  color: var(--szary);
+  font-size: 12.5px;
+}
+.kafelek-start.szeroki {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+}
+.kafelek-start.szeroki .emoji {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Przycisk lodówki przy polu tekstowym */
+.lodowka-przycisk {
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: 50%;
+  border: 1.5px solid var(--linia);
+  background: var(--tlo);
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+}
+.lodowka-przycisk:hover {
+  border-color: var(--akcent);
+}
+
+/* Arkusze (wysuwane panele) */
+dialog.arkusz {
+  border: 0;
+  padding: 0;
+  margin: auto auto 0;
+  width: min(760px, 100vw);
+  max-width: 100vw;
+  max-height: 88vh;
+  border-radius: 24px 24px 0 0;
+  background: var(--karta);
+  color: var(--tekst);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+}
+dialog.arkusz[open] {
+  animation: wysun 0.25s ease-out;
+}
+@keyframes wysun {
+  from { transform: translateY(40px); opacity: 0; }
+}
+dialog.arkusz::backdrop {
+  background: rgba(45, 36, 32, 0.45);
+}
+.arkusz-wnetrze {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+}
+.arkusz-gora {
+  display: flex;
+  align-items: center;
+  padding: 14px 14px 6px 20px;
+}
+.arkusz-gora h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+.arkusz-gora .ikona svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.arkusz-tresc {
+  overflow-y: auto;
+  padding: 4px 20px 16px;
+}
+.arkusz-stopka {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 20px calc(12px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--linia);
+}
+.licznik-dopasowan {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--zielony);
+}
+.opis-arkusza {
+  font-size: 13.5px;
+  color: var(--szary);
+  margin: 4px 0 10px;
+}
+.grupa-skladnikow h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--szary);
+  margin: 14px 0 8px;
+}
+.skladniki-siatka {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skladnik {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1.5px solid var(--linia);
+  background: var(--karta);
+  border-radius: 14px;
+  padding: 7px 12px 7px 9px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.12s;
+}
+.skladnik .emoji {
+  font-size: 19px;
+}
+.skladnik[aria-pressed='true'] {
+  background: var(--zielony-jasny);
+  border-color: var(--zielony);
+  color: var(--zielony);
+  transform: scale(1.03);
+}
+.szukajka {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--linia);
+  border-radius: 14px;
+  font: inherit;
+  color: var(--tekst);
+  background: var(--tlo);
+  margin-bottom: 10px;
+}
+.szukajka:focus {
+  outline: none;
+  border-color: var(--akcent);
+}
+.filtry {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+.przycisk.duzy {
+  padding: 13px 22px;
+  font-size: 16px;
+  border-radius: 14px;
+}
+.przycisk:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.przycisk.zielony {
+  background: var(--zielony);
+  border-color: var(--zielony);
+}
+.link-przycisk {
+  border: 0;
+  background: none;
+  color: var(--akcent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0;
+  align-self: flex-start;
+}
+
+/* Tryb gotowania */
+.gotowanie {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: var(--tlo);
+  display: flex;
+  flex-direction: column;
+  animation: wjazd 0.2s ease-out;
+}
+.gotowanie-gora {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: calc(12px + env(safe-area-inset-top)) 14px 12px 16px;
+  background: var(--karta);
+  border-bottom: 1px solid var(--linia);
+}
+.gotowanie-gora .ilustracja {
+  border-radius: 10px;
+}
+.gotowanie-gora h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+.gotowanie-gora .ikona svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.kropki-krokow {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  padding: 12px;
+}
+.kropki-krokow span {
+  width: 28px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--linia);
+  transition: background 0.2s;
+}
+.kropki-krokow span.zrobione {
+  background: var(--zielony);
+}
+.kropki-krokow span.teraz {
+  background: var(--akcent);
+}
+.minutniki {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 14px 6px;
+}
+.minutnik-chip {
+  border: 0;
+  border-radius: 20px;
+  padding: 5px 12px;
+  background: var(--akcent-jasny);
+  color: var(--akcent);
+  font-weight: 800;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+.minutnik-chip.dzwoni {
+  background: var(--akcent);
+  color: #fff;
+  animation: pulsuj 0.8s infinite;
+}
+@keyframes pulsuj {
+  50% { transform: scale(1.08); }
+}
+.gotowanie-srodek {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 22px;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: wjazd 0.25s ease-out;
+}
+.numer-kroku {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--akcent);
+}
+.tekst-kroku {
+  font-size: clamp(24px, 4.5vw, 34px);
+  line-height: 1.35;
+  font-weight: 700;
+  margin: 0;
+}
+.minutnik-kroku {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--karta);
+  border-radius: 20px;
+  padding: 16px 18px;
+  box-shadow: var(--cien);
+}
+.czas-duzy {
+  font-size: 46px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  min-width: 140px;
+}
+.czas-duzy.koniec {
+  color: var(--akcent);
+  font-size: 32px;
+}
+.lista-do-odhaczenia {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lista-do-odhaczenia li {
+  border-bottom: 1px solid var(--linia);
+}
+.lista-do-odhaczenia label {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 19px;
+}
+.lista-do-odhaczenia input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--zielony);
+}
+.lista-do-odhaczenia input:checked + span {
+  text-decoration: line-through;
+  color: var(--szary);
+}
+.gotowanie-dol {
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  background: var(--karta);
+  border-top: 1px solid var(--linia);
+}
+.gotowanie-dol .przycisk {
+  flex: 1;
+  padding: 16px;
+  font-size: 18px;
+}
+
+@media (max-width: 520px) {
+  .lodowka-przycisk { width: 44px; height: 44px; font-size: 20px; }
+  .kafelek-start { padding: 12px; }
+}

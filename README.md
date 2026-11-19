@@ -29,6 +29,16 @@ Inne polecenia:
 Żeby nie wklejać klucza za każdym razem, skopiuj `.env.example` jako `.env.local` i wpisz w nim klucz.
 Działa to tylko przy `npm run dev`. Plik `.env.local` nie trafia do repozytorium, a klucz nie trafia do zbudowanej strony.
 
+## Co potrafi Ania
+
+- przepis na konkretne danie z bazy 30 przepisów (karta z ilustracją, czasem, dietą i alergenami)
+- **Co mam w lodówce?** – wybór składników ikonami, aplikacja od razu liczy pasujące przepisy
+- **Książka przepisów** – wyszukiwarka z filtrami kategorii i „do 15 min”
+- **Tryb gotowania** – pełny ekran, duży tekst, lista składników do odhaczenia, minutniki z dźwiękiem, ekran nie gaśnie,
+  przycisk „Nie rozumiem tego kroku”
+- przeliczanie porcji i lista zakupów, preferencje dietetyczne, ciemny motyw
+- podpowiedzi kolejnej wiadomości pod każdą odpowiedzią, odpowiedź pisana na żywo
+
 ## Jak to działa
 
 ```

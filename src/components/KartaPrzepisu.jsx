@@ -4,7 +4,7 @@ import Ilustracja from './Ilustracja.jsx'
 
 const odmienPorcje = (n) => (n === 1 ? 'porcja' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'porcje' : 'porcji')
 
-export default function KartaPrzepisu({ przepis: p, onListaZakupow }) {
+export default function KartaPrzepisu({ przepis: p, onListaZakupow, onGotuj }) {
   const [porcje, setPorcje] = useState(p.porcje || 1)
   const [otwarte, setOtwarte] = useState(false)
   const mnoznik = porcje / (p.porcje || 1)
@@ -42,8 +42,11 @@ export default function KartaPrzepisu({ przepis: p, onListaZakupow }) {
             +
           </button>
         </div>
-        <button className="przycisk" onClick={() => setOtwarte((o) => !o)} aria-expanded={otwarte}>
-          {otwarte ? 'Zwiń przepis' : 'Pokaż przepis'}
+        <button className="przycisk" onClick={() => onGotuj?.(p, mnoznik, porcje)}>
+          Gotuj krok po kroku
+        </button>
+        <button className="przycisk drugi" onClick={() => setOtwarte((o) => !o)} aria-expanded={otwarte}>
+          {otwarte ? 'Zwiń' : 'Przepis'}
         </button>
         <button className="przycisk drugi" onClick={() => onListaZakupow?.(p, mnoznik, porcje)}>
           Lista zakupów
