@@ -1,7 +1,7 @@
 // Ustawienia prototypu. Tu zespół zmienia limity, kontakt i domyślne modele.
 
 export const KONFIG = {
-  kontakt: '', // e-mail zespołu podawany, gdy użytkownik prosi o człowieka, np. 'zespol@przyklad.pl'
+  kontakt: 'ania.zespol@example.com', // wymyślony e-mail zespołu podawany, gdy użytkownik prosi o człowieka, np. 'zespol@przyklad.pl'
   opoznienieLaczeniaMs: 2500, // tyle Ania czeka, czy użytkownik dopisze kolejną wiadomość do tego samego pytania
   maksWiadomosciWKontekscie: 20,
   limitWiadomosciSesji: 30, // po tylu wiadomościach Ania proponuje nową rozmowę
