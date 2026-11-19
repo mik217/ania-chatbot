@@ -1,0 +1,99 @@
+{
+  "wersja": "2026-11-19",
+  "przepisy": [
+    {
+      "id": "makaron-pomidorowy",
+      "nazwa": "Makaron z sosem pomidorowym",
+      "kategoria": "obiad",
+      "porcje": 2,
+      "trudnosc": "łatwe",
+      "dieta": ["wegetariańskie", "wegańskie"],
+      "alergeny": ["gluten"],
+      "skladniki": [
+        { "n": "makaron", "q": 200, "u": "g" },
+        { "n": "krojone pomidory", "q": 1, "u": "puszka" },
+        { "n": "czosnek", "q": 2, "u": "ząbek" },
+        { "n": "oliwa", "q": 1, "u": "łyżka" },
+        { "n": "sól", "q": null, "u": "do smaku" },
+        { "n": "pieprz", "q": null, "u": "do smaku" },
+        { "n": "świeża bazylia", "q": null, "u": "do posypania" }
+      ],
+      "kroki": [
+        { "t": "Ugotuj makaron al dente w osolonej wodzie.", "min": 10 },
+        { "t": "Na patelni rozgrzej oliwę i podsmaż posiekany czosnek.", "min": 3 },
+        { "t": "Wlej pomidory, dopraw solą i pieprzem i duś pod przykryciem.", "min": 10 },
+        { "t": "Wymieszaj ugotowany makaron z sosem i posyp bazylią.", "min": 1 }
+      ]
+    },
+    {
+      "id": "jajka-na-miekko",
+      "nazwa": "Jajka na miękko",
+      "kategoria": "śniadanie",
+      "porcje": 1,
+      "trudnosc": "łatwe",
+      "dieta": ["wegetariańskie", "bezglutenowe"],
+      "alergeny": ["jajka"],
+      "skladniki": [
+        { "n": "jajka", "q": 2, "u": "szt" },
+        { "n": "woda", "q": null, "u": "tyle, by przykryła jajka" },
+        { "n": "sól", "q": 1, "u": "szczypta" }
+      ],
+      "kroki": [
+        { "t": "Wyjmij jajka wcześniej z lodówki i zagotuj wodę w garnku ze szczyptą soli.", "min": 2 },
+        { "t": "Włóż jajka ostrożnie na wrzątek łyżką i gotuj dokładnie 3,5 minuty (rozmiar M) lub 4,5 minuty (rozmiar L).", "min": 4 },
+        { "t": "Odlej wrzątek i zalej jajka zimną wodą, aby zatrzymać ścinanie żółtka.", "min": 1 }
+      ]
+    },
+    {
+      "id": "omlet-z-cebula",
+      "nazwa": "Omlet z cebulą",
+      "kategoria": "śniadanie",
+      "porcje": 1,
+      "trudnosc": "łatwe",
+      "dieta": ["wegetariańskie", "bezglutenowe"],
+      "alergeny": ["jajka", "laktoza"],
+      "skladniki": [
+        { "n": "jajka", "q": 3, "u": "szt" },
+        { "n": "mleko", "q": 2, "u": "łyżka" },
+        { "n": "cebula", "q": 1, "u": "szt" },
+        { "n": "olej", "q": 1, "u": "łyżka" }
+      ],
+      "kroki": [
+        { "t": "Roztrzep 3 jajka z dwiema łyżkami mleka.", "min": 1 },
+        { "t": "Pokrój cebulę w kostkę i podsmaż na oleju na patelni.", "min": 4 },
+        { "t": "Wylej na cebulę masę jajeczną i smaż pod przykryciem na małym ogniu.", "min": 5 }
+      ]
+    },
+    {
+      "id": "bowl-ryz-awokado",
+      "nazwa": "Wegetariański bowl z ryżem i awokado",
+      "kategoria": "obiad",
+      "porcje": 1,
+      "trudnosc": "łatwe",
+      "dieta": ["wegetariańskie", "wegańskie"],
+      "alergeny": ["soja", "gluten"],
+      "skladniki": [
+        { "n": "ugotowany ryż", "q": 100, "u": "g" },
+        { "n": "awokado", "q": 0.5, "u": "szt" },
+        { "n": "ogórek", "q": 1, "u": "szt" },
+        { "n": "sos sojowy", "q": 2, "u": "łyżka" }
+      ],
+      "kroki": [
+        { "t": "Pokrój awokado i ogórek.", "min": 3 },
+        { "t": "Ułóż warzywa na ugotowanym ryżu.", "min": 1 },
+        { "t": "Polej dwiema łyżkami sosu sojowego.", "min": null }
+      ]
+    }
+  ],
+  "zamienniki": [
+    { "skladnik": "mleko (w omlecie)", "zamiennik": "woda albo napój roślinny w tej samej ilości" },
+    { "skladnik": "oliwa", "zamiennik": "olej rzepakowy w tej samej ilości" },
+    { "skladnik": "świeża bazylia", "zamiennik": "suszona bazylia, około 1 łyżeczki" },
+    { "skladnik": "krojone pomidory z puszki", "zamiennik": "passata pomidorowa w podobnej ilości" }
+  ],
+  "porady": [
+    "Makaron al dente jest miękki z zewnątrz, ale lekko sprężysty w środku. Sprawdź, gryząc jedną nitkę minutę przed końcem gotowania.",
+    "Przypalony sos: nie mieszaj go, przelej górną, nieprzypaloną część do czystego garnka. Jeśli czuć gorycz, ugotuj sos od nowa.",
+    "Ugotowany makaron i sos przechowuj w lodówce w zamkniętym pojemniku do 2 dni."
+  ]
+}
