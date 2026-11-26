@@ -83,9 +83,14 @@ export default function Ustawienia({ otwarte, ustawienia, klucz, onZapisz, onZam
             </button>
           </div>
           <label className="wybor">
-            <input type="checkbox" checked={!!f.zapamietajKlucz} onChange={(e) => ustaw({ zapamietajKlucz: e.target.checked })} />
-            <span>Pamiętaj klucz do zamknięcia karty przeglądarki</span>
+            <input type="checkbox" checked={f.pamietajKlucz !== false} onChange={(e) => ustaw({ pamietajKlucz: e.target.checked })} />
+            <span>Pamiętaj klucz na tym urządzeniu (nie trzeba go wpisywać ponownie). Odznacz na cudzym komputerze.</span>
           </label>
+          {f.klucz && (
+            <button type="button" className="link-przycisk" onClick={() => ustaw({ klucz: '' })}>
+              Zapomnij klucz
+            </button>
+          )}
 
           <h4>Wygląd</h4>
           <label className="wybor">

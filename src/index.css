@@ -1167,3 +1167,32 @@ dialog.arkusz::backdrop {
 .lista-pamieci small {
   color: var(--szary);
 }
+
+.wpisz-klucz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.wpisz-klucz input {
+  flex: 1 1 200px;
+  min-width: 0;
+  padding: 9px 12px;
+  border: 1.5px solid var(--linia);
+  border-radius: 12px;
+  font: inherit;
+  color: var(--tekst);
+  background: var(--karta);
+}
+.wpisz-klucz input:focus {
+  outline: none;
+  border-color: var(--akcent);
+}
+.wpisz-klucz .uwaga-mala {
+  flex-basis: 100%;
+}
+.wpisz-klucz a {
+  color: var(--akcent);
+  font-weight: 700;
+}

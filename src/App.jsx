@@ -28,25 +28,27 @@ const magazyn = {
     }
   },
 }
-const kluczSesji = {
+// Klucz API: na stałe w tej przeglądarce (localStorage) albo tylko do zamknięcia karty (sessionStorage).
+const kluczPamiec = {
   get() {
     try {
-      return sessionStorage.getItem('ania.klucz') || ''
+      return localStorage.getItem('ania.klucz') || sessionStorage.getItem('ania.klucz') || ''
     } catch {
       return ''
     }
   },
-  set(v) {
+  set(v, naStale) {
     try {
-      if (v) sessionStorage.setItem('ania.klucz', v)
-      else sessionStorage.removeItem('ania.klucz')
+      localStorage.removeItem('ania.klucz')
+      sessionStorage.removeItem('ania.klucz')
+      if (v) (naStale ? localStorage : sessionStorage).setItem('ania.klucz', v)
     } catch {
       /* brak dostępu do pamięci przeglądarki */
     }
   },
 }
 
-const USTAWIENIA_DOMYSLNE = { dostawca: 'gemini', modele: {}, urlWlasny: '', preferencje: [], zapamietajKlucz: false, trybTestowy: false, ciemny: false }
+const USTAWIENIA_DOMYSLNE = { dostawca: 'gemini', modele: {}, urlWlasny: '', preferencje: [], pamietajKlucz: true, trybTestowy: false, ciemny: false }
 
 function Ikona({ d }) {
   return (
@@ -60,7 +62,7 @@ function Ikona({ d }) {
 
 export default function App() {
   const [ustawienia, setUstawienia] = useState(() => ({ ...USTAWIENIA_DOMYSLNE, ...magazyn.get('ania.ustawienia', {}) }))
-  const [klucz, setKlucz] = useState(() => kluczSesji.get() || KLUCZ_DEWELOPERSKI)
+  const [klucz, setKlucz] = useState(() => kluczPamiec.get() || KLUCZ_DEWELOPERSKI)
   const baza = bazaDomyslna
   const bazaPoId = useMemo(() => Object.fromEntries(baza.przepisy.map((p) => [p.id, p])), [baza])
   const [pamiec, setPamiecStan] = useState(wczytajPamiec)
@@ -91,7 +93,7 @@ export default function App() {
     if (wystartowano.current) return
     wystartowano.current = true
     czat.nowaRozmowa('start')
-    if (!klucz) czat.dodajSystem('Żeby porozmawiać z Anią, wklej darmowy klucz API w ustawieniach.', { akcja: 'ustawienia' })
+    if (!klucz) czat.dodajSystem('Żeby porozmawiać z Anią, wklej darmowy klucz API. Wystarczy raz: Ania zapamięta go na tym urządzeniu.', { akcja: 'klucz' })
   }, [czat, klucz])
 
   useEffect(() => {
@@ -108,9 +110,19 @@ export default function App() {
     magazyn.set('ania.ustawienia', u)
     const mialKlucz = !!klucz
     setKlucz(k)
-    kluczSesji.set(u.zapamietajKlucz ? k : '')
+    kluczPamiec.set(k, u.pamietajKlucz !== false)
     setOkno(null)
     if (!mialKlucz && k) czat.dodajSystem('Klucz zapisany. Możesz pisać do Ani!')
+  }
+
+  // klucz wklejony od razu w czacie: zapisujemy na stałe na tym urządzeniu
+  const zapiszKluczZCzatu = (k, idWiadomosci) => {
+    const u = { ...ustawienia, pamietajKlucz: true }
+    setUstawienia(u)
+    magazyn.set('ania.ustawienia', u)
+    setKlucz(k)
+    kluczPamiec.set(k, true)
+    czat.zmien(idWiadomosci, { akcja: null, tekst: 'Klucz zapisany na tym urządzeniu. Następnym razem nie trzeba go wpisywać. Możesz pisać do Ani!' })
   }
 
   const przelaczPreferencje = (id) => {
@@ -223,6 +235,7 @@ export default function App() {
               czat.zmien(wiad.id, { stan: decyzja })
             }}
             onPokazPamiec={() => setOkno('pamiec')}
+            onZapiszKlucz={zapiszKluczZCzatu}
             onPonow={czat.ponow}
             onUstawienia={() => setOkno('ustawienia')}
             onNowa={() => czat.nowaRozmowa('uzytkownik')}

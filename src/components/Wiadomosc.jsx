@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import AniaAvatar from './AniaAvatar.jsx'
 import KartaPrzepisu from './KartaPrzepisu.jsx'
 import Ilustracja from './Ilustracja.jsx'
@@ -17,6 +18,34 @@ function Kciuk({ dol, ...props }) {
 }
 
 export const nastrojWiadomosci = (m) => (m.przepisy?.length ? 'radosc' : m.brak || m.katalog ? 'oops' : 'wita')
+
+function WpiszKlucz({ onZapisz, onUstawienia }) {
+  const [k, setK] = useState('')
+  return (
+    <form
+      className="wpisz-klucz"
+      onSubmit={(e) => {
+        e.preventDefault()
+        if (k.trim()) onZapisz(k.trim())
+      }}
+    >
+      <input type="password" placeholder="Wklej klucz API (np. AIza…)" value={k} onChange={(e) => setK(e.target.value)} autoComplete="off" spellCheck="false" aria-label="Klucz API" />
+      <button className="przycisk maly" type="submit" disabled={!k.trim()}>
+        Zapisz
+      </button>
+      <span className="uwaga-mala">
+        Nie masz klucza? Darmowy weźmiesz w{' '}
+        <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">
+          Google AI Studio
+        </a>{' '}
+        (aistudio.google.com/apikey). Inny dostawca?{' '}
+        <button type="button" className="link-przycisk" onClick={onUstawienia}>
+          Ustawienia
+        </button>
+      </span>
+    </form>
+  )
+}
 
 function PropozycjaPamieci({ m, onDecyzja, onPokazPamiec }) {
   const opis = m.propozycje.map((w) => `${m.etykiety?.[w.typ] || w.typ}: ${w.wartosc}`)
@@ -72,7 +101,7 @@ function PropozycjaPamieci({ m, onDecyzja, onPokazPamiec }) {
   )
 }
 
-export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onUstawienia, onNowa, onWyslij, onListaZakupow, onGotuj, start, onDecyzjaPamieci, onPokazPamiec }) {
+export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onUstawienia, onNowa, onWyslij, onListaZakupow, onGotuj, start, onDecyzjaPamieci, onPokazPamiec, onZapiszKlucz }) {
   if (m.kto === 'pamiec') return <PropozycjaPamieci m={m} onDecyzja={onDecyzjaPamieci} onPokazPamiec={onPokazPamiec} />
 
   if (m.kto === 'system')
@@ -86,6 +115,7 @@ export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onU
             </button>
           </div>
         )}
+        {m.akcja === 'klucz' && <WpiszKlucz onZapisz={(k) => onZapiszKlucz(k, m.id)} onUstawienia={onUstawienia} />}
         {m.akcja === 'ustawienia' && (
           <div>
             <button className="przycisk maly" onClick={onUstawienia}>
