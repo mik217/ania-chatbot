@@ -1086,3 +1086,84 @@ dialog.arkusz::backdrop {
   .lodowka-przycisk { width: 44px; height: 44px; font-size: 20px; }
   .kafelek-start { padding: 12px; }
 }
+
+/* Pamięć */
+.ikona-pamieci {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  background: var(--zielony-jasny);
+}
+.karta-pamieci {
+  background: var(--karta);
+  border: 1.5px dashed var(--zielony);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: var(--cien);
+}
+.karta-pamieci ul {
+  margin: 6px 0 4px;
+  padding-left: 20px;
+}
+.karta-pamieci .uwaga-mala {
+  margin: 6px 0 0;
+}
+.link-przycisk.maly {
+  font-size: 13px;
+}
+.wybor-pamieci {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-weight: 700;
+  font-size: 14.5px;
+  margin: 6px 0 10px;
+}
+.wybor-pamieci input {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--zielony);
+}
+.grupa-pamieci h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--szary);
+  margin: 14px 0 8px;
+}
+.wpis-pamieci {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--zielony-jasny);
+  color: var(--zielony);
+  border-radius: 14px;
+  padding: 5px 6px 5px 12px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.wpis-pamieci button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 18px;
+  line-height: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.wpis-pamieci button:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+.lista-pamieci {
+  margin: 0;
+  padding-left: 20px;
+}
+.lista-pamieci small {
+  color: var(--szary);
+}

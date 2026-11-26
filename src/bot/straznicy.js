@@ -12,7 +12,7 @@ const RE_ATAK = [
   /(tryb\p{L}* (dewelopera|developera|deweloperski|administratora|debug|bez ograniczeń)|developer mode|jailbreak|(^|\s)DAN(\s|$))/iu,
   /(udawaj|wciel się|wciel sie|odegraj rolę|odegraj role|zachowuj się jak|od teraz jesteś|od teraz jestes|jesteś teraz|jestes teraz|pretend|act as|you are now|roleplay)/iu,
   // podrabianie znaczników aplikacji
-  /<\/?\s*(system|wiadomosc|instrukcje|assistant|user)\s*>|\[(PRZEPIS|BRAK|CZLOWIEK|PODPOWIEDZI)/i,
+  /<\/?\s*(system|wiadomosc|instrukcje|assistant|user)\s*>|\[(PRZEPIS|BRAK|CZLOWIEK|PODPOWIEDZI|PAMIETAJ|PAMIĘTAJ|ZAPOMNIJ)/i,
 ]
 
 const RE_CZLOWIEK =

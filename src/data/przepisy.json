@@ -1,473 +1,8312 @@
 {
-  "wersja": "2026-11-19b",
-  "przepisy": [
+ "wersja": "2026-11-26",
+ "przepisy": [
+  {
+   "id": "makaron-pomidorowy",
+   "nazwa": "Makaron z sosem pomidorowym",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie"
+   ],
+   "alergeny": [
+    "gluten"
+   ],
+   "skladniki": [
     {
-      "id": "makaron-pomidorowy", "nazwa": "Makaron z sosem pomidorowym", "kategoria": "obiad", "ilustracja": "makaron",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "wegańskie"], "alergeny": ["gluten"],
-      "skladniki": [
-        { "n": "makaron", "q": 200, "u": "g" }, { "n": "krojone pomidory", "q": 1, "u": "puszka" },
-        { "n": "czosnek", "q": 2, "u": "ząbek" }, { "n": "oliwa", "q": 1, "u": "łyżka" },
-        { "n": "sól", "q": null, "u": "do smaku" }, { "n": "pieprz", "q": null, "u": "do smaku" },
-        { "n": "świeża bazylia", "q": null, "u": "do posypania" }
-      ],
-      "kroki": [
-        { "t": "Ugotuj makaron al dente w osolonej wodzie.", "min": 10 },
-        { "t": "Na patelni rozgrzej oliwę i podsmaż posiekany czosnek.", "min": 3 },
-        { "t": "Wlej pomidory, dopraw solą i pieprzem i duś pod przykryciem.", "min": 10 },
-        { "t": "Wymieszaj ugotowany makaron z sosem i posyp bazylią.", "min": 1 }
-      ]
+     "n": "makaron",
+     "q": 200,
+     "u": "g"
     },
     {
-      "id": "jajka-na-miekko", "nazwa": "Jajka na miękko", "kategoria": "śniadanie", "ilustracja": "jajko",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "bezglutenowe"], "alergeny": ["jajka"],
-      "skladniki": [
-        { "n": "jajka", "q": 2, "u": "szt" }, { "n": "woda", "q": null, "u": "tyle, by przykryła jajka" },
-        { "n": "sól", "q": 1, "u": "szczypta" }
-      ],
-      "kroki": [
-        { "t": "Wyjmij jajka wcześniej z lodówki i zagotuj wodę w garnku ze szczyptą soli.", "min": 2 },
-        { "t": "Włóż jajka ostrożnie na wrzątek łyżką i gotuj dokładnie 3,5 minuty (rozmiar M) lub 4,5 minuty (rozmiar L).", "min": 4 },
-        { "t": "Odlej wrzątek i zalej jajka zimną wodą, aby zatrzymać ścinanie żółtka.", "min": 1 }
-      ]
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
     },
     {
-      "id": "omlet-z-cebula", "nazwa": "Omlet z cebulą", "kategoria": "śniadanie", "ilustracja": "patelnia",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "bezglutenowe"], "alergeny": ["jajka", "laktoza"],
-      "skladniki": [
-        { "n": "jajka", "q": 3, "u": "szt" }, { "n": "mleko", "q": 2, "u": "łyżka" },
-        { "n": "cebula", "q": 1, "u": "szt" }, { "n": "olej", "q": 1, "u": "łyżka" },
-        { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Roztrzep 3 jajka z dwiema łyżkami mleka i szczyptą soli.", "min": 1 },
-        { "t": "Pokrój cebulę w kostkę i podsmaż na oleju, aż zmięknie.", "min": 4 },
-        { "t": "Wylej na cebulę masę jajeczną i smaż pod przykryciem na małym ogniu.", "min": 5 }
-      ]
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
     },
     {
-      "id": "bowl-ryz-awokado", "nazwa": "Wegetariański bowl z ryżem i awokado", "kategoria": "obiad", "ilustracja": "miska",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "wegańskie"], "alergeny": ["soja", "gluten"],
-      "skladniki": [
-        { "n": "ugotowany ryż", "q": 100, "u": "g" }, { "n": "awokado", "q": 0.5, "u": "szt" },
-        { "n": "ogórek", "q": 1, "u": "szt" }, { "n": "sos sojowy", "q": 2, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Pokrój awokado i ogórek w kostkę albo w plasterki.", "min": 3 },
-        { "t": "Ułóż warzywa na ugotowanym ryżu.", "min": 1 },
-        { "t": "Polej dwiema łyżkami sosu sojowego.", "min": null }
-      ]
+     "n": "oliwa",
+     "q": 1,
+     "u": "łyżka"
     },
     {
-      "id": "owsianka-z-bananem", "nazwa": "Owsianka z bananem i cynamonem", "kategoria": "śniadanie", "ilustracja": "miska",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["gluten", "laktoza"],
-      "skladniki": [
-        { "n": "płatki owsiane", "q": 50, "u": "g" }, { "n": "mleko", "q": 250, "u": "ml" },
-        { "n": "banan", "q": 1, "u": "szt" }, { "n": "miód", "q": 1, "u": "łyżeczka" },
-        { "n": "cynamon", "q": 1, "u": "szczypta" }
-      ],
-      "kroki": [
-        { "t": "Wsyp płatki do garnka, zalej mlekiem i zagotuj.", "min": 3 },
-        { "t": "Gotuj na małym ogniu, często mieszając, aż owsianka zgęstnieje.", "min": 4 },
-        { "t": "Przełóż do miski, dodaj pokrojonego banana, miód i cynamon.", "min": 1 }
-      ]
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
     },
     {
-      "id": "jajecznica-ze-szczypiorkiem", "nazwa": "Jajecznica ze szczypiorkiem", "kategoria": "śniadanie", "ilustracja": "patelnia",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "bezglutenowe"], "alergeny": ["jajka", "laktoza"],
-      "skladniki": [
-        { "n": "jajka", "q": 3, "u": "szt" }, { "n": "masło", "q": 1, "u": "łyżeczka" },
-        { "n": "szczypiorek", "q": 1, "u": "łyżka" }, { "n": "sól", "q": null, "u": "do smaku" },
-        { "n": "pieprz", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Rozpuść masło na patelni na małym ogniu.", "min": 1 },
-        { "t": "Wbij jajka, posól i powoli mieszaj łopatką, aż się zetną, ale zostaną lekko wilgotne.", "min": 3 },
-        { "t": "Zdejmij z ognia, dopraw pieprzem i posyp posiekanym szczypiorkiem.", "min": 1 }
-      ]
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
     },
     {
-      "id": "tosty-francuskie", "nazwa": "Tosty francuskie", "kategoria": "śniadanie", "ilustracja": "nalesniki",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["gluten", "jajka", "laktoza"],
-      "skladniki": [
-        { "n": "chleb tostowy albo czerstwa bułka", "q": 4, "u": "kromka" }, { "n": "jajka", "q": 2, "u": "szt" },
-        { "n": "mleko", "q": 100, "u": "ml" }, { "n": "cukier", "q": 1, "u": "łyżeczka" },
-        { "n": "cynamon", "q": 1, "u": "szczypta" }, { "n": "masło", "q": 1, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "W głębokim talerzu roztrzep jajka z mlekiem, cukrem i cynamonem.", "min": 2 },
-        { "t": "Zanurz każdą kromkę w masie na kilka sekund z obu stron.", "min": 2 },
-        { "t": "Smaż kromki na rozgrzanym maśle na złoto z obu stron.", "min": 6 },
-        { "t": "Podawaj na ciepło, np. z owocami albo miodem.", "min": null }
-      ]
-    },
-    {
-      "id": "kanapki-awokado-jajko", "nazwa": "Kanapki z awokado i jajkiem", "kategoria": "śniadanie", "ilustracja": "kanapka",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["gluten", "jajka"],
-      "skladniki": [
-        { "n": "chleb", "q": 2, "u": "kromka" }, { "n": "awokado", "q": 0.5, "u": "szt" },
-        { "n": "jajka", "q": 1, "u": "szt" }, { "n": "sok z cytryny", "q": 1, "u": "łyżeczka" },
-        { "n": "sól", "q": null, "u": "do smaku" }, { "n": "pieprz", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Ugotuj jajko na twardo we wrzątku.", "min": 9 },
-        { "t": "W tym czasie rozgnieć awokado widelcem z sokiem z cytryny, solą i pieprzem.", "min": 2 },
-        { "t": "Ostudź jajko w zimnej wodzie i obierz.", "min": 2 },
-        { "t": "Posmaruj chleb pastą z awokado i połóż na niej plasterki jajka.", "min": 1 }
-      ]
-    },
-    {
-      "id": "placuszki-bananowe", "nazwa": "Placuszki bananowe", "kategoria": "śniadanie", "ilustracja": "nalesniki",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["gluten", "jajka"],
-      "skladniki": [
-        { "n": "dojrzały banan", "q": 1, "u": "szt" }, { "n": "jajka", "q": 2, "u": "szt" },
-        { "n": "mąka pszenna", "q": 4, "u": "łyżka" }, { "n": "olej", "q": 1, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Rozgnieć banana widelcem na gładką masę.", "min": 2 },
-        { "t": "Dodaj jajka i mąkę i wymieszaj na gęste ciasto.", "min": 2 },
-        { "t": "Na rozgrzanym oleju nakładaj łyżką małe placuszki i smaż na średnim ogniu z obu stron na złoto.", "min": 8 }
-      ]
-    },
-    {
-      "id": "twarozek-z-rzodkiewka", "nazwa": "Twarożek z rzodkiewką i szczypiorkiem", "kategoria": "śniadanie", "ilustracja": "miska",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "bezglutenowe"], "alergeny": ["laktoza"],
-      "skladniki": [
-        { "n": "twaróg półtłusty", "q": 200, "u": "g" }, { "n": "jogurt naturalny", "q": 3, "u": "łyżka" },
-        { "n": "rzodkiewka", "q": 5, "u": "szt" }, { "n": "szczypiorek", "q": 2, "u": "łyżka" },
-        { "n": "sól", "q": null, "u": "do smaku" }, { "n": "pieprz", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Rozgnieć twaróg widelcem z jogurtem.", "min": 2 },
-        { "t": "Pokrój rzodkiewki w drobną kostkę i posiekaj szczypiorek.", "min": 4 },
-        { "t": "Wymieszaj wszystko i dopraw solą i pieprzem. Podawaj z pieczywem.", "min": 1 }
-      ]
-    },
-    {
-      "id": "spaghetti-aglio-olio", "nazwa": "Spaghetti aglio e olio", "kategoria": "obiad", "ilustracja": "makaron",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "wegańskie"], "alergeny": ["gluten"],
-      "skladniki": [
-        { "n": "spaghetti", "q": 200, "u": "g" }, { "n": "czosnek", "q": 4, "u": "ząbek" },
-        { "n": "oliwa", "q": 4, "u": "łyżka" }, { "n": "płatki chili", "q": 1, "u": "szczypta" },
-        { "n": "natka pietruszki", "q": 2, "u": "łyżka" }, { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Ugotuj spaghetti al dente w osolonej wodzie. Odlej pół szklanki wody z gotowania.", "min": 10 },
-        { "t": "Na małym ogniu podgrzewaj oliwę z cienko pokrojonym czosnkiem i chili, aż czosnek lekko się zezłoci. Uważaj, żeby się nie przypalił.", "min": 3 },
-        { "t": "Dodaj makaron i trochę wody z gotowania, wymieszaj, posyp natką.", "min": 2 }
-      ]
-    },
-    {
-      "id": "makaron-z-tunczykiem", "nazwa": "Makaron z tuńczykiem i pomidorami", "kategoria": "obiad", "ilustracja": "makaron",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": [], "alergeny": ["gluten", "ryby"],
-      "skladniki": [
-        { "n": "makaron", "q": 200, "u": "g" }, { "n": "tuńczyk w sosie własnym", "q": 1, "u": "puszka" },
-        { "n": "krojone pomidory", "q": 1, "u": "puszka" }, { "n": "cebula", "q": 1, "u": "szt" },
-        { "n": "oliwa", "q": 1, "u": "łyżka" }, { "n": "sól", "q": null, "u": "do smaku" },
-        { "n": "oregano", "q": 1, "u": "łyżeczka" }
-      ],
-      "kroki": [
-        { "t": "Ugotuj makaron al dente w osolonej wodzie.", "min": 10 },
-        { "t": "Podsmaż posiekaną cebulę na oliwie, aż zmięknie.", "min": 4 },
-        { "t": "Dodaj pomidory i oregano i duś.", "min": 6 },
-        { "t": "Dodaj odsączonego tuńczyka, podgrzej i wymieszaj z makaronem.", "min": 2 }
-      ]
-    },
-    {
-      "id": "carbonara", "nazwa": "Makaron carbonara", "kategoria": "obiad", "ilustracja": "makaron",
-      "porcje": 2, "trudnosc": "średnie", "dieta": [], "alergeny": ["gluten", "jajka", "laktoza"],
-      "skladniki": [
-        { "n": "spaghetti", "q": 200, "u": "g" }, { "n": "boczek", "q": 100, "u": "g" },
-        { "n": "jajka", "q": 2, "u": "szt" }, { "n": "starty parmezan", "q": 40, "u": "g" },
-        { "n": "pieprz", "q": null, "u": "do smaku" }, { "n": "sól", "q": null, "u": "do wody" }
-      ],
-      "kroki": [
-        { "t": "Ugotuj spaghetti al dente w osolonej wodzie. Odlej pół szklanki wody z gotowania.", "min": 10 },
-        { "t": "Pokrój boczek w kostkę i podsmaż na suchej patelni, aż będzie chrupiący.", "min": 6 },
-        { "t": "W misce wymieszaj jajka z parmezanem i dużą ilością pieprzu.", "min": 2 },
-        { "t": "Zdejmij patelnię z ognia, dodaj makaron, wlej masę jajeczną i szybko mieszaj, dolewając wody z gotowania, aż powstanie kremowy sos.", "min": 2 }
-      ]
-    },
-    {
-      "id": "kurczak-curry", "nazwa": "Kurczak curry z ryżem", "kategoria": "obiad", "ilustracja": "kurczak",
-      "porcje": 2, "trudnosc": "średnie", "dieta": ["bezglutenowe"], "alergeny": [],
-      "skladniki": [
-        { "n": "pierś z kurczaka", "q": 300, "u": "g" }, { "n": "ryż", "q": 150, "u": "g" },
-        { "n": "cebula", "q": 1, "u": "szt" }, { "n": "mleczko kokosowe", "q": 200, "u": "ml" },
-        { "n": "curry w proszku", "q": 2, "u": "łyżeczka" }, { "n": "olej", "q": 1, "u": "łyżka" },
-        { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Ugotuj ryż według przepisu na opakowaniu.", "min": 15 },
-        { "t": "W tym czasie pokrój kurczaka w kostkę, posól i obsmaż na oleju.", "min": 6 },
-        { "t": "Dodaj posiekaną cebulę i curry i smaż, mieszając.", "min": 3 },
-        { "t": "Wlej mleczko kokosowe i gotuj na małym ogniu, aż mięso będzie w środku białe, a sos zgęstnieje.", "min": 8 },
-        { "t": "Podawaj z ryżem.", "min": null }
-      ]
-    },
-    {
-      "id": "kurczak-z-warzywami", "nazwa": "Kurczak z warzywami z patelni", "kategoria": "obiad", "ilustracja": "kurczak",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": [], "alergeny": ["soja", "gluten"],
-      "skladniki": [
-        { "n": "pierś z kurczaka", "q": 300, "u": "g" }, { "n": "papryka", "q": 1, "u": "szt" },
-        { "n": "cukinia", "q": 1, "u": "szt" }, { "n": "czosnek", "q": 2, "u": "ząbek" },
-        { "n": "sos sojowy", "q": 2, "u": "łyżka" }, { "n": "olej", "q": 1, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Pokrój kurczaka w paski, a paprykę i cukinię w kostkę.", "min": 5 },
-        { "t": "Obsmaż kurczaka na rozgrzanym oleju, aż w środku przestanie być różowy.", "min": 7 },
-        { "t": "Dodaj warzywa i posiekany czosnek i smaż, mieszając.", "min": 5 },
-        { "t": "Wlej sos sojowy, wymieszaj i podgrzej. Pasuje do ryżu albo kaszy.", "min": 1 }
-      ]
-    },
-    {
-      "id": "ryz-smazony-z-jajkiem", "nazwa": "Ryż smażony z jajkiem i warzywami", "kategoria": "obiad", "ilustracja": "patelnia",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["jajka", "soja", "gluten"],
-      "skladniki": [
-        { "n": "ugotowany ryż (najlepiej z poprzedniego dnia)", "q": 250, "u": "g" }, { "n": "jajka", "q": 2, "u": "szt" },
-        { "n": "mrożony groszek z marchewką", "q": 150, "u": "g" }, { "n": "sos sojowy", "q": 2, "u": "łyżka" },
-        { "n": "olej", "q": 2, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Na rozgrzanym oleju smaż mrożone warzywa.", "min": 4 },
-        { "t": "Odsuń warzywa na bok, wbij jajka i mieszaj, aż się zetną.", "min": 2 },
-        { "t": "Dodaj ryż i smaż na dużym ogniu, cały czas mieszając.", "min": 4 },
-        { "t": "Polej sosem sojowym i wymieszaj.", "min": 1 }
-      ]
-    },
-    {
-      "id": "szakszuka", "nazwa": "Szakszuka", "kategoria": "obiad", "ilustracja": "patelnia",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "bezglutenowe"], "alergeny": ["jajka"],
-      "skladniki": [
-        { "n": "jajka", "q": 4, "u": "szt" }, { "n": "krojone pomidory", "q": 1, "u": "puszka" },
-        { "n": "cebula", "q": 1, "u": "szt" }, { "n": "papryka", "q": 1, "u": "szt" },
-        { "n": "czosnek", "q": 2, "u": "ząbek" }, { "n": "papryka słodka w proszku", "q": 1, "u": "łyżeczka" },
-        { "n": "olej", "q": 1, "u": "łyżka" }, { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Podsmaż na oleju pokrojoną cebulę i paprykę.", "min": 6 },
-        { "t": "Dodaj czosnek i paprykę w proszku, a po chwili pomidory. Posól i duś.", "min": 8 },
-        { "t": "Zrób łyżką 4 dołki w sosie i wbij do nich jajka.", "min": 1 },
-        { "t": "Gotuj pod przykryciem na małym ogniu, aż białka się zetną.", "min": 6 }
-      ]
-    },
-    {
-      "id": "zupa-krem-pomidorowy", "nazwa": "Krem z pomidorów", "kategoria": "obiad", "ilustracja": "zupa",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["laktoza", "seler"],
-      "skladniki": [
-        { "n": "passata pomidorowa", "q": 500, "u": "ml" }, { "n": "bulion warzywny", "q": 300, "u": "ml" },
-        { "n": "cebula", "q": 1, "u": "szt" }, { "n": "czosnek", "q": 2, "u": "ząbek" },
-        { "n": "śmietanka 30%", "q": 50, "u": "ml" }, { "n": "olej", "q": 1, "u": "łyżka" },
-        { "n": "sól", "q": null, "u": "do smaku" }, { "n": "cukier", "q": 1, "u": "szczypta" }
-      ],
-      "kroki": [
-        { "t": "Podsmaż na oleju posiekaną cebulę i czosnek.", "min": 5 },
-        { "t": "Wlej passatę i bulion, dodaj sól i szczyptę cukru i gotuj.", "min": 10 },
-        { "t": "Zmiksuj blenderem na gładko, wlej śmietankę i podgrzej, nie gotując.", "min": 3 }
-      ]
-    },
-    {
-      "id": "zupa-z-soczewicy", "nazwa": "Zupa z czerwonej soczewicy", "kategoria": "obiad", "ilustracja": "zupa",
-      "porcje": 3, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "wegańskie", "bezglutenowe"], "alergeny": [],
-      "skladniki": [
-        { "n": "czerwona soczewica", "q": 150, "u": "g" }, { "n": "cebula", "q": 1, "u": "szt" },
-        { "n": "czosnek", "q": 2, "u": "ząbek" }, { "n": "krojone pomidory", "q": 1, "u": "puszka" },
-        { "n": "woda", "q": 600, "u": "ml" }, { "n": "curry w proszku", "q": 1, "u": "łyżeczka" },
-        { "n": "olej", "q": 1, "u": "łyżka" }, { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Opłucz soczewicę na sitku zimną wodą.", "min": 1 },
-        { "t": "Podsmaż na oleju posiekaną cebulę, czosnek i curry.", "min": 4 },
-        { "t": "Dodaj soczewicę, pomidory i wodę, posól i gotuj, aż soczewica się rozpadnie.", "min": 18 },
-        { "t": "Jeśli lubisz gładką zupę, zmiksuj ją blenderem.", "min": 2 }
-      ]
-    },
-    {
-      "id": "leczo-warzywne", "nazwa": "Leczo warzywne", "kategoria": "obiad", "ilustracja": "patelnia",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "wegańskie", "bezglutenowe"], "alergeny": [],
-      "skladniki": [
-        { "n": "papryka", "q": 2, "u": "szt" }, { "n": "cukinia", "q": 1, "u": "szt" },
-        { "n": "cebula", "q": 1, "u": "szt" }, { "n": "krojone pomidory", "q": 1, "u": "puszka" },
-        { "n": "papryka słodka w proszku", "q": 1, "u": "łyżeczka" }, { "n": "olej", "q": 2, "u": "łyżka" },
-        { "n": "sól", "q": null, "u": "do smaku" }, { "n": "pieprz", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Pokrój cebulę, paprykę i cukinię w kostkę.", "min": 6 },
-        { "t": "Podsmaż cebulę na oleju, potem dodaj paprykę i cukinię i smaż, mieszając.", "min": 8 },
-        { "t": "Dodaj pomidory i przyprawy i duś pod przykryciem, aż warzywa zmiękną.", "min": 12 }
-      ]
-    },
-    {
-      "id": "ziemniaki-pieczone", "nazwa": "Pieczone ziemniaki z ziołami", "kategoria": "obiad", "ilustracja": "ziemniaki",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "wegańskie", "bezglutenowe"], "alergeny": [],
-      "skladniki": [
-        { "n": "ziemniaki", "q": 500, "u": "g" }, { "n": "olej", "q": 2, "u": "łyżka" },
-        { "n": "papryka słodka w proszku", "q": 1, "u": "łyżeczka" }, { "n": "zioła prowansalskie", "q": 1, "u": "łyżeczka" },
-        { "n": "sól", "q": 0.5, "u": "łyżeczka" }
-      ],
-      "kroki": [
-        { "t": "Nagrzej piekarnik do 200°C.", "min": 10 },
-        { "t": "Umyj ziemniaki i pokrój je w ćwiartki (ze skórką).", "min": 5 },
-        { "t": "Wymieszaj ziemniaki z olejem, solą i przyprawami i rozłóż na blasze z papierem do pieczenia.", "min": 2 },
-        { "t": "Piecz, aż będą miękkie w środku i rumiane z wierzchu. W połowie przemieszaj.", "min": 35 }
-      ]
-    },
-    {
-      "id": "quesadilla-z-fasola", "nazwa": "Quesadilla z serem i fasolą", "kategoria": "kolacja", "ilustracja": "wrap",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["gluten", "laktoza"],
-      "skladniki": [
-        { "n": "tortille pszenne", "q": 2, "u": "szt" }, { "n": "tarty ser żółty", "q": 80, "u": "g" },
-        { "n": "czerwona fasola z puszki", "q": 4, "u": "łyżka" }, { "n": "kukurydza z puszki", "q": 3, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Na jedną tortillę rozłóż połowę sera, fasolę, kukurydzę i resztę sera.", "min": 2 },
-        { "t": "Przykryj drugą tortillą i podpiecz na suchej patelni z obu stron, aż ser się roztopi.", "min": 6 },
-        { "t": "Pokrój na trójkąty jak pizzę.", "min": 1 }
-      ]
-    },
-    {
-      "id": "wrap-z-kurczakiem", "nazwa": "Wrap z kurczakiem i sosem jogurtowym", "kategoria": "kolacja", "ilustracja": "wrap",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": [], "alergeny": ["gluten", "laktoza"],
-      "skladniki": [
-        { "n": "tortille pszenne", "q": 2, "u": "szt" }, { "n": "pierś z kurczaka", "q": 200, "u": "g" },
-        { "n": "sałata", "q": 4, "u": "liście" }, { "n": "pomidor", "q": 1, "u": "szt" },
-        { "n": "jogurt naturalny", "q": 3, "u": "łyżka" }, { "n": "czosnek", "q": 1, "u": "ząbek" },
-        { "n": "olej", "q": 1, "u": "łyżka" }, { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Pokrój kurczaka w paski, posól i smaż na oleju, aż w środku przestanie być różowy.", "min": 8 },
-        { "t": "Wymieszaj jogurt z przeciśniętym czosnkiem i szczyptą soli.", "min": 2 },
-        { "t": "Pokrój pomidor w plasterki.", "min": 2 },
-        { "t": "Na tortille wyłóż sałatę, pomidor, kurczaka i sos, a potem zawiń.", "min": 3 }
-      ]
-    },
-    {
-      "id": "salatka-grecka", "nazwa": "Sałatka grecka", "kategoria": "kolacja", "ilustracja": "salatka",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "bezglutenowe"], "alergeny": ["laktoza"],
-      "skladniki": [
-        { "n": "pomidory", "q": 2, "u": "szt" }, { "n": "ogórek", "q": 1, "u": "szt" },
-        { "n": "papryka", "q": 1, "u": "szt" }, { "n": "czerwona cebula", "q": 0.5, "u": "szt" },
-        { "n": "ser feta", "q": 100, "u": "g" }, { "n": "oliwki", "q": 10, "u": "szt" },
-        { "n": "oliwa", "q": 2, "u": "łyżka" }, { "n": "oregano", "q": 1, "u": "łyżeczka" }
-      ],
-      "kroki": [
-        { "t": "Pokrój pomidory, ogórka i paprykę w dużą kostkę, a cebulę w cienkie piórka.", "min": 6 },
-        { "t": "Dodaj oliwki i pokrojoną fetę.", "min": 2 },
-        { "t": "Polej oliwą, posyp oregano i delikatnie wymieszaj.", "min": 1 }
-      ]
-    },
-    {
-      "id": "hummus", "nazwa": "Hummus", "kategoria": "przekąska", "ilustracja": "miska",
-      "porcje": 4, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "wegańskie", "bezglutenowe"], "alergeny": ["sezam"],
-      "skladniki": [
-        { "n": "ciecierzyca z puszki", "q": 1, "u": "puszka" }, { "n": "pasta tahini", "q": 2, "u": "łyżka" },
-        { "n": "sok z cytryny", "q": 2, "u": "łyżka" }, { "n": "czosnek", "q": 1, "u": "ząbek" },
-        { "n": "oliwa", "q": 2, "u": "łyżka" }, { "n": "zimna woda", "q": 3, "u": "łyżka" },
-        { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Odsącz i opłucz ciecierzycę.", "min": 1 },
-        { "t": "Zmiksuj wszystkie składniki blenderem na gładką pastę. Jeśli jest za gęsta, dodaj trochę wody.", "min": 4 },
-        { "t": "Przełóż do miski i polej odrobiną oliwy. Podawaj z pieczywem albo warzywami.", "min": 1 }
-      ]
-    },
-    {
-      "id": "tost-z-serem-i-szynka", "nazwa": "Tosty z serem i szynką", "kategoria": "kolacja", "ilustracja": "kanapka",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": [], "alergeny": ["gluten", "laktoza"],
-      "skladniki": [
-        { "n": "chleb tostowy", "q": 4, "u": "kromka" }, { "n": "ser żółty", "q": 4, "u": "plaster" },
-        { "n": "szynka", "q": 4, "u": "plaster" }, { "n": "masło", "q": 1, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Posmaruj kromki cienko masłem z jednej strony.", "min": 1 },
-        { "t": "Na niesmarowane strony połóż ser i szynkę i przykryj drugą kromką masłem na zewnątrz.", "min": 2 },
-        { "t": "Opiekaj na patelni albo w opiekaczu z obu stron, aż ser się roztopi.", "min": 5 }
-      ]
-    },
-    {
-      "id": "zapiekanka-z-pieczarkami", "nazwa": "Zapiekanka z pieczarkami", "kategoria": "kolacja", "ilustracja": "kanapka",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["gluten", "laktoza"],
-      "skladniki": [
-        { "n": "bagietka", "q": 1, "u": "szt" }, { "n": "pieczarki", "q": 200, "u": "g" },
-        { "n": "cebula", "q": 1, "u": "szt" }, { "n": "tarty ser żółty", "q": 100, "u": "g" },
-        { "n": "olej", "q": 1, "u": "łyżka" }, { "n": "ketchup", "q": null, "u": "do polania" },
-        { "n": "sól", "q": null, "u": "do smaku" }
-      ],
-      "kroki": [
-        { "t": "Nagrzej piekarnik do 200°C.", "min": 10 },
-        { "t": "Pokrój pieczarki i cebulę i usmaż na oleju, aż odparuje woda. Posól.", "min": 8 },
-        { "t": "Przekrój bagietkę wzdłuż na pół, nałóż pieczarki i posyp serem.", "min": 2 },
-        { "t": "Zapiekaj, aż ser się roztopi. Polej ketchupem.", "min": 8 }
-      ]
-    },
-    {
-      "id": "nalesniki", "nazwa": "Naleśniki", "kategoria": "deser", "ilustracja": "nalesniki",
-      "porcje": 2, "trudnosc": "średnie", "dieta": ["wegetariańskie"], "alergeny": ["gluten", "jajka", "laktoza"],
-      "skladniki": [
-        { "n": "mąka pszenna", "q": 150, "u": "g" }, { "n": "mleko", "q": 250, "u": "ml" },
-        { "n": "woda gazowana", "q": 100, "u": "ml" }, { "n": "jajka", "q": 2, "u": "szt" },
-        { "n": "sól", "q": 1, "u": "szczypta" }, { "n": "olej", "q": 1, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Zmiksuj albo dokładnie wymieszaj mąkę, mleko, wodę, jajka, sól i olej na gładkie, rzadkie ciasto.", "min": 3 },
-        { "t": "Odstaw ciasto na chwilę, żeby odpoczęło.", "min": 10 },
-        { "t": "Na rozgrzaną, lekko natłuszczoną patelnię wlewaj cienką warstwę ciasta i smaż każdy naleśnik z obu stron, aż się zrumieni.", "min": 15 },
-        { "t": "Podawaj z dżemem, serem albo owocami.", "min": null }
-      ]
-    },
-    {
-      "id": "pieczone-jablka", "nazwa": "Pieczone jabłka z cynamonem", "kategoria": "deser", "ilustracja": "jablko",
-      "porcje": 2, "trudnosc": "łatwe", "dieta": ["wegetariańskie", "bezglutenowe"], "alergeny": ["orzechy"],
-      "skladniki": [
-        { "n": "jabłka", "q": 2, "u": "szt" }, { "n": "miód", "q": 2, "u": "łyżeczka" },
-        { "n": "cynamon", "q": 0.5, "u": "łyżeczka" }, { "n": "posiekane orzechy włoskie", "q": 2, "u": "łyżka" }
-      ],
-      "kroki": [
-        { "t": "Nagrzej piekarnik do 180°C.", "min": 10 },
-        { "t": "Wydrąż gniazda nasienne jabłek łyżeczką, nie przebijając dna.", "min": 4 },
-        { "t": "Napełnij jabłka orzechami, miodem i cynamonem i postaw w naczyniu do pieczenia.", "min": 2 },
-        { "t": "Piecz, aż jabłka będą miękkie.", "min": 25 }
-      ]
-    },
-    {
-      "id": "jogurt-z-owocami", "nazwa": "Jogurt z owocami i granolą", "kategoria": "deser", "ilustracja": "miska",
-      "porcje": 1, "trudnosc": "łatwe", "dieta": ["wegetariańskie"], "alergeny": ["laktoza", "gluten"],
-      "skladniki": [
-        { "n": "jogurt naturalny", "q": 200, "u": "g" }, { "n": "owoce (świeże albo mrożone)", "q": 100, "u": "g" },
-        { "n": "granola albo płatki owsiane", "q": 3, "u": "łyżka" }, { "n": "miód", "q": 1, "u": "łyżeczka" }
-      ],
-      "kroki": [
-        { "t": "Przełóż jogurt do miski albo szklanki.", "min": 1 },
-        { "t": "Dodaj owoce, posyp granolą i polej miodem.", "min": 2 }
-      ]
+     "n": "świeża bazylia",
+     "q": null,
+     "u": "do posypania"
     }
-  ],
-  "zamienniki": [
-    { "skladnik": "mleko", "zamiennik": "napój roślinny (owsiany, sojowy) w tej samej ilości; w omlecie także woda" },
-    { "skladnik": "masło do smażenia", "zamiennik": "olej w tej samej ilości" },
-    { "skladnik": "oliwa", "zamiennik": "olej rzepakowy w tej samej ilości" },
-    { "skladnik": "świeża bazylia", "zamiennik": "suszona bazylia, około 1 łyżeczki" },
-    { "skladnik": "krojone pomidory z puszki", "zamiennik": "passata pomidorowa w podobnej ilości albo 3–4 świeże pomidory" },
-    { "skladnik": "śmietanka 30%", "zamiennik": "jogurt naturalny (dodany na końcu, bez gotowania) albo mleczko kokosowe" },
-    { "skladnik": "jogurt naturalny", "zamiennik": "skyr albo gęsty kefir" },
-    { "skladnik": "parmezan", "zamiennik": "inny twardy, dojrzewający ser, np. grana padano" },
-    { "skladnik": "pierś z kurczaka", "zamiennik": "udka bez kości (smaż kilka minut dłużej) albo ciecierzyca z puszki w wersji wegetariańskiej" },
-    { "skladnik": "ryż", "zamiennik": "kasza bulgur albo kuskus (krócej się gotują)" },
-    { "skladnik": "tortille", "zamiennik": "cienkie naleśniki albo chleb pita" },
-    { "skladnik": "miód", "zamiennik": "syrop klonowy albo cukier" },
-    { "skladnik": "jajko w placuszkach", "zamiennik": "1 łyżka mielonego siemienia lnianego wymieszana z 3 łyżkami wody (odstaw na 5 minut)" }
-  ],
-  "porady": [
-    "Makaron al dente jest miękki z zewnątrz, ale lekko sprężysty w środku. Sprawdź, gryząc jedną nitkę minutę przed końcem gotowania.",
-    "Do wody na makaron dodaj około 1 łyżeczki soli na litr wody. Oleju nie trzeba.",
-    "Przypalony sos: nie mieszaj go, przelej górną, nieprzypaloną część do czystego garnka. Jeśli czuć gorycz, ugotuj sos od nowa.",
-    "Za słona zupa: dolej wody albo bulionu bez soli; możesz też ugotować w niej trochę ryżu albo ziemniaka.",
-    "Kurczak jest gotowy, gdy po przekrojeniu jest biały w środku, bez różowego koloru, a sok jest przezroczysty.",
-    "Surowego mięsa nie kroi się na tej samej desce co warzyw do sałatki bez umycia jej gorącą wodą z płynem.",
-    "Ugotowane dania przechowuj w lodówce w zamkniętym pojemniku do 2–3 dni. Wstaw je do lodówki, gdy ostygną, najpóźniej po 2 godzinach.",
-    "Ryż do smażenia najlepiej ugotować dzień wcześniej, bo zimny ryż się nie skleja.",
-    "Cebulę łatwiej pokroić bez łez, gdy nóż jest ostry, a cebula schłodzona w lodówce.",
-    "Ciepłą patelnię sprawdzisz, kropiąc na nią odrobinę wody: jeśli skwierczy i odparowuje, możesz smażyć.",
-    "Jajko jest świeże, jeśli w szklance wody opada na dno i leży płasko.",
-    "Czosnek przypala się bardzo szybko i robi się gorzki, więc dodawaj go na patelnię na krótko i na mniejszym ogniu."
-  ]
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj makaron al dente w osolonej wodzie.",
+     "min": 10
+    },
+    {
+     "t": "Na patelni rozgrzej oliwę i podsmaż posiekany czosnek.",
+     "min": 3
+    },
+    {
+     "t": "Wlej pomidory, dopraw solą i pieprzem i duś pod przykryciem.",
+     "min": 10
+    },
+    {
+     "t": "Wymieszaj ugotowany makaron z sosem i posyp bazylią.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "jajka-na-miekko",
+   "nazwa": "Jajka na miękko",
+   "kategoria": "śniadanie",
+   "ilustracja": "jajko",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka"
+   ],
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "woda",
+     "q": null,
+     "u": "tyle, by przykryła jajka"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Wyjmij jajka wcześniej z lodówki i zagotuj wodę w garnku ze szczyptą soli.",
+     "min": 2
+    },
+    {
+     "t": "Włóż jajka ostrożnie na wrzątek łyżką i gotuj dokładnie 3,5 minuty (rozmiar M) lub 4,5 minuty (rozmiar L).",
+     "min": 4
+    },
+    {
+     "t": "Odlej wrzątek i zalej jajka zimną wodą, aby zatrzymać ścinanie żółtka.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "omlet-z-cebula",
+   "nazwa": "Omlet z cebulą",
+   "kategoria": "śniadanie",
+   "ilustracja": "patelnia",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "mleko",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Roztrzep 3 jajka z dwiema łyżkami mleka i szczyptą soli.",
+     "min": 1
+    },
+    {
+     "t": "Pokrój cebulę w kostkę i podsmaż na oleju, aż zmięknie.",
+     "min": 4
+    },
+    {
+     "t": "Wylej na cebulę masę jajeczną i smaż pod przykryciem na małym ogniu.",
+     "min": 5
+    }
+   ]
+  },
+  {
+   "id": "bowl-ryz-awokado",
+   "nazwa": "Wegetariański bowl z ryżem i awokado",
+   "kategoria": "obiad",
+   "ilustracja": "miska",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "soja"
+   ],
+   "skladniki": [
+    {
+     "n": "ugotowany ryż",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "awokado",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "ogórek",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "sos sojowy",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój awokado i ogórek w kostkę albo w plasterki.",
+     "min": 3
+    },
+    {
+     "t": "Ułóż warzywa na ugotowanym ryżu.",
+     "min": 1
+    },
+    {
+     "t": "Polej dwiema łyżkami sosu sojowego.",
+     "min": null
+    }
+   ]
+  },
+  {
+   "id": "owsianka-z-bananem",
+   "nazwa": "Owsianka z bananem i cynamonem",
+   "kategoria": "śniadanie",
+   "ilustracja": "miska",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "płatki owsiane",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "mleko",
+     "q": 250,
+     "u": "ml"
+    },
+    {
+     "n": "banan",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "miód",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "cynamon",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Wsyp płatki do garnka, zalej mlekiem i zagotuj.",
+     "min": 3
+    },
+    {
+     "t": "Gotuj na małym ogniu, często mieszając, aż owsianka zgęstnieje.",
+     "min": 4
+    },
+    {
+     "t": "Przełóż do miski, dodaj pokrojonego banana, miód i cynamon.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "jajecznica-ze-szczypiorkiem",
+   "nazwa": "Jajecznica ze szczypiorkiem",
+   "kategoria": "śniadanie",
+   "ilustracja": "patelnia",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "szczypiorek",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozpuść masło na patelni na małym ogniu.",
+     "min": 1
+    },
+    {
+     "t": "Wbij jajka, posól i powoli mieszaj łopatką, aż się zetną, ale zostaną lekko wilgotne.",
+     "min": 3
+    },
+    {
+     "t": "Zdejmij z ognia, dopraw pieprzem i posyp posiekanym szczypiorkiem.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "tosty-francuskie",
+   "nazwa": "Tosty francuskie",
+   "kategoria": "śniadanie",
+   "ilustracja": "nalesniki",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "chleb tostowy albo czerstwa bułka",
+     "q": 4,
+     "u": "kromka"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "mleko",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "cynamon",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "W głębokim talerzu roztrzep jajka z mlekiem, cukrem i cynamonem.",
+     "min": 2
+    },
+    {
+     "t": "Zanurz każdą kromkę w masie na kilka sekund z obu stron.",
+     "min": 2
+    },
+    {
+     "t": "Smaż kromki na rozgrzanym maśle na złoto z obu stron.",
+     "min": 6
+    },
+    {
+     "t": "Podawaj na ciepło, np. z owocami albo miodem.",
+     "min": null
+    }
+   ]
+  },
+  {
+   "id": "kanapki-awokado-jajko",
+   "nazwa": "Kanapki z awokado i jajkiem",
+   "kategoria": "śniadanie",
+   "ilustracja": "kanapka",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka"
+   ],
+   "skladniki": [
+    {
+     "n": "chleb",
+     "q": 2,
+     "u": "kromka"
+    },
+    {
+     "n": "awokado",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "sok z cytryny",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj jajko na twardo we wrzątku.",
+     "min": 9
+    },
+    {
+     "t": "W tym czasie rozgnieć awokado widelcem z sokiem z cytryny, solą i pieprzem.",
+     "min": 2
+    },
+    {
+     "t": "Ostudź jajko w zimnej wodzie i obierz.",
+     "min": 2
+    },
+    {
+     "t": "Posmaruj chleb pastą z awokado i połóż na niej plasterki jajka.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "placuszki-bananowe",
+   "nazwa": "Placuszki bananowe",
+   "kategoria": "śniadanie",
+   "ilustracja": "nalesniki",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka"
+   ],
+   "skladniki": [
+    {
+     "n": "dojrzały banan",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozgnieć banana widelcem na gładką masę.",
+     "min": 2
+    },
+    {
+     "t": "Dodaj jajka i mąkę i wymieszaj na gęste ciasto.",
+     "min": 2
+    },
+    {
+     "t": "Na rozgrzanym oleju nakładaj łyżką małe placuszki i smaż na średnim ogniu z obu stron na złoto.",
+     "min": 8
+    }
+   ]
+  },
+  {
+   "id": "twarozek-z-rzodkiewka",
+   "nazwa": "Twarożek z rzodkiewką i szczypiorkiem",
+   "kategoria": "śniadanie",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "twaróg półtłusty",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "jogurt naturalny",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "rzodkiewka",
+     "q": 5,
+     "u": "szt"
+    },
+    {
+     "n": "szczypiorek",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozgnieć twaróg widelcem z jogurtem.",
+     "min": 2
+    },
+    {
+     "t": "Pokrój rzodkiewki w drobną kostkę i posiekaj szczypiorek.",
+     "min": 4
+    },
+    {
+     "t": "Wymieszaj wszystko i dopraw solą i pieprzem. Podawaj z pieczywem.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "spaghetti-aglio-olio",
+   "nazwa": "Spaghetti aglio e olio",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie"
+   ],
+   "alergeny": [
+    "gluten"
+   ],
+   "skladniki": [
+    {
+     "n": "spaghetti",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "czosnek",
+     "q": 4,
+     "u": "ząbek"
+    },
+    {
+     "n": "oliwa",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "płatki chili",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "natka pietruszki",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj spaghetti al dente w osolonej wodzie. Odlej pół szklanki wody z gotowania.",
+     "min": 10
+    },
+    {
+     "t": "Na małym ogniu podgrzewaj oliwę z cienko pokrojonym czosnkiem i chili, aż czosnek lekko się zezłoci. Uważaj, żeby się nie przypalił.",
+     "min": 3
+    },
+    {
+     "t": "Dodaj makaron i trochę wody z gotowania, wymieszaj, posyp natką.",
+     "min": 2
+    }
+   ]
+  },
+  {
+   "id": "makaron-z-tunczykiem",
+   "nazwa": "Makaron z tuńczykiem i pomidorami",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "ryby"
+   ],
+   "skladniki": [
+    {
+     "n": "makaron",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "tuńczyk w sosie własnym",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "oliwa",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "oregano",
+     "q": 1,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj makaron al dente w osolonej wodzie.",
+     "min": 10
+    },
+    {
+     "t": "Podsmaż posiekaną cebulę na oliwie, aż zmięknie.",
+     "min": 4
+    },
+    {
+     "t": "Dodaj pomidory i oregano i duś.",
+     "min": 6
+    },
+    {
+     "t": "Dodaj odsączonego tuńczyka, podgrzej i wymieszaj z makaronem.",
+     "min": 2
+    }
+   ]
+  },
+  {
+   "id": "carbonara",
+   "nazwa": "Makaron carbonara",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "spaghetti",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "boczek",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "starty parmezan",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do wody"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj spaghetti al dente w osolonej wodzie. Odlej pół szklanki wody z gotowania.",
+     "min": 10
+    },
+    {
+     "t": "Pokrój boczek w kostkę i podsmaż na suchej patelni, aż będzie chrupiący.",
+     "min": 6
+    },
+    {
+     "t": "W misce wymieszaj jajka z parmezanem i dużą ilością pieprzu.",
+     "min": 2
+    },
+    {
+     "t": "Zdejmij patelnię z ognia, dodaj makaron, wlej masę jajeczną i szybko mieszaj, dolewając wody z gotowania, aż powstanie kremowy sos.",
+     "min": 2
+    }
+   ]
+  },
+  {
+   "id": "kurczak-curry",
+   "nazwa": "Kurczak curry z ryżem",
+   "kategoria": "obiad",
+   "ilustracja": "kurczak",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": [],
+   "skladniki": [
+    {
+     "n": "pierś z kurczaka",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "ryż",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "mleczko kokosowe",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "curry w proszku",
+     "q": 2,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj ryż według przepisu na opakowaniu.",
+     "min": 15
+    },
+    {
+     "t": "W tym czasie pokrój kurczaka w kostkę, posól i obsmaż na oleju.",
+     "min": 6
+    },
+    {
+     "t": "Dodaj posiekaną cebulę i curry i smaż, mieszając.",
+     "min": 3
+    },
+    {
+     "t": "Wlej mleczko kokosowe i gotuj na małym ogniu, aż mięso będzie w środku białe, a sos zgęstnieje.",
+     "min": 8
+    },
+    {
+     "t": "Podawaj z ryżem.",
+     "min": null
+    }
+   ]
+  },
+  {
+   "id": "kurczak-z-warzywami",
+   "nazwa": "Kurczak z warzywami z patelni",
+   "kategoria": "obiad",
+   "ilustracja": "kurczak",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "soja"
+   ],
+   "skladniki": [
+    {
+     "n": "pierś z kurczaka",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cukinia",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "sos sojowy",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój kurczaka w paski, a paprykę i cukinię w kostkę.",
+     "min": 5
+    },
+    {
+     "t": "Obsmaż kurczaka na rozgrzanym oleju, aż w środku przestanie być różowy.",
+     "min": 7
+    },
+    {
+     "t": "Dodaj warzywa i posiekany czosnek i smaż, mieszając.",
+     "min": 5
+    },
+    {
+     "t": "Wlej sos sojowy, wymieszaj i podgrzej. Pasuje do ryżu albo kaszy.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "ryz-smazony-z-jajkiem",
+   "nazwa": "Ryż smażony z jajkiem i warzywami",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "soja"
+   ],
+   "skladniki": [
+    {
+     "n": "ugotowany ryż (najlepiej z poprzedniego dnia)",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "mrożony groszek z marchewką",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "sos sojowy",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Na rozgrzanym oleju smaż mrożone warzywa.",
+     "min": 4
+    },
+    {
+     "t": "Odsuń warzywa na bok, wbij jajka i mieszaj, aż się zetną.",
+     "min": 2
+    },
+    {
+     "t": "Dodaj ryż i smaż na dużym ogniu, cały czas mieszając.",
+     "min": 4
+    },
+    {
+     "t": "Polej sosem sojowym i wymieszaj.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "szakszuka",
+   "nazwa": "Szakszuka",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka"
+   ],
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 4,
+     "u": "szt"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Podsmaż na oleju pokrojoną cebulę i paprykę.",
+     "min": 6
+    },
+    {
+     "t": "Dodaj czosnek i paprykę w proszku, a po chwili pomidory. Posól i duś.",
+     "min": 8
+    },
+    {
+     "t": "Zrób łyżką 4 dołki w sosie i wbij do nich jajka.",
+     "min": 1
+    },
+    {
+     "t": "Gotuj pod przykryciem na małym ogniu, aż białka się zetną.",
+     "min": 6
+    }
+   ]
+  },
+  {
+   "id": "zupa-krem-pomidorowy",
+   "nazwa": "Krem z pomidorów",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza",
+    "seler"
+   ],
+   "skladniki": [
+    {
+     "n": "passata pomidorowa",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 300,
+     "u": "ml"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "śmietanka 30%",
+     "q": 50,
+     "u": "ml"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Podsmaż na oleju posiekaną cebulę i czosnek.",
+     "min": 5
+    },
+    {
+     "t": "Wlej passatę i bulion, dodaj sól i szczyptę cukru i gotuj.",
+     "min": 10
+    },
+    {
+     "t": "Zmiksuj blenderem na gładko, wlej śmietankę i podgrzej, nie gotując.",
+     "min": 3
+    }
+   ]
+  },
+  {
+   "id": "zupa-z-soczewicy",
+   "nazwa": "Zupa z czerwonej soczewicy",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [],
+   "skladniki": [
+    {
+     "n": "czerwona soczewica",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "woda",
+     "q": 600,
+     "u": "ml"
+    },
+    {
+     "n": "curry w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Opłucz soczewicę na sitku zimną wodą.",
+     "min": 1
+    },
+    {
+     "t": "Podsmaż na oleju posiekaną cebulę, czosnek i curry.",
+     "min": 4
+    },
+    {
+     "t": "Dodaj soczewicę, pomidory i wodę, posól i gotuj, aż soczewica się rozpadnie.",
+     "min": 18
+    },
+    {
+     "t": "Jeśli lubisz gładką zupę, zmiksuj ją blenderem.",
+     "min": 2
+    }
+   ]
+  },
+  {
+   "id": "leczo-warzywne",
+   "nazwa": "Leczo warzywne",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [],
+   "skladniki": [
+    {
+     "n": "papryka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "cukinia",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój cebulę, paprykę i cukinię w kostkę.",
+     "min": 6
+    },
+    {
+     "t": "Podsmaż cebulę na oleju, potem dodaj paprykę i cukinię i smaż, mieszając.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj pomidory i przyprawy i duś pod przykryciem, aż warzywa zmiękną.",
+     "min": 12
+    }
+   ]
+  },
+  {
+   "id": "ziemniaki-pieczone",
+   "nazwa": "Pieczone ziemniaki z ziołami",
+   "kategoria": "obiad",
+   "ilustracja": "ziemniaki",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [],
+   "skladniki": [
+    {
+     "n": "ziemniaki",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "zioła prowansalskie",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": 0.5,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C.",
+     "min": 10
+    },
+    {
+     "t": "Umyj ziemniaki i pokrój je w ćwiartki (ze skórką).",
+     "min": 5
+    },
+    {
+     "t": "Wymieszaj ziemniaki z olejem, solą i przyprawami i rozłóż na blasze z papierem do pieczenia.",
+     "min": 2
+    },
+    {
+     "t": "Piecz, aż będą miękkie w środku i rumiane z wierzchu. W połowie przemieszaj.",
+     "min": 35
+    }
+   ]
+  },
+  {
+   "id": "quesadilla-z-fasola",
+   "nazwa": "Quesadilla z serem i fasolą",
+   "kategoria": "kolacja",
+   "ilustracja": "wrap",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "tortille pszenne",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "tarty ser żółty",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "czerwona fasola z puszki",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "kukurydza z puszki",
+     "q": 3,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Na jedną tortillę rozłóż połowę sera, fasolę, kukurydzę i resztę sera.",
+     "min": 2
+    },
+    {
+     "t": "Przykryj drugą tortillą i podpiecz na suchej patelni z obu stron, aż ser się roztopi.",
+     "min": 6
+    },
+    {
+     "t": "Pokrój na trójkąty jak pizzę.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "wrap-z-kurczakiem",
+   "nazwa": "Wrap z kurczakiem i sosem jogurtowym",
+   "kategoria": "kolacja",
+   "ilustracja": "wrap",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "tortille pszenne",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "pierś z kurczaka",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "sałata",
+     "q": 4,
+     "u": "liście"
+    },
+    {
+     "n": "pomidor",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "jogurt naturalny",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "czosnek",
+     "q": 1,
+     "u": "ząbek"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój kurczaka w paski, posól i smaż na oleju, aż w środku przestanie być różowy.",
+     "min": 8
+    },
+    {
+     "t": "Wymieszaj jogurt z przeciśniętym czosnkiem i szczyptą soli.",
+     "min": 2
+    },
+    {
+     "t": "Pokrój pomidor w plasterki.",
+     "min": 2
+    },
+    {
+     "t": "Na tortille wyłóż sałatę, pomidor, kurczaka i sos, a potem zawiń.",
+     "min": 3
+    }
+   ]
+  },
+  {
+   "id": "salatka-grecka",
+   "nazwa": "Sałatka grecka",
+   "kategoria": "kolacja",
+   "ilustracja": "salatka",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "pomidory",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "ogórek",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czerwona cebula",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "ser feta",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "oliwki",
+     "q": 10,
+     "u": "szt"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "oregano",
+     "q": 1,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój pomidory, ogórka i paprykę w dużą kostkę, a cebulę w cienkie piórka.",
+     "min": 6
+    },
+    {
+     "t": "Dodaj oliwki i pokrojoną fetę.",
+     "min": 2
+    },
+    {
+     "t": "Polej oliwą, posyp oregano i delikatnie wymieszaj.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "hummus",
+   "nazwa": "Hummus",
+   "kategoria": "przekąska",
+   "ilustracja": "miska",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "sezam"
+   ],
+   "skladniki": [
+    {
+     "n": "ciecierzyca z puszki",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "pasta tahini",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sok z cytryny",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "czosnek",
+     "q": 1,
+     "u": "ząbek"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "zimna woda",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Odsącz i opłucz ciecierzycę.",
+     "min": 1
+    },
+    {
+     "t": "Zmiksuj wszystkie składniki blenderem na gładką pastę. Jeśli jest za gęsta, dodaj trochę wody.",
+     "min": 4
+    },
+    {
+     "t": "Przełóż do miski i polej odrobiną oliwy. Podawaj z pieczywem albo warzywami.",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "tost-z-serem-i-szynka",
+   "nazwa": "Tosty z serem i szynką",
+   "kategoria": "kolacja",
+   "ilustracja": "kanapka",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "chleb tostowy",
+     "q": 4,
+     "u": "kromka"
+    },
+    {
+     "n": "ser żółty",
+     "q": 4,
+     "u": "plaster"
+    },
+    {
+     "n": "szynka",
+     "q": 4,
+     "u": "plaster"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Posmaruj kromki cienko masłem z jednej strony.",
+     "min": 1
+    },
+    {
+     "t": "Na niesmarowane strony połóż ser i szynkę i przykryj drugą kromką masłem na zewnątrz.",
+     "min": 2
+    },
+    {
+     "t": "Opiekaj na patelni albo w opiekaczu z obu stron, aż ser się roztopi.",
+     "min": 5
+    }
+   ]
+  },
+  {
+   "id": "zapiekanka-z-pieczarkami",
+   "nazwa": "Zapiekanka z pieczarkami",
+   "kategoria": "kolacja",
+   "ilustracja": "kanapka",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "bagietka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "pieczarki",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "tarty ser żółty",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "ketchup",
+     "q": null,
+     "u": "do polania"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C.",
+     "min": 10
+    },
+    {
+     "t": "Pokrój pieczarki i cebulę i usmaż na oleju, aż odparuje woda. Posól.",
+     "min": 8
+    },
+    {
+     "t": "Przekrój bagietkę wzdłuż na pół, nałóż pieczarki i posyp serem.",
+     "min": 2
+    },
+    {
+     "t": "Zapiekaj, aż ser się roztopi. Polej ketchupem.",
+     "min": 8
+    }
+   ]
+  },
+  {
+   "id": "nalesniki",
+   "nazwa": "Naleśniki",
+   "kategoria": "deser",
+   "ilustracja": "nalesniki",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "mąka pszenna",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "mleko",
+     "q": 250,
+     "u": "ml"
+    },
+    {
+     "n": "woda gazowana",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zmiksuj albo dokładnie wymieszaj mąkę, mleko, wodę, jajka, sól i olej na gładkie, rzadkie ciasto.",
+     "min": 3
+    },
+    {
+     "t": "Odstaw ciasto na chwilę, żeby odpoczęło.",
+     "min": 10
+    },
+    {
+     "t": "Na rozgrzaną, lekko natłuszczoną patelnię wlewaj cienką warstwę ciasta i smaż każdy naleśnik z obu stron, aż się zrumieni.",
+     "min": 15
+    },
+    {
+     "t": "Podawaj z dżemem, serem albo owocami.",
+     "min": null
+    }
+   ]
+  },
+  {
+   "id": "pieczone-jablka",
+   "nazwa": "Pieczone jabłka z cynamonem",
+   "kategoria": "deser",
+   "ilustracja": "jablko",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "orzechy"
+   ],
+   "skladniki": [
+    {
+     "n": "jabłka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "miód",
+     "q": 2,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "cynamon",
+     "q": 0.5,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "posiekane orzechy włoskie",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 180°C.",
+     "min": 10
+    },
+    {
+     "t": "Wydrąż gniazda nasienne jabłek łyżeczką, nie przebijając dna.",
+     "min": 4
+    },
+    {
+     "t": "Napełnij jabłka orzechami, miodem i cynamonem i postaw w naczyniu do pieczenia.",
+     "min": 2
+    },
+    {
+     "t": "Piecz, aż jabłka będą miękkie.",
+     "min": 25
+    }
+   ]
+  },
+  {
+   "id": "jogurt-z-owocami",
+   "nazwa": "Jogurt z owocami i granolą",
+   "kategoria": "deser",
+   "ilustracja": "miska",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ],
+   "skladniki": [
+    {
+     "n": "jogurt naturalny",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "owoce (świeże albo mrożone)",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "granola albo płatki owsiane",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "miód",
+     "q": 1,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Przełóż jogurt do miski albo szklanki.",
+     "min": 1
+    },
+    {
+     "t": "Dodaj owoce, posyp granolą i polej miodem.",
+     "min": 2
+    }
+   ]
+  },
+  {
+   "id": "omlet-ser-szpinak",
+   "nazwa": "Omlet ze szpinakiem i serem żółtym",
+   "kategoria": "śniadanie",
+   "ilustracja": "patelnia",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "świeży szpinak",
+     "q": 1,
+     "u": "garść"
+    },
+    {
+     "n": "ser żółty (np. gouda)",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Roztrzep jajka z solą i pieprzem, zetrzyj ser na tarce.",
+     "min": 2
+    },
+    {
+     "t": "Na maśle podsmaż szpinak, aż zwiędnie.",
+     "min": 2
+    },
+    {
+     "t": "Wlej jajka, smaż pod przykryciem na małym ogniu, aż wierzch się zetnie.",
+     "min": 4
+    },
+    {
+     "t": "Posyp serem, złóż omlet na pół i podgrzej jeszcze chwilę, aż ser się roztopi.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "pasta-jajeczna",
+   "nazwa": "Pasta jajeczna ze szczypiorkiem",
+   "kategoria": "śniadanie",
+   "ilustracja": "kanapka",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 4,
+     "u": "szt"
+    },
+    {
+     "n": "majonez",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "musztarda",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "szczypiorek",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieczywo",
+     "q": null,
+     "u": "do podania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj jajka na twardo we wrzątku.",
+     "min": 10
+    },
+    {
+     "t": "Przelej zimną wodą, ostudź i obierz.",
+     "min": 5
+    },
+    {
+     "t": "Posiekaj jajka drobno albo rozgnieć widelcem.",
+     "min": 3
+    },
+    {
+     "t": "Wymieszaj z majonezem, musztardą i szczypiorkiem, dopraw solą i pieprzem. Podawaj z pieczywem.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "gorczyca"
+   ]
+  },
+  {
+   "id": "tost-jajko-w-koszulce",
+   "nazwa": "Tost z awokado i jajkiem w koszulce",
+   "kategoria": "śniadanie",
+   "ilustracja": "kanapka",
+   "porcje": 1,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "chleb",
+     "q": 1,
+     "u": "kromka"
+    },
+    {
+     "n": "awokado",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "ocet",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "płatki chili",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zagotuj wodę w garnku, zmniejsz ogień tak, żeby ledwo mrugała, i dodaj ocet.",
+     "min": 4
+    },
+    {
+     "t": "Wbij jajko do miseczki, zamieszaj wodę w wir i wlej jajko na środek. Gotuj, aż białko się zetnie, a żółtko zostanie płynne.",
+     "min": 3
+    },
+    {
+     "t": "W tym czasie opiecz chleb i rozgnieć na nim awokado z solą.",
+     "min": 2
+    },
+    {
+     "t": "Wyjmij jajko łyżką cedzakową, połóż na tost i posyp chili.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka"
+   ]
+  },
+  {
+   "id": "pancakes",
+   "nazwa": "Pancakes (puszyste placuszki)",
+   "kategoria": "śniadanie",
+   "ilustracja": "nalesniki",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mąka pszenna",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "mleko",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "proszek do pieczenia",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "owoce albo syrop klonowy",
+     "q": null,
+     "u": "do podania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozpuść masło. W misce wymieszaj mąkę, cukier, proszek do pieczenia i sól.",
+     "min": 2
+    },
+    {
+     "t": "Dodaj mleko, jajko i roztopione masło i wymieszaj krótko, do połączenia (grudki mogą zostać).",
+     "min": 2
+    },
+    {
+     "t": "Na suchej, rozgrzanej patelni nakładaj po 2 łyżki ciasta i smaż, aż na wierzchu pojawią się pęcherzyki, potem przewróć.",
+     "min": 12
+    },
+    {
+     "t": "Podawaj z owocami albo syropem klonowym.",
+     "min": null
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "jaglanka-jablko",
+   "nazwa": "Jaglanka z jabłkiem i cynamonem",
+   "kategoria": "śniadanie",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "kasza jaglana",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "mleko",
+     "q": 400,
+     "u": "ml"
+    },
+    {
+     "n": "jabłka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cynamon",
+     "q": 0.5,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "miód",
+     "q": 2,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Przepłucz kaszę na sitku gorącą wodą, żeby nie była gorzka.",
+     "min": 2
+    },
+    {
+     "t": "Zagotuj kaszę w mleku i gotuj na małym ogniu pod przykryciem, często mieszając.",
+     "min": 15
+    },
+    {
+     "t": "W tym czasie pokrój jabłko w kostkę.",
+     "min": 3
+    },
+    {
+     "t": "Dodaj jabłko i cynamon, gotuj jeszcze chwilę i dosłódź miodem.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "kasza-manna",
+   "nazwa": "Kasza manna na mleku",
+   "kategoria": "śniadanie",
+   "ilustracja": "miska",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "kasza manna",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "mleko",
+     "q": 300,
+     "u": "ml"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sok malinowy albo owoce",
+     "q": null,
+     "u": "do podania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zagotuj mleko z cukrem.",
+     "min": 4
+    },
+    {
+     "t": "Wsypuj kaszę cienkim strumieniem, cały czas mieszając trzepaczką, żeby nie było grudek.",
+     "min": 1
+    },
+    {
+     "t": "Gotuj na małym ogniu, mieszając, aż zgęstnieje.",
+     "min": 3
+    },
+    {
+     "t": "Podawaj z sokiem malinowym albo owocami.",
+     "min": null
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "pudding-chia",
+   "nazwa": "Pudding chia z owocami",
+   "kategoria": "śniadanie",
+   "ilustracja": "miska",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "nasiona chia",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "napój roślinny albo mleko",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "syrop klonowy",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "owoce (np. maliny, banan)",
+     "q": 100,
+     "u": "g"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Wymieszaj chia z napojem i syropem.",
+     "min": 2
+    },
+    {
+     "t": "Po 5 minutach wymieszaj jeszcze raz, żeby nasiona się nie skleiły.",
+     "min": 5
+    },
+    {
+     "t": "Wstaw do lodówki na co najmniej 2 godziny, najlepiej na noc.",
+     "min": 120
+    },
+    {
+     "t": "Przed podaniem dodaj owoce.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "granola-domowa",
+   "nazwa": "Granola domowa",
+   "kategoria": "śniadanie",
+   "ilustracja": "miska",
+   "porcje": 6,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "płatki owsiane",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "posiekane orzechy włoskie",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "pestki słonecznika",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "n": "miód",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "cynamon",
+     "q": 1,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 160°C.",
+     "min": 10
+    },
+    {
+     "t": "Wymieszaj płatki, orzechy, pestki i cynamon, dodaj miód i olej i dokładnie wymieszaj.",
+     "min": 3
+    },
+    {
+     "t": "Rozłóż cienko na blasze z papierem i piecz, mieszając co 10 minut, aż się zezłoci.",
+     "min": 25
+    },
+    {
+     "t": "Ostudź na blasze (wtedy stwardnieje) i przechowuj w słoiku do 2 tygodni.",
+     "min": 20
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "orzechy"
+   ]
+  },
+  {
+   "id": "smoothie-bananowe",
+   "nazwa": "Smoothie bananowe ze szpinakiem",
+   "kategoria": "śniadanie",
+   "ilustracja": "miska",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "banan",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "świeży szpinak",
+     "q": 1,
+     "u": "garść"
+    },
+    {
+     "n": "jogurt naturalny",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "płatki owsiane",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "miód",
+     "q": 1,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Wrzuć wszystkie składniki do blendera.",
+     "min": 1
+    },
+    {
+     "t": "Zmiksuj na gładko. Jeśli jest za gęste, dolej trochę wody albo mleka.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "frittata-warzywa",
+   "nazwa": "Frittata z warzywami",
+   "kategoria": "śniadanie",
+   "ilustracja": "patelnia",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 5,
+     "u": "szt"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cukinia",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "ser feta",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 180°C. Pokrój warzywa w kostkę.",
+     "min": 8
+    },
+    {
+     "t": "Podsmaż warzywa na oleju na patelni, która może iść do piekarnika.",
+     "min": 6
+    },
+    {
+     "t": "Roztrzep jajka z solą i pieprzem, wlej na warzywa i pokrusz na wierzch fetę.",
+     "min": 2
+    },
+    {
+     "t": "Wstaw patelnię do piekarnika i piecz, aż środek się zetnie.",
+     "min": 12
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "kanapki-twarozek-pomidor",
+   "nazwa": "Kanapki z serkiem, pomidorem i bazylią",
+   "kategoria": "śniadanie",
+   "ilustracja": "kanapka",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "chleb",
+     "q": 2,
+     "u": "kromka"
+    },
+    {
+     "n": "serek kremowy",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "pomidor",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "świeża bazylia",
+     "q": 4,
+     "u": "liście"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Posmaruj chleb serkiem.",
+     "min": 1
+    },
+    {
+     "t": "Pokrój pomidor w plasterki i ułóż na kanapkach.",
+     "min": 2
+    },
+    {
+     "t": "Posól, popieprz i ozdób bazylią.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "rosol",
+   "nazwa": "Rosół z kurczaka",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 6,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "porcja rosołowa z kurczaka",
+     "q": 1,
+     "u": "kg"
+    },
+    {
+     "n": "włoszczyzna (marchew, pietruszka, seler, por)",
+     "q": 1,
+     "u": "pęczek"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "ziele angielskie",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "liść laurowy",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "woda",
+     "q": 3,
+     "u": "l"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "makaron nitki",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "natka pietruszki",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Opłucz mięso, zalej zimną wodą w dużym garnku i powoli zagotuj. Zbieraj łyżką szumowiny.",
+     "min": 20
+    },
+    {
+     "t": "Dodaj obraną włoszczyznę, opaloną na suchej patelni cebulę, ziele i liść laurowy. Posól.",
+     "min": 5
+    },
+    {
+     "t": "Gotuj bardzo wolno, pod uchyloną pokrywką, żeby rosół był klarowny.",
+     "min": 120
+    },
+    {
+     "t": "Osobno ugotuj makaron według opakowania.",
+     "min": 8
+    },
+    {
+     "t": "Przecedź rosół, podawaj z makaronem, pokrojoną marchewką i natką.",
+     "min": 5
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "seler"
+   ]
+  },
+  {
+   "id": "pomidorowa",
+   "nazwa": "Zupa pomidorowa z makaronem",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "bulion warzywny",
+     "q": 1,
+     "u": "l"
+    },
+    {
+     "n": "passata pomidorowa",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "koncentrat pomidorowy",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "makaron",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "natka pietruszki",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zagotuj bulion z passatą i koncentratem.",
+     "min": 8
+    },
+    {
+     "t": "Gotuj na małym ogniu, dopraw solą i szczyptą cukru.",
+     "min": 10
+    },
+    {
+     "t": "Osobno ugotuj makaron.",
+     "min": 10
+    },
+    {
+     "t": "Zahartuj śmietanę: wymieszaj ją z kilkoma łyżkami gorącej zupy i dopiero wlej do garnka. Nie gotuj już zupy.",
+     "min": 2
+    },
+    {
+     "t": "Podawaj z makaronem i natką.",
+     "min": null
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "ogorkowa",
+   "nazwa": "Zupa ogórkowa",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "bulion warzywny",
+     "q": 1,
+     "u": "l"
+    },
+    {
+     "n": "ogórki kiszone",
+     "q": 4,
+     "u": "szt"
+    },
+    {
+     "n": "woda z ogórków",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "marchew",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "koperek",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Obierz i pokrój w kostkę ziemniaki i marchew, zetrzyj ogórki na tarce.",
+     "min": 8
+    },
+    {
+     "t": "Gotuj ziemniaki i marchew w bulionie do miękkości.",
+     "min": 15
+    },
+    {
+     "t": "Dodaj ogórki i wodę z ogórków, gotuj jeszcze chwilę.",
+     "min": 8
+    },
+    {
+     "t": "Zahartuj śmietanę kilkoma łyżkami zupy, wlej do garnka, dopraw i posyp koperkiem.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "zurek",
+   "nazwa": "Żurek z kiełbasą i jajkiem",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "zakwas na żurek",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "woda",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "biała kiełbasa",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "majeranek",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "jajka",
+     "q": 4,
+     "u": "szt"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": 50,
+     "u": "ml"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj kiełbasę w wodzie, wyjmij i zostaw wywar.",
+     "min": 20
+    },
+    {
+     "t": "W tym czasie ugotuj jajka na twardo i osobno ziemniaki w kostkę.",
+     "min": 15
+    },
+    {
+     "t": "Do wywaru wlej zakwas (wcześniej wstrząśnij butelką), dodaj przeciśnięty czosnek i majeranek, zagotuj.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj śmietanę, pokrojoną kiełbasę i ziemniaki, dopraw. Podawaj z połówkami jajek.",
+     "min": 3
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "krupnik",
+   "nazwa": "Krupnik z kaszą jęczmienną",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "bulion warzywny",
+     "q": 1.5,
+     "u": "l"
+    },
+    {
+     "n": "kasza jęczmienna (pęczak)",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "marchew",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "pietruszka (korzeń)",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "natka pietruszki",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Opłucz kaszę i gotuj ją w bulionie.",
+     "min": 15
+    },
+    {
+     "t": "Dodaj pokrojone w kostkę ziemniaki, marchew i pietruszkę.",
+     "min": 5
+    },
+    {
+     "t": "Gotuj, aż warzywa i kasza będą miękkie.",
+     "min": 20
+    },
+    {
+     "t": "Dodaj masło, dopraw i posyp natką.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "kapusniak",
+   "nazwa": "Kapuśniak z kiszonej kapusty",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "kapusta kiszona",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 1.5,
+     "u": "l"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "marchew",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "liść laurowy",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Posiekaj kapustę, pokrój ziemniaki i marchew w kostkę, cebulę drobno.",
+     "min": 8
+    },
+    {
+     "t": "Podsmaż cebulę na oleju w garnku, dodaj kapustę i paprykę, smaż chwilę.",
+     "min": 5
+    },
+    {
+     "t": "Wlej bulion, dodaj liść laurowy i gotuj.",
+     "min": 15
+    },
+    {
+     "t": "Dodaj ziemniaki i marchew i gotuj do miękkości. Dopraw.",
+     "min": 20
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "seler"
+   ]
+  },
+  {
+   "id": "krem-z-dyni",
+   "nazwa": "Krem z dyni z imbirem",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "dynia (np. hokkaido)",
+     "q": 1,
+     "u": "kg"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "świeży imbir",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 800,
+     "u": "ml"
+    },
+    {
+     "n": "mleczko kokosowe",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pestki dyni",
+     "q": null,
+     "u": "do posypania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój dynię w kostkę (hokkaido nie trzeba obierać), posiekaj cebulę i czosnek, zetrzyj imbir.",
+     "min": 10
+    },
+    {
+     "t": "Podsmaż cebulę, czosnek i imbir na oleju.",
+     "min": 4
+    },
+    {
+     "t": "Dodaj dynię i bulion i gotuj do miękkości.",
+     "min": 20
+    },
+    {
+     "t": "Zmiksuj na gładko, wlej mleczko kokosowe, podgrzej i dopraw. Posyp pestkami.",
+     "min": 4
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "seler"
+   ]
+  },
+  {
+   "id": "krem-z-brokulow",
+   "nazwa": "Krem z brokułów z serem",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "brokuł",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 800,
+     "u": "ml"
+    },
+    {
+     "n": "ser topiony albo śmietanka",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "gałka muszkatołowa",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Podziel brokuł na różyczki, obierz i pokrój ziemniaki, posiekaj cebulę.",
+     "min": 6
+    },
+    {
+     "t": "Podsmaż cebulę na oleju, dodaj ziemniaki i bulion i gotuj.",
+     "min": 10
+    },
+    {
+     "t": "Dodaj brokuł i gotuj, aż będzie miękki (nie dłużej, żeby nie stracił koloru).",
+     "min": 8
+    },
+    {
+     "t": "Zmiksuj z serem na gładko, dopraw solą i gałką muszkatołową.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "krem-z-marchwi",
+   "nazwa": "Krem z marchwi z pomarańczą",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "marchew",
+     "q": 600,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "świeży imbir",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 800,
+     "u": "ml"
+    },
+    {
+     "n": "sok z pomarańczy",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Obierz i pokrój marchew, posiekaj cebulę, zetrzyj imbir.",
+     "min": 8
+    },
+    {
+     "t": "Podsmaż cebulę i imbir na oleju.",
+     "min": 3
+    },
+    {
+     "t": "Dodaj marchew i bulion i gotuj do miękkości.",
+     "min": 20
+    },
+    {
+     "t": "Zmiksuj, wlej sok z pomarańczy, podgrzej i dopraw.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "seler"
+   ]
+  },
+  {
+   "id": "zupa-pieczarkowa",
+   "nazwa": "Zupa pieczarkowa",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "pieczarki",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 1,
+     "u": "l"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "koperek",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój pieczarki w plasterki, cebulę i ziemniaki w kostkę.",
+     "min": 8
+    },
+    {
+     "t": "Podsmaż cebulę i pieczarki na maśle, aż odparuje woda.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj ziemniaki i bulion i gotuj do miękkości ziemniaków.",
+     "min": 15
+    },
+    {
+     "t": "Zahartuj śmietanę, wlej do zupy, dopraw i posyp koperkiem.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "minestrone",
+   "nazwa": "Minestrone (włoska zupa warzywna)",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "marchew",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "seler naciowy",
+     "q": 1,
+     "u": "łodyga"
+    },
+    {
+     "n": "cukinia",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "biała fasola z puszki",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 1,
+     "u": "l"
+    },
+    {
+     "n": "drobny makaron",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "parmezan",
+     "q": null,
+     "u": "do posypania"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój warzywa w drobną kostkę.",
+     "min": 10
+    },
+    {
+     "t": "Podsmaż cebulę, marchew i seler na oliwie.",
+     "min": 5
+    },
+    {
+     "t": "Dodaj cukinię, pomidory i bulion i gotuj.",
+     "min": 15
+    },
+    {
+     "t": "Dodaj odsączoną fasolę i makaron i gotuj, aż makaron będzie miękki. Podawaj z parmezanem.",
+     "min": 10
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "zupa-cebulowa",
+   "nazwa": "Zupa cebulowa z grzanką serową",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "kg"
+    },
+    {
+     "n": "masło",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "bulion wołowy",
+     "q": 1.2,
+     "u": "l"
+    },
+    {
+     "n": "tymianek",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "bagietka",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "ser ementaler albo gruyère",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój cebulę w cienkie piórka.",
+     "min": 10
+    },
+    {
+     "t": "Duś cebulę na maśle na małym ogniu, często mieszając, aż będzie złota i słodka. Nie przypal jej.",
+     "min": 35
+    },
+    {
+     "t": "Oprósz mąką, wlej bulion, dodaj tymianek i gotuj. Dopraw.",
+     "min": 15
+    },
+    {
+     "t": "Plastry bagietki posyp startym serem i zapiecz w piekarniku albo opiekaczu. Podawaj na zupie.",
+     "min": 8
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "zupa-ziemniaczana",
+   "nazwa": "Zupa ziemniaczana z majerankiem",
+   "kategoria": "zupa",
+   "ilustracja": "zupa",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ziemniaki",
+     "q": 600,
+     "u": "g"
+    },
+    {
+     "n": "marchew",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 1.2,
+     "u": "l"
+    },
+    {
+     "n": "majeranek",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój ziemniaki, marchew i cebulę w kostkę.",
+     "min": 8
+    },
+    {
+     "t": "Podsmaż cebulę na oleju w garnku.",
+     "min": 4
+    },
+    {
+     "t": "Dodaj ziemniaki, marchew i bulion i gotuj do miękkości.",
+     "min": 20
+    },
+    {
+     "t": "Dodaj majeranek rozgnieciony w dłoniach i dopraw.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "seler"
+   ]
+  },
+  {
+   "id": "spaghetti-bolognese",
+   "nazwa": "Spaghetti bolognese",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "spaghetti",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "mięso mielone wołowe",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "marchew",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "passata pomidorowa",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "koncentrat pomidorowy",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "oregano",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "parmezan",
+     "q": null,
+     "u": "do posypania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Posiekaj drobno cebulę, marchew i czosnek.",
+     "min": 6
+    },
+    {
+     "t": "Podsmaż je na oliwie, dodaj mięso i smaż, rozbijając łopatką, aż straci różowy kolor.",
+     "min": 10
+    },
+    {
+     "t": "Dodaj passatę, koncentrat i oregano, dopraw i duś pod przykryciem na małym ogniu.",
+     "min": 25
+    },
+    {
+     "t": "Ugotuj spaghetti al dente i wymieszaj z sosem. Podawaj z parmezanem.",
+     "min": 10
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "lasagne",
+   "nazwa": "Lasagne bolońska",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 6,
+   "trudnosc": "trudne",
+   "skladniki": [
+    {
+     "n": "płaty lasagne",
+     "q": 12,
+     "u": "szt"
+    },
+    {
+     "n": "mięso mielone wołowe",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "passata pomidorowa",
+     "q": 700,
+     "u": "ml"
+    },
+    {
+     "n": "masło",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "mleko",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "gałka muszkatołowa",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "parmezan",
+     "q": 60,
+     "u": "g"
+    },
+    {
+     "n": "mozzarella",
+     "q": 125,
+     "u": "g"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zrób sos mięsny: podsmaż cebulę i czosnek, dodaj mięso, a gdy się zrumieni, passatę. Duś i dopraw.",
+     "min": 25
+    },
+    {
+     "t": "Zrób beszamel: rozpuść masło, dodaj mąkę i mieszaj minutę, potem stopniowo wlewaj mleko, mieszając, aż zgęstnieje. Dopraw gałką i solą.",
+     "min": 8
+    },
+    {
+     "t": "Nagrzej piekarnik do 180°C. W naczyniu układaj warstwy: sos mięsny, płaty, beszamel, parmezan. Powtórz 3 razy.",
+     "min": 10
+    },
+    {
+     "t": "Na wierzch połóż pokrojoną mozzarellę i piecz, aż płaty zmiękną, a wierzch się zrumieni.",
+     "min": 40
+    },
+    {
+     "t": "Odstaw na kilka minut przed krojeniem, żeby warstwy się nie rozjechały.",
+     "min": 10
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "penne-kurczak-smietana",
+   "nazwa": "Penne z kurczakiem w sosie śmietanowym",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "penne",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "pierś z kurczaka",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "pieczarki",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "śmietanka 30%",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "parmezan",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj penne al dente.",
+     "min": 11
+    },
+    {
+     "t": "W tym czasie pokrój kurczaka w kostkę, posól i obsmaż na oleju, aż w środku przestanie być różowy.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj pokrojone pieczarki i czosnek i smaż, aż odparuje woda.",
+     "min": 6
+    },
+    {
+     "t": "Wlej śmietankę, dodaj starty parmezan, gotuj chwilę i wymieszaj z makaronem.",
+     "min": 3
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "makaron-pesto",
+   "nazwa": "Makaron z pesto i pomidorkami",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "makaron (np. trofie albo penne)",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "pesto bazyliowe (z parmezanem i orzeszkami piniowymi)",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "pomidorki koktajlowe",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "parmezan",
+     "q": 20,
+     "u": "g"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do wody"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj makaron al dente w osolonej wodzie. Odlej pół szklanki wody z gotowania.",
+     "min": 10
+    },
+    {
+     "t": "Przekrój pomidorki na pół.",
+     "min": 3
+    },
+    {
+     "t": "Wymieszaj makaron z pesto i odrobiną wody z gotowania, dodaj pomidorki i posyp parmezanem.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "orzechy"
+   ]
+  },
+  {
+   "id": "makaron-szpinak-feta",
+   "nazwa": "Makaron ze szpinakiem i fetą",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "makaron",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "świeży szpinak",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "ser feta",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "śmietanka 18%",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj makaron al dente.",
+     "min": 10
+    },
+    {
+     "t": "Na oliwie podsmaż czosnek, dodaj szpinak i duś, aż zwiędnie.",
+     "min": 3
+    },
+    {
+     "t": "Wlej śmietankę, pokrusz połowę fety i mieszaj, aż powstanie sos.",
+     "min": 3
+    },
+    {
+     "t": "Wymieszaj z makaronem, posyp resztą fety i pieprzem. Fety nie trzeba solić, jest słona.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "makaron-z-lososiem",
+   "nazwa": "Makaron z łososiem i koperkiem",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "tagliatelle",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "świeży łosoś bez skóry",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "śmietanka 18%",
+     "q": 150,
+     "u": "ml"
+    },
+    {
+     "n": "koperek",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sok z cytryny",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj makaron al dente.",
+     "min": 10
+    },
+    {
+     "t": "Pokrój łososia w kostkę i smaż krótko na maśle.",
+     "min": 4
+    },
+    {
+     "t": "Wlej śmietankę, dodaj koperek i sok z cytryny, gotuj chwilę, aż łosoś będzie nieprzezroczysty w środku.",
+     "min": 3
+    },
+    {
+     "t": "Wymieszaj z makaronem i dopraw.",
+     "min": 1
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "ryby"
+   ]
+  },
+  {
+   "id": "mac-and-cheese",
+   "nazwa": "Mac and cheese z cheddarem",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "makaron kolanka",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "ser cheddar",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "masło",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "mleko",
+     "q": 400,
+     "u": "ml"
+    },
+    {
+     "n": "musztarda",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj makaron al dente.",
+     "min": 9
+    },
+    {
+     "t": "Rozpuść masło, dodaj mąkę i mieszaj minutę, potem stopniowo wlewaj mleko, aż sos zgęstnieje.",
+     "min": 6
+    },
+    {
+     "t": "Zdejmij z ognia, dodaj starty cheddar i musztardę i mieszaj, aż ser się roztopi. Nie zastępuj cheddara mozzarellą: sos będzie ciągnący i mdły.",
+     "min": 2
+    },
+    {
+     "t": "Wymieszaj z makaronem i dopraw.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "gorczyca"
+   ]
+  },
+  {
+   "id": "pizza-margherita",
+   "nazwa": "Pizza margherita",
+   "kategoria": "obiad",
+   "ilustracja": "pizza",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "mąka pszenna typ 00 albo 450",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "ciepła woda",
+     "q": 190,
+     "u": "ml"
+    },
+    {
+     "n": "suche drożdże",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "oliwa",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "passata pomidorowa",
+     "q": 150,
+     "u": "ml"
+    },
+    {
+     "n": "mozzarella (najlepiej w bloku, do pizzy)",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "świeża bazylia",
+     "q": 6,
+     "u": "liście"
+    },
+    {
+     "n": "oregano",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Wymieszaj mąkę, drożdże i sól, dodaj wodę i oliwę i wyrabiaj ciasto, aż będzie gładkie i elastyczne.",
+     "min": 10
+    },
+    {
+     "t": "Przykryj i odstaw w ciepłe miejsce, aż podwoi objętość.",
+     "min": 60
+    },
+    {
+     "t": "Nagrzej piekarnik z blachą do najwyższej temperatury (250°C albo więcej).",
+     "min": 20
+    },
+    {
+     "t": "Podziel ciasto na 2 części i rozciągnij dłońmi na cienkie placki. Posmaruj passatą z oregano i solą, dodaj porwaną mozzarellę. Mozzarella w kulce ma dużo wody: odsącz ją i osusz ręcznikiem.",
+     "min": 5
+    },
+    {
+     "t": "Piecz na gorącej blasze, aż brzegi się zrumienią, a ser się roztopi. Na koniec dodaj bazylię.",
+     "min": 9
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "pizza-z-tortilli",
+   "nazwa": "Szybka pizza z tortilli",
+   "kategoria": "kolacja",
+   "ilustracja": "pizza",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "tortille pszenne",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "passata pomidorowa",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "mozzarella tarta",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "szynka",
+     "q": 3,
+     "u": "plaster"
+    },
+    {
+     "n": "pieczarki",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "oregano",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 220°C.",
+     "min": 10
+    },
+    {
+     "t": "Posmaruj tortille passatą, posyp oregano, połóż szynkę, pokrojone pieczarki i mozzarellę.",
+     "min": 4
+    },
+    {
+     "t": "Piecz na kratce, aż ser się roztopi, a brzegi będą chrupiące.",
+     "min": 7
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "pierogi-ruskie",
+   "nazwa": "Pierogi ruskie",
+   "kategoria": "obiad",
+   "ilustracja": "pierogi",
+   "porcje": 4,
+   "trudnosc": "trudne",
+   "skladniki": [
+    {
+     "n": "mąka pszenna",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "ciepła woda",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "n": "twaróg półtłusty",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj ziemniaki w osolonej wodzie i przeciśnij przez praskę.",
+     "min": 25
+    },
+    {
+     "t": "Podsmaż posiekaną cebulę na maśle. Połowę wymieszaj z ziemniakami i twarogiem, dopraw dużą ilością pieprzu.",
+     "min": 10
+    },
+    {
+     "t": "Z mąki, wody, oleju i szczypty soli zagnieć gładkie ciasto.",
+     "min": 10
+    },
+    {
+     "t": "Rozwałkuj cienko, wycinaj szklanką krążki, nakładaj farsz i dokładnie sklejaj brzegi.",
+     "min": 40
+    },
+    {
+     "t": "Gotuj partiami w osolonym wrzątku, 2 minuty od wypłynięcia. Podawaj z resztą cebulki.",
+     "min": 15
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "placki-ziemniaczane",
+   "nazwa": "Placki ziemniaczane",
+   "kategoria": "obiad",
+   "ilustracja": "nalesniki",
+   "porcje": 3,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "ziemniaki",
+     "q": 1,
+     "u": "kg"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": null,
+     "u": "do smażenia"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": null,
+     "u": "do podania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Obierz ziemniaki i cebulę i zetrzyj na drobnej tarce.",
+     "min": 12
+    },
+    {
+     "t": "Odlej nadmiar soku, dodaj jajko, mąkę i sól i wymieszaj.",
+     "min": 3
+    },
+    {
+     "t": "Na rozgrzanym oleju nakładaj łyżką cienkie placki i smaż z obu stron na złoto.",
+     "min": 20
+    },
+    {
+     "t": "Odsącz na ręczniku papierowym. Podawaj ze śmietaną.",
+     "min": null
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "schabowy",
+   "nazwa": "Kotlet schabowy z ziemniakami i mizerią",
+   "kategoria": "obiad",
+   "ilustracja": "kotlet",
+   "porcje": 4,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "schab bez kości",
+     "q": 600,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "bułka tarta",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": null,
+     "u": "do smażenia"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 1,
+     "u": "kg"
+    },
+    {
+     "n": "ogórek",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": 150,
+     "u": "ml"
+    },
+    {
+     "n": "koperek",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Obierz ziemniaki i gotuj w osolonej wodzie do miękkości.",
+     "min": 25
+    },
+    {
+     "t": "Pokrój schab na 4 plastry, rozbij tłuczkiem przez folię na cienko, posól i popieprz.",
+     "min": 8
+    },
+    {
+     "t": "Panieruj kolejno w mące, roztrzepanym jajku i bułce tartej.",
+     "min": 5
+    },
+    {
+     "t": "Smaż na rozgrzanym oleju z obu stron na złoto, aż mięso w środku nie będzie różowe.",
+     "min": 10
+    },
+    {
+     "t": "Na mizerię pokrój ogórki w cienkie plastry i wymieszaj ze śmietaną, koperkiem i solą.",
+     "min": 5
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "kotlety-mielone",
+   "nazwa": "Kotlety mielone",
+   "kategoria": "obiad",
+   "ilustracja": "kotlet",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mięso mielone wieprzowe",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "n": "bułka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "mleko",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "bułka tarta",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": null,
+     "u": "do smażenia"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Namocz bułkę w mleku, a potem odciśnij.",
+     "min": 5
+    },
+    {
+     "t": "Wymieszaj mięso z bułką, startą cebulą, jajkiem, solą i pieprzem.",
+     "min": 5
+    },
+    {
+     "t": "Formuj kotlety, obtocz w bułce tartej.",
+     "min": 6
+    },
+    {
+     "t": "Smaż na średnim ogniu z obu stron, aż będą zrumienione, a w środku nie różowe.",
+     "min": 14
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "gulasz-wieprzowy",
+   "nazwa": "Gulasz wieprzowy",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 4,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "łopatka wieprzowa",
+     "q": 700,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 2,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "koncentrat pomidorowy",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "woda",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój mięso w kostkę, obtocz w mące wymieszanej z solą i pieprzem.",
+     "min": 8
+    },
+    {
+     "t": "Obsmaż mięso na oleju partiami, przełóż do garnka.",
+     "min": 10
+    },
+    {
+     "t": "Na tej samej patelni podsmaż cebulę, czosnek i paprykę, dodaj paprykę w proszku i koncentrat.",
+     "min": 5
+    },
+    {
+     "t": "Przełóż do mięsa, zalej wodą i duś pod przykryciem, aż mięso będzie miękkie.",
+     "min": 80
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "udka-pieczone",
+   "nazwa": "Pieczone udka z ziemniakami",
+   "kategoria": "obiad",
+   "ilustracja": "kurczak",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "udka z kurczaka",
+     "q": 4,
+     "u": "szt"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 800,
+     "u": "g"
+    },
+    {
+     "n": "czosnek",
+     "q": 3,
+     "u": "ząbek"
+    },
+    {
+     "n": "olej",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 2,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "zioła prowansalskie",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C.",
+     "min": 10
+    },
+    {
+     "t": "Natrzyj udka olejem, przeciśniętym czosnkiem, papryką, solą i pieprzem.",
+     "min": 5
+    },
+    {
+     "t": "Pokrój ziemniaki w ćwiartki, wymieszaj z olejem, ziołami i solą, rozłóż wokół udek.",
+     "min": 5
+    },
+    {
+     "t": "Piecz, aż skórka będzie chrupiąca, a sok z nakłutego udka przezroczysty.",
+     "min": 50
+    }
+   ],
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "kurczak-slodko-kwasny",
+   "nazwa": "Kurczak w sosie słodko-kwaśnym",
+   "kategoria": "obiad",
+   "ilustracja": "kurczak",
+   "porcje": 3,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "pierś z kurczaka",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "ananas z puszki",
+     "q": 4,
+     "u": "plaster"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "sos sojowy",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "ketchup",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "ocet ryżowy albo jabłkowy",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "mąka ziemniaczana",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "ryż",
+     "q": 200,
+     "u": "g"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj ryż.",
+     "min": 15
+    },
+    {
+     "t": "Pokrój kurczaka w kostkę i obtocz w 1 łyżce mąki ziemniaczanej. Obsmaż na oleju, aż w środku przestanie być różowy.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj pokrojoną paprykę, cebulę i ananasa i smaż kilka minut.",
+     "min": 5
+    },
+    {
+     "t": "Wymieszaj sos sojowy, ketchup, ocet, cukier, łyżkę mąki ziemniaczanej i pół szklanki wody, wlej i gotuj, aż zgęstnieje. Podawaj z ryżem.",
+     "min": 3
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "soja"
+   ]
+  },
+  {
+   "id": "kurczak-teriyaki",
+   "nazwa": "Kurczak teriyaki z ryżem",
+   "kategoria": "obiad",
+   "ilustracja": "kurczak",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "pierś z kurczaka",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "sos teriyaki",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "czosnek",
+     "q": 1,
+     "u": "ząbek"
+    },
+    {
+     "n": "świeży imbir",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "ryż",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "sezam",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "dymka",
+     "q": 1,
+     "u": "szt"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj ryż.",
+     "min": 15
+    },
+    {
+     "t": "Pokrój kurczaka w kostkę i obsmaż na oleju, aż w środku przestanie być różowy.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj czosnek, imbir i sos teriyaki i smaż, mieszając, aż sos oblepi mięso.",
+     "min": 3
+    },
+    {
+     "t": "Podawaj na ryżu, posyp sezamem i dymką.",
+     "min": 1
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "sezam",
+    "soja"
+   ]
+  },
+  {
+   "id": "chili-con-carne",
+   "nazwa": "Chili con carne",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mięso mielone wołowe",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "czerwona fasola z puszki",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "kukurydza z puszki",
+     "q": 0.5,
+     "u": "puszka"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "kumin",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "chili w proszku",
+     "q": 0.5,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Podsmaż cebulę i czosnek na oleju, dodaj mięso i smaż, aż straci różowy kolor.",
+     "min": 10
+    },
+    {
+     "t": "Dodaj przyprawy i smaż minutę.",
+     "min": 1
+    },
+    {
+     "t": "Dodaj pomidory, odsączoną fasolę i kukurydzę i duś pod przykryciem.",
+     "min": 25
+    },
+    {
+     "t": "Dopraw. Podawaj z ryżem, chlebem albo tortillą.",
+     "min": null
+    }
+   ],
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "chili-sin-carne",
+   "nazwa": "Chili sin carne (bez mięsa)",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "czerwona soczewica",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "czerwona fasola z puszki",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "kukurydza z puszki",
+     "q": 0.5,
+     "u": "puszka"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "kumin",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "papryka wędzona",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "woda",
+     "q": 300,
+     "u": "ml"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Podsmaż cebulę, paprykę i czosnek na oleju.",
+     "min": 6
+    },
+    {
+     "t": "Dodaj przyprawy, opłukaną soczewicę, pomidory i wodę i gotuj, aż soczewica zmięknie.",
+     "min": 20
+    },
+    {
+     "t": "Dodaj odsączoną fasolę i kukurydzę, gotuj jeszcze chwilę i dopraw.",
+     "min": 5
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "risotto-pieczarki",
+   "nazwa": "Risotto z pieczarkami i parmezanem",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "ryż do risotto (arborio)",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "pieczarki",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "bulion warzywny",
+     "q": 750,
+     "u": "ml"
+    },
+    {
+     "n": "masło",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "parmezan",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "n": "oliwa",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Podgrzej bulion w osobnym garnku. Pokrój pieczarki i cebulę.",
+     "min": 5
+    },
+    {
+     "t": "Podsmaż cebulę na oliwie, dodaj ryż i smaż minutę, aż ziarna będą szkliste.",
+     "min": 3
+    },
+    {
+     "t": "Wlewaj gorący bulion po jednej chochli, mieszając i czekając, aż ryż go wchłonie.",
+     "min": 18
+    },
+    {
+     "t": "W tym czasie usmaż pieczarki na łyżce masła i dodaj do ryżu.",
+     "min": 6
+    },
+    {
+     "t": "Zdejmij z ognia, wmieszaj resztę masła i starty parmezan. Parmezanu nie zastępuj mozzarellą: risotto zrobi się gumowate.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza",
+    "seler"
+   ]
+  },
+  {
+   "id": "losos-pieczony",
+   "nazwa": "Łosoś pieczony z warzywami",
+   "kategoria": "obiad",
+   "ilustracja": "ryba",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "filet z łososia",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "brokuł",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "cytryna",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "koperek",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C. Pokrój ziemniaki w ćwiartki, wymieszaj z oliwą i solą i piecz.",
+     "min": 25
+    },
+    {
+     "t": "Dodaj na blachę różyczki brokuła i łososia skórą do dołu, posól, popieprz i skrop cytryną.",
+     "min": 3
+    },
+    {
+     "t": "Piecz, aż łosoś będzie się rozdzielał na płatki.",
+     "min": 13
+    },
+    {
+     "t": "Posyp koperkiem.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "ryby"
+   ]
+  },
+  {
+   "id": "dorsz-w-panierce",
+   "nazwa": "Dorsz w panierce z frytkami z piekarnika",
+   "kategoria": "obiad",
+   "ilustracja": "ryba",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "filet z dorsza",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "bułka tarta",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "ziemniaki",
+     "q": 500,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": null,
+     "u": "do smażenia"
+    },
+    {
+     "n": "cytryna",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 220°C. Pokrój ziemniaki w słupki, wymieszaj z olejem i solą i piecz, przewracając w połowie.",
+     "min": 35
+    },
+    {
+     "t": "Pokrój rybę na porcje, osusz i posól.",
+     "min": 3
+    },
+    {
+     "t": "Panieruj w mące, jajku i bułce tartej.",
+     "min": 4
+    },
+    {
+     "t": "Smaż na rozgrzanym oleju z obu stron na złoto. Podawaj z cytryną.",
+     "min": 8
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "ryby"
+   ]
+  },
+  {
+   "id": "krewetki-czosnek",
+   "nazwa": "Krewetki z czosnkiem i masłem",
+   "kategoria": "kolacja",
+   "ilustracja": "ryba",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "krewetki obrane",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "czosnek",
+     "q": 3,
+     "u": "ząbek"
+    },
+    {
+     "n": "masło",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "płatki chili",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "natka pietruszki",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sok z cytryny",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "bagietka",
+     "q": 0.5,
+     "u": "szt"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozmroź krewetki, jeśli są mrożone, i osusz.",
+     "min": 10
+    },
+    {
+     "t": "Na maśle podsmaż czosnek z chili.",
+     "min": 1
+    },
+    {
+     "t": "Dodaj krewetki i smaż, aż zmienią kolor na różowy.",
+     "min": 4
+    },
+    {
+     "t": "Skrop cytryną, posyp natką. Podawaj z bagietką do maczania w maśle.",
+     "min": 1
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "skorupiaki"
+   ]
+  },
+  {
+   "id": "burger-domowy",
+   "nazwa": "Burger domowy",
+   "kategoria": "obiad",
+   "ilustracja": "burger",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "mięso mielone wołowe",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "bułki do burgerów",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "ser cheddar",
+     "q": 2,
+     "u": "plaster"
+    },
+    {
+     "n": "sałata",
+     "q": 2,
+     "u": "liście"
+    },
+    {
+     "n": "pomidor",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cebula czerwona",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "ketchup",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "majonez",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Uformuj z mięsa 2 płaskie kotlety, nieco większe niż bułka. Posól i popieprz dopiero przed smażeniem.",
+     "min": 4
+    },
+    {
+     "t": "Smaż na mocno rozgrzanej patelni z obu stron. Pod koniec połóż na kotletach cheddar i przykryj, żeby się roztopił.",
+     "min": 8
+    },
+    {
+     "t": "Przekrój i podpiecz bułki.",
+     "min": 2
+    },
+    {
+     "t": "Złóż burgery: sos, sałata, kotlet z serem, pomidor, cebula.",
+     "min": 3
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza",
+    "gorczyca"
+   ]
+  },
+  {
+   "id": "kasza-gryczana-pieczarki",
+   "nazwa": "Kasza gryczana z pieczarkami i cebulą",
+   "kategoria": "obiad",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "kasza gryczana",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "pieczarki",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "koperek",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj kaszę w osolonej wodzie (2 razy więcej wody niż kaszy) pod przykryciem.",
+     "min": 15
+    },
+    {
+     "t": "Pokrój cebulę i pieczarki i smaż na oleju, aż się zrumienią.",
+     "min": 10
+    },
+    {
+     "t": "Wymieszaj z kaszą, dopraw i posyp koperkiem.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "curry-ciecierzyca",
+   "nazwa": "Curry z ciecierzycą i szpinakiem",
+   "kategoria": "obiad",
+   "ilustracja": "miska",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ciecierzyca z puszki",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "mleczko kokosowe",
+     "q": 400,
+     "u": "ml"
+    },
+    {
+     "n": "krojone pomidory",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "świeży szpinak",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "pasta curry albo curry w proszku",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "ryż",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj ryż.",
+     "min": 15
+    },
+    {
+     "t": "Podsmaż cebulę i czosnek na oleju, dodaj curry i smaż minutę.",
+     "min": 5
+    },
+    {
+     "t": "Dodaj pomidory, mleczko kokosowe i odsączoną ciecierzycę i gotuj.",
+     "min": 12
+    },
+    {
+     "t": "Dodaj szpinak, gotuj, aż zwiędnie, dopraw. Podawaj z ryżem.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "placki-z-cukinii",
+   "nazwa": "Placki z cukinii",
+   "kategoria": "obiad",
+   "ilustracja": "nalesniki",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "cukinia",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "czosnek",
+     "q": 1,
+     "u": "ząbek"
+    },
+    {
+     "n": "koperek",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": 0.5,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": null,
+     "u": "do smażenia"
+    },
+    {
+     "n": "jogurt naturalny",
+     "q": null,
+     "u": "do podania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zetrzyj cukinię na tarce, posól i odstaw, a potem mocno odciśnij z wody.",
+     "min": 10
+    },
+    {
+     "t": "Wymieszaj z jajkiem, mąką, czosnkiem i koperkiem.",
+     "min": 3
+    },
+    {
+     "t": "Smaż na oleju małe placki z obu stron na złoto. Podawaj z jogurtem.",
+     "min": 12
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "fasolka-po-bretonsku",
+   "nazwa": "Fasolka po bretońsku",
+   "kategoria": "obiad",
+   "ilustracja": "patelnia",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "biała fasola z puszki",
+     "q": 2,
+     "u": "puszka"
+    },
+    {
+     "n": "kiełbasa",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "boczek",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "koncentrat pomidorowy",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "passata pomidorowa",
+     "q": 300,
+     "u": "ml"
+    },
+    {
+     "n": "majeranek",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój boczek, kiełbasę i cebulę w kostkę.",
+     "min": 5
+    },
+    {
+     "t": "Wytop boczek w garnku, dodaj cebulę i kiełbasę i smaż.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj koncentrat, passatę, przyprawy i odsączoną fasolę i duś pod przykryciem.",
+     "min": 20
+    },
+    {
+     "t": "Dopraw. Podawaj z chlebem.",
+     "min": null
+    }
+   ],
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "zapiekanka-makaron-brokul",
+   "nazwa": "Zapiekanka makaronowa z brokułem i serem",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "makaron penne",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "brokuł",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "śmietanka 18%",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "ser żółty (np. gouda)",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "czosnek",
+     "q": 1,
+     "u": "ząbek"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 190°C. Ugotuj makaron, a na 3 minuty przed końcem dodaj różyczki brokuła.",
+     "min": 10
+    },
+    {
+     "t": "Wymieszaj śmietankę z jajkami, czosnkiem, solą i pieprzem.",
+     "min": 3
+    },
+    {
+     "t": "Przełóż makaron z brokułem do naczynia, zalej sosem i posyp startym serem.",
+     "min": 3
+    },
+    {
+     "t": "Zapiekaj, aż ser się zrumieni.",
+     "min": 20
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "tacos-wolowina",
+   "nazwa": "Tacos z wołowiną",
+   "kategoria": "kolacja",
+   "ilustracja": "wrap",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mięso mielone wołowe",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "tortille kukurydziane",
+     "q": 6,
+     "u": "szt"
+    },
+    {
+     "n": "cebula",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "kumin",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "pomidor",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "sałata",
+     "q": 4,
+     "u": "liście"
+    },
+    {
+     "n": "ser cheddar",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Podsmaż cebulę na oleju, dodaj mięso i przyprawy i smaż, aż mięso straci różowy kolor.",
+     "min": 10
+    },
+    {
+     "t": "Pokrój pomidory w kostkę, posiekaj sałatę, zetrzyj cheddar.",
+     "min": 6
+    },
+    {
+     "t": "Podgrzej tortille na suchej patelni.",
+     "min": 3
+    },
+    {
+     "t": "Nakładaj na tortille mięso, warzywa, ser i śmietanę.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "tofu-z-warzywami",
+   "nazwa": "Tofu z warzywami i ryżem",
+   "kategoria": "obiad",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "tofu naturalne",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "brokuł",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "marchew",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "sos sojowy",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "czosnek",
+     "q": 1,
+     "u": "ząbek"
+    },
+    {
+     "n": "mąka ziemniaczana",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "ryż",
+     "q": 150,
+     "u": "g"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj ryż. Odciśnij tofu z wody i pokrój w kostkę.",
+     "min": 15
+    },
+    {
+     "t": "Obtocz tofu w mące ziemniaczanej i smaż na oleju, aż będzie chrupiące.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj pokrojone warzywa i czosnek i smaż, mieszając, aż będą chrupko-miękkie.",
+     "min": 6
+    },
+    {
+     "t": "Polej sosem sojowym i wymieszaj. Podawaj z ryżem.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "soja"
+   ]
+  },
+  {
+   "id": "pad-thai",
+   "nazwa": "Pad thai z kurczakiem (wersja domowa)",
+   "kategoria": "obiad",
+   "ilustracja": "makaron",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "makaron ryżowy",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "pierś z kurczaka",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "kiełki fasoli mung",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "dymka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "prażone orzeszki ziemne",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "n": "sos sojowy",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sok z limonki",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "cukier trzcinowy",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zalej makaron gorącą wodą według opakowania i odcedź.",
+     "min": 8
+    },
+    {
+     "t": "Wymieszaj sos sojowy, sok z limonki i cukier.",
+     "min": 2
+    },
+    {
+     "t": "Obsmaż pokrojonego kurczaka na oleju, aż przestanie być różowy, odsuń na bok i usmaż jajecznicę.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj makaron, sos i kiełki, smaż, mieszając. Posyp dymką i posiekanymi orzeszkami.",
+     "min": 3
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "orzeszki ziemne",
+    "soja"
+   ]
+  },
+  {
+   "id": "nuggetsy-pieczone",
+   "nazwa": "Pieczone nuggetsy z kurczaka",
+   "kategoria": "obiad",
+   "ilustracja": "kurczak",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "pierś z kurczaka",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "płatki kukurydziane bez cukru",
+     "q": 60,
+     "u": "g"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": 0.5,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C. Pokrój kurczaka w kawałki.",
+     "min": 10
+    },
+    {
+     "t": "Pokrusz płatki z papryką i solą. Obtocz kurczaka w jajku, a potem w płatkach.",
+     "min": 6
+    },
+    {
+     "t": "Ułóż na blasze z papierem, skrop olejem i piecz, przewracając w połowie, aż w środku będą białe.",
+     "min": 18
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka"
+   ]
+  },
+  {
+   "id": "salatka-cezar",
+   "nazwa": "Sałatka cezar z kurczakiem",
+   "kategoria": "kolacja",
+   "ilustracja": "salatka",
+   "porcje": 2,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "sałata rzymska",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "pierś z kurczaka",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "chleb",
+     "q": 2,
+     "u": "kromka"
+    },
+    {
+     "n": "parmezan",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "n": "majonez",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "jogurt naturalny",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "czosnek",
+     "q": 1,
+     "u": "ząbek"
+    },
+    {
+     "n": "sok z cytryny",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "musztarda",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Posól kurczaka i usmaż na łyżce oliwy, aż w środku przestanie być różowy. Pokrój w paski.",
+     "min": 12
+    },
+    {
+     "t": "Pokrój chleb w kostkę i podpiecz na patelni z łyżką oliwy na grzanki.",
+     "min": 5
+    },
+    {
+     "t": "Wymieszaj majonez, jogurt, czosnek, sok z cytryny, musztardę i połowę startego parmezanu na sos.",
+     "min": 3
+    },
+    {
+     "t": "Porwij sałatę, dodaj kurczaka i grzanki, polej sosem i posyp resztą parmezanu.",
+     "min": 3
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza",
+    "gorczyca"
+   ]
+  },
+  {
+   "id": "caprese",
+   "nazwa": "Sałatka caprese",
+   "kategoria": "kolacja",
+   "ilustracja": "salatka",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "pomidory",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "mozzarella w kulce",
+     "q": 125,
+     "u": "g"
+    },
+    {
+     "n": "świeża bazylia",
+     "q": 10,
+     "u": "liście"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój pomidory i odsączoną mozzarellę w plastry.",
+     "min": 4
+    },
+    {
+     "t": "Układaj na zmianę z liśćmi bazylii.",
+     "min": 2
+    },
+    {
+     "t": "Polej oliwą, posól i popieprz. Tu pasuje świeża mozzarella w kulce; ser żółty albo feta nie dadzą tego smaku.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "salatka-z-tunczykiem",
+   "nazwa": "Sałatka z tuńczykiem i kukurydzą",
+   "kategoria": "kolacja",
+   "ilustracja": "salatka",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "tuńczyk w sosie własnym",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "kukurydza z puszki",
+     "q": 0.5,
+     "u": "puszka"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "sałata",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "ogórek",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "jogurt naturalny",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj jajka na twardo, ostudź i pokrój.",
+     "min": 12
+    },
+    {
+     "t": "Porwij sałatę, pokrój ogórka, dodaj odsączonego tuńczyka i kukurydzę.",
+     "min": 5
+    },
+    {
+     "t": "Dodaj jajka, polej jogurtem, dopraw i delikatnie wymieszaj.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka",
+    "laktoza",
+    "ryby"
+   ]
+  },
+  {
+   "id": "tabbouleh",
+   "nazwa": "Tabbouleh (sałatka z kaszą bulgur)",
+   "kategoria": "kolacja",
+   "ilustracja": "salatka",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "kasza bulgur",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "natka pietruszki",
+     "q": 1,
+     "u": "pęczek"
+    },
+    {
+     "n": "świeża mięta",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "pomidory",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "ogórek",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "sok z cytryny",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "oliwa",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zalej bulgur wrzątkiem (2 razy więcej wody niż kaszy), przykryj i odstaw.",
+     "min": 15
+    },
+    {
+     "t": "Posiekaj drobno natkę i miętę, pokrój pomidory i ogórka w drobną kostkę.",
+     "min": 10
+    },
+    {
+     "t": "Wymieszaj ostudzoną kaszę z warzywami, sokiem z cytryny i oliwą, posól.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie"
+   ],
+   "alergeny": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "halloumi-z-warzywami",
+   "nazwa": "Grillowany halloumi z warzywami",
+   "kategoria": "kolacja",
+   "ilustracja": "patelnia",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ser halloumi",
+     "q": 225,
+     "u": "g"
+    },
+    {
+     "n": "cukinia",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "papryka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "pomidorki koktajlowe",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "oliwa",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sok z cytryny",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "oregano",
+     "q": 1,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój cukinię i paprykę w plastry, a halloumi w plastry grubości 1 cm.",
+     "min": 6
+    },
+    {
+     "t": "Grilluj warzywa na patelni grillowej z oliwą.",
+     "min": 8
+    },
+    {
+     "t": "Grilluj halloumi z obu stron na złoto (bez tłuszczu). Halloumi nie topi się jak mozzarella, dlatego nadaje się do grillowania.",
+     "min": 4
+    },
+    {
+     "t": "Podawaj z pomidorkami, skrop cytryną i posyp oregano.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "grzanki-gruszka-ser-plesniowy",
+   "nazwa": "Grzanki z gruszką i serem pleśniowym",
+   "kategoria": "kolacja",
+   "ilustracja": "kanapka",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "bagietka",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "gruszka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "ser pleśniowy (np. gorgonzola albo lazur)",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "miód",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "posiekane orzechy włoskie",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C. Pokrój bagietkę ukośnie w kromki.",
+     "min": 10
+    },
+    {
+     "t": "Na każdą kromkę połóż plaster gruszki i kawałek sera.",
+     "min": 4
+    },
+    {
+     "t": "Zapiekaj, aż ser się roztopi.",
+     "min": 7
+    },
+    {
+     "t": "Polej miodem i posyp orzechami.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza",
+    "orzechy"
+   ]
+  },
+  {
+   "id": "salatka-ziemniaczana",
+   "nazwa": "Sałatka ziemniaczana z ogórkiem kiszonym",
+   "kategoria": "kolacja",
+   "ilustracja": "salatka",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ziemniaki",
+     "q": 600,
+     "u": "g"
+    },
+    {
+     "n": "ogórki kiszone",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "cebula czerwona",
+     "q": 0.5,
+     "u": "szt"
+    },
+    {
+     "n": "jogurt naturalny",
+     "q": 4,
+     "u": "łyżka"
+    },
+    {
+     "n": "musztarda",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "szczypiorek",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "pieprz",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj ziemniaki w mundurkach, ostudź i obierz.",
+     "min": 30
+    },
+    {
+     "t": "Pokrój ziemniaki i ogórki w kostkę, cebulę drobno.",
+     "min": 8
+    },
+    {
+     "t": "Wymieszaj z jogurtem, musztardą i szczypiorkiem, dopraw.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza",
+    "gorczyca"
+   ]
+  },
+  {
+   "id": "wrap-sniadaniowy",
+   "nazwa": "Wrap z jajecznicą i warzywami",
+   "kategoria": "kolacja",
+   "ilustracja": "wrap",
+   "porcje": 1,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "tortille pszenne",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "papryka",
+     "q": 0.25,
+     "u": "szt"
+    },
+    {
+     "n": "szpinak",
+     "q": 1,
+     "u": "garść"
+    },
+    {
+     "n": "ser żółty (np. gouda)",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "n": "masło",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój paprykę w kostkę i podsmaż na maśle ze szpinakiem.",
+     "min": 3
+    },
+    {
+     "t": "Wbij jajka, posól i mieszaj, aż się zetną.",
+     "min": 3
+    },
+    {
+     "t": "Podgrzej tortillę, nałóż jajecznicę i starty ser, zawiń.",
+     "min": 2
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "jajka-faszerowane",
+   "nazwa": "Jajka faszerowane",
+   "kategoria": "przekąska",
+   "ilustracja": "jajko",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "jajka",
+     "q": 6,
+     "u": "szt"
+    },
+    {
+     "n": "majonez",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "musztarda",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "szczypiorek",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "szczypta"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Ugotuj jajka na twardo, ostudź w zimnej wodzie i obierz.",
+     "min": 15
+    },
+    {
+     "t": "Przekrój jajka wzdłuż i wyjmij żółtka.",
+     "min": 3
+    },
+    {
+     "t": "Rozgnieć żółtka z majonezem, musztardą i solą.",
+     "min": 3
+    },
+    {
+     "t": "Napełnij białka masą, posyp szczypiorkiem i papryką.",
+     "min": 5
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "jajka",
+    "gorczyca"
+   ]
+  },
+  {
+   "id": "bruschetta",
+   "nazwa": "Bruschetta z pomidorami",
+   "kategoria": "przekąska",
+   "ilustracja": "kanapka",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "bagietka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "pomidory",
+     "q": 4,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "świeża bazylia",
+     "q": 8,
+     "u": "liście"
+    },
+    {
+     "n": "oliwa",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrój pomidory w drobną kostkę, odlej sok, wymieszaj z posiekaną bazylią, oliwą i solą.",
+     "min": 6
+    },
+    {
+     "t": "Pokrój bagietkę ukośnie i podpiecz kromki na złoto.",
+     "min": 5
+    },
+    {
+     "t": "Natrzyj ciepłe kromki przekrojonym czosnkiem i nałóż pomidory.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie"
+   ],
+   "alergeny": [
+    "gluten"
+   ]
+  },
+  {
+   "id": "guacamole",
+   "nazwa": "Guacamole",
+   "kategoria": "przekąska",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "dojrzałe awokado",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "sok z limonki",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "cebula czerwona",
+     "q": 0.25,
+     "u": "szt"
+    },
+    {
+     "n": "pomidor",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "kolendra albo natka",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    },
+    {
+     "n": "chipsy kukurydziane",
+     "q": null,
+     "u": "do podania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozgnieć awokado widelcem z sokiem z limonki.",
+     "min": 3
+    },
+    {
+     "t": "Dodaj drobno posiekaną cebulę, pomidor bez pestek i kolendrę.",
+     "min": 4
+    },
+    {
+     "t": "Posól i podawaj od razu z chipsami (awokado szybko ciemnieje).",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "frytki-z-piekarnika",
+   "nazwa": "Frytki z piekarnika",
+   "kategoria": "przekąska",
+   "ilustracja": "ziemniaki",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ziemniaki",
+     "q": 600,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "papryka słodka w proszku",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": 0.5,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 220°C. Pokrój ziemniaki w słupki.",
+     "min": 10
+    },
+    {
+     "t": "Opłucz je w zimnej wodzie i dokładnie osusz ręcznikiem.",
+     "min": 5
+    },
+    {
+     "t": "Wymieszaj z olejem i papryką, rozłóż na blasze w jednej warstwie.",
+     "min": 2
+    },
+    {
+     "t": "Piecz, przewracając w połowie, aż będą rumiane. Posól po upieczeniu.",
+     "min": 30
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "nachos-z-serem",
+   "nazwa": "Nachos zapiekane z cheddarem",
+   "kategoria": "przekąska",
+   "ilustracja": "wrap",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "chipsy kukurydziane",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "ser cheddar",
+     "q": 120,
+     "u": "g"
+    },
+    {
+     "n": "czerwona fasola z puszki",
+     "q": 0.5,
+     "u": "puszka"
+    },
+    {
+     "n": "jalapeño ze słoika",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "pomidor",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "śmietana 18%",
+     "q": null,
+     "u": "do podania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C.",
+     "min": 10
+    },
+    {
+     "t": "Rozłóż chipsy w naczyniu, posyp fasolą, pokrojonym pomidorem, jalapeño i startym cheddarem.",
+     "min": 4
+    },
+    {
+     "t": "Zapiekaj, aż ser się roztopi. Podawaj ze śmietaną.",
+     "min": 7
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "tzatziki",
+   "nazwa": "Tzatziki",
+   "kategoria": "przekąska",
+   "ilustracja": "miska",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "jogurt grecki",
+     "q": 400,
+     "u": "g"
+    },
+    {
+     "n": "ogórek",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "czosnek",
+     "q": 2,
+     "u": "ząbek"
+    },
+    {
+     "n": "oliwa",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "koperek",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": null,
+     "u": "do smaku"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zetrzyj ogórka na tarce, posól i mocno odciśnij z wody.",
+     "min": 8
+    },
+    {
+     "t": "Wymieszaj z jogurtem, przeciśniętym czosnkiem, koperkiem i oliwą.",
+     "min": 3
+    },
+    {
+     "t": "Odstaw do lodówki, żeby smaki się połączyły.",
+     "min": 30
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "ciecierzyca-pieczona",
+   "nazwa": "Chrupiąca pieczona ciecierzyca",
+   "kategoria": "przekąska",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ciecierzyca z puszki",
+     "q": 1,
+     "u": "puszka"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "papryka wędzona",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "czosnek granulowany",
+     "q": 0.5,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": 0.5,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C. Odsącz ciecierzycę, opłucz i bardzo dokładnie osusz.",
+     "min": 12
+    },
+    {
+     "t": "Wymieszaj z olejem i przyprawami.",
+     "min": 2
+    },
+    {
+     "t": "Piecz na blasze, potrząsając nią co 10 minut, aż ciecierzyca będzie chrupiąca.",
+     "min": 30
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "paluszki-francuskie",
+   "nazwa": "Paluszki z ciasta francuskiego z serem",
+   "kategoria": "przekąska",
+   "ilustracja": "ciasto",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ciasto francuskie",
+     "q": 1,
+     "u": "opakowanie"
+    },
+    {
+     "n": "ser żółty (np. gouda)",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "sezam",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 200°C.",
+     "min": 10
+    },
+    {
+     "t": "Rozwiń ciasto, posmaruj roztrzepanym jajkiem, posyp startym serem i sezamem.",
+     "min": 4
+    },
+    {
+     "t": "Pokrój w paski i skręć każdy kilka razy.",
+     "min": 6
+    },
+    {
+     "t": "Piecz na blasze z papierem, aż będą złote.",
+     "min": 14
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza",
+    "sezam"
+   ]
+  },
+  {
+   "id": "popcorn-domowy",
+   "nazwa": "Popcorn z garnka",
+   "kategoria": "przekąska",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "ziarna kukurydzy do prażenia",
+     "q": 60,
+     "u": "g"
+    },
+    {
+     "n": "olej",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": 0.5,
+     "u": "łyżeczka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozgrzej olej w dużym garnku z 3 ziarnami. Gdy pękną, wsyp resztę i przykryj.",
+     "min": 3
+    },
+    {
+     "t": "Potrząsaj garnkiem, aż przerwy między pękaniem będą dłuższe niż 2 sekundy.",
+     "min": 3
+    },
+    {
+     "t": "Wsyp do miski i posól.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "wegańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": []
+  },
+  {
+   "id": "szarlotka",
+   "nazwa": "Szarlotka",
+   "kategoria": "deser",
+   "ilustracja": "ciasto",
+   "porcje": 8,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "mąka pszenna",
+     "q": 300,
+     "u": "g"
+    },
+    {
+     "n": "zimne masło",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "cukier",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "proszek do pieczenia",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "jabłka (kwaśne, np. szara reneta)",
+     "q": 1.2,
+     "u": "kg"
+    },
+    {
+     "n": "cynamon",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "cukier puder",
+     "q": null,
+     "u": "do posypania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Posiekaj mąkę z masłem, cukrem, jajkiem i proszkiem do pieczenia, zagnieć ciasto. Podziel na 2 części i schłodź w lodówce.",
+     "min": 40
+    },
+    {
+     "t": "Obierz jabłka, zetrzyj na grubej tarce, odciśnij sok i wymieszaj z cynamonem.",
+     "min": 15
+    },
+    {
+     "t": "Nagrzej piekarnik do 180°C. Wyłóż formę połową ciasta, nałóż jabłka, a na wierzch zetrzyj resztę ciasta.",
+     "min": 10
+    },
+    {
+     "t": "Piecz, aż wierzch będzie złoty. Po ostudzeniu posyp cukrem pudrem.",
+     "min": 50
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "brownie",
+   "nazwa": "Brownie czekoladowe",
+   "kategoria": "deser",
+   "ilustracja": "ciasto",
+   "porcje": 9,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "gorzka czekolada",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "masło",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "cukier",
+     "q": 180,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 3,
+     "u": "szt"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "kakao",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 180°C. Roztop czekoladę z masłem na małym ogniu.",
+     "min": 6
+    },
+    {
+     "t": "Ubij jajka z cukrem do jasności, wmieszaj czekoladę.",
+     "min": 5
+    },
+    {
+     "t": "Dodaj przesianą mąkę, kakao i sól i wymieszaj tylko do połączenia.",
+     "min": 2
+    },
+    {
+     "t": "Przelej do formy 20 × 20 cm z papierem i piecz. Środek ma być lekko wilgotny.",
+     "min": 25
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "muffiny-czekoladowe",
+   "nazwa": "Muffiny czekoladowe",
+   "kategoria": "deser",
+   "ilustracja": "ciasto",
+   "porcje": 12,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mąka pszenna",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "kakao",
+     "q": 30,
+     "u": "g"
+    },
+    {
+     "n": "cukier",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "proszek do pieczenia",
+     "q": 2,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "mleko",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "olej",
+     "q": 100,
+     "u": "ml"
+    },
+    {
+     "n": "kawałki gorzkiej czekolady",
+     "q": 80,
+     "u": "g"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 180°C, włóż papilotki do formy na muffiny.",
+     "min": 10
+    },
+    {
+     "t": "W jednej misce wymieszaj suche składniki, w drugiej jajka, mleko i olej.",
+     "min": 4
+    },
+    {
+     "t": "Połącz obie mieszanki łyżką, krótko, dodaj kawałki czekolady.",
+     "min": 2
+    },
+    {
+     "t": "Napełnij papilotki do 3/4 i piecz, aż patyczek wyjdzie suchy.",
+     "min": 20
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "sernik-na-zimno",
+   "nazwa": "Sernik na zimno z truskawkami",
+   "kategoria": "deser",
+   "ilustracja": "ciasto",
+   "porcje": 8,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "herbatniki",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "masło",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "twaróg sernikowy",
+     "q": 750,
+     "u": "g"
+    },
+    {
+     "n": "śmietanka 30%",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "cukier puder",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "żelatyna",
+     "q": 20,
+     "u": "g"
+    },
+    {
+     "n": "truskawki",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "galaretka truskawkowa",
+     "q": 1,
+     "u": "opakowanie"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Pokrusz herbatniki, wymieszaj z roztopionym masłem i ugnieć na dnie formy. Schłodź.",
+     "min": 10
+    },
+    {
+     "t": "Rozpuść żelatynę w 100 ml gorącej wody. Zmiksuj twaróg z cukrem pudrem, ubij śmietankę.",
+     "min": 10
+    },
+    {
+     "t": "Wmieszaj do sera przestudzoną żelatynę, potem śmietankę, i wyłóż na spód. Schłodź, aż masa stężeje.",
+     "min": 120
+    },
+    {
+     "t": "Ułóż truskawki i zalej tężejącą galaretką. Schłodź jeszcze.",
+     "min": 60
+    }
+   ],
+   "dieta": [],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "tiramisu",
+   "nazwa": "Tiramisu (bez surowych jajek)",
+   "kategoria": "deser",
+   "ilustracja": "ciasto",
+   "porcje": 6,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "mascarpone",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "śmietanka 30%",
+     "q": 200,
+     "u": "ml"
+    },
+    {
+     "n": "cukier puder",
+     "q": 60,
+     "u": "g"
+    },
+    {
+     "n": "biszkopty podłużne",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "mocna kawa (ostudzona)",
+     "q": 250,
+     "u": "ml"
+    },
+    {
+     "n": "kakao",
+     "q": 2,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Zaparz kawę i ostudź.",
+     "min": 15
+    },
+    {
+     "t": "Ubij zimną śmietankę z cukrem pudrem, dodaj mascarpone i ubijaj krótko, aż krem będzie gładki. Mascarpone nie zastąpisz twarogiem: krem nie będzie aksamitny.",
+     "min": 5
+    },
+    {
+     "t": "Maczaj biszkopty krótko w kawie i układaj warstwę w naczyniu, przykryj połową kremu. Powtórz.",
+     "min": 10
+    },
+    {
+     "t": "Schłodź co najmniej 4 godziny, przed podaniem przesiej kakao.",
+     "min": 240
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "racuchy-z-jablkami",
+   "nazwa": "Racuchy z jabłkami",
+   "kategoria": "deser",
+   "ilustracja": "nalesniki",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mąka pszenna",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "mleko",
+     "q": 250,
+     "u": "ml"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "suche drożdże",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "jabłka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "olej",
+     "q": null,
+     "u": "do smażenia"
+    },
+    {
+     "n": "cukier puder",
+     "q": null,
+     "u": "do posypania"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Wymieszaj mąkę, drożdże i cukier, dodaj ciepłe mleko i jajko i wyrób gęste ciasto.",
+     "min": 5
+    },
+    {
+     "t": "Odstaw w ciepłe miejsce, aż urośnie.",
+     "min": 40
+    },
+    {
+     "t": "Dodaj jabłka pokrojone w cienkie plasterki.",
+     "min": 5
+    },
+    {
+     "t": "Smaż placki łyżką na oleju z obu stron na złoto. Posyp cukrem pudrem.",
+     "min": 15
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "budyn-czekoladowy",
+   "nazwa": "Domowy budyń czekoladowy",
+   "kategoria": "deser",
+   "ilustracja": "miska",
+   "porcje": 2,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mleko",
+     "q": 500,
+     "u": "ml"
+    },
+    {
+     "n": "kakao",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "cukier",
+     "q": 3,
+     "u": "łyżka"
+    },
+    {
+     "n": "mąka ziemniaczana",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "gorzka czekolada",
+     "q": 30,
+     "u": "g"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Odlej szklankę mleka i rozmieszaj w nim kakao, cukier i mąkę ziemniaczaną.",
+     "min": 3
+    },
+    {
+     "t": "Zagotuj resztę mleka.",
+     "min": 5
+    },
+    {
+     "t": "Wlewaj mieszankę do gotującego się mleka, cały czas mieszając, aż zgęstnieje.",
+     "min": 2
+    },
+    {
+     "t": "Dodaj czekoladę i mieszaj, aż się roztopi. Podawaj na ciepło albo schłodzony.",
+     "min": 1
+    }
+   ],
+   "dieta": [
+    "wegetariańskie",
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "crumble-jablkowe",
+   "nazwa": "Crumble jabłkowe",
+   "kategoria": "deser",
+   "ilustracja": "jablko",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "jabłka",
+     "q": 4,
+     "u": "szt"
+    },
+    {
+     "n": "cynamon",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "cukier",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "płatki owsiane",
+     "q": 40,
+     "u": "g"
+    },
+    {
+     "n": "zimne masło",
+     "q": 70,
+     "u": "g"
+    },
+    {
+     "n": "cukier trzcinowy",
+     "q": 50,
+     "u": "g"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 190°C. Pokrój jabłka w kostkę, wymieszaj z cynamonem i cukrem, przełóż do naczynia.",
+     "min": 10
+    },
+    {
+     "t": "Rozetrzyj palcami mąkę, płatki, masło i cukier trzcinowy na kruszonkę.",
+     "min": 5
+    },
+    {
+     "t": "Posyp jabłka kruszonką i piecz, aż wierzch będzie złoty, a jabłka miękkie.",
+     "min": 30
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "ciasteczka-owsiane",
+   "nazwa": "Ciasteczka owsiane",
+   "kategoria": "deser",
+   "ilustracja": "ciasto",
+   "porcje": 6,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "płatki owsiane",
+     "q": 150,
+     "u": "g"
+    },
+    {
+     "n": "mąka pszenna",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "masło",
+     "q": 100,
+     "u": "g"
+    },
+    {
+     "n": "cukier trzcinowy",
+     "q": 80,
+     "u": "g"
+    },
+    {
+     "n": "jajka",
+     "q": 1,
+     "u": "szt"
+    },
+    {
+     "n": "proszek do pieczenia",
+     "q": 0.5,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "rodzynki",
+     "q": 50,
+     "u": "g"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Nagrzej piekarnik do 180°C. Utrzyj miękkie masło z cukrem, dodaj jajko.",
+     "min": 8
+    },
+    {
+     "t": "Dodaj płatki, mąkę, proszek i rodzynki i wymieszaj.",
+     "min": 3
+    },
+    {
+     "t": "Nakładaj łyżką kulki na blachę z papierem i lekko spłaszcz.",
+     "min": 5
+    },
+    {
+     "t": "Piecz, aż brzegi się zezłocą. Ciasteczka stwardnieją po ostudzeniu.",
+     "min": 14
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "panna-cotta",
+   "nazwa": "Panna cotta z sosem malinowym",
+   "kategoria": "deser",
+   "ilustracja": "miska",
+   "porcje": 4,
+   "trudnosc": "średnie",
+   "skladniki": [
+    {
+     "n": "śmietanka 30%",
+     "q": 400,
+     "u": "ml"
+    },
+    {
+     "n": "cukier",
+     "q": 50,
+     "u": "g"
+    },
+    {
+     "n": "cukier wanilinowy",
+     "q": 1,
+     "u": "opakowanie"
+    },
+    {
+     "n": "żelatyna",
+     "q": 8,
+     "u": "g"
+    },
+    {
+     "n": "maliny (świeże albo mrożone)",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "cukier puder",
+     "q": 1,
+     "u": "łyżka"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Namocz żelatynę w 3 łyżkach zimnej wody.",
+     "min": 5
+    },
+    {
+     "t": "Podgrzej śmietankę z cukrem i cukrem wanilinowym, nie gotując. Zdejmij z ognia i rozpuść w niej żelatynę.",
+     "min": 5
+    },
+    {
+     "t": "Przelej do 4 szklanek i schłodź, aż stężeje.",
+     "min": 240
+    },
+    {
+     "t": "Zmiksuj maliny z cukrem pudrem i polej nimi deser.",
+     "min": 3
+    }
+   ],
+   "dieta": [
+    "bezglutenowe"
+   ],
+   "alergeny": [
+    "laktoza"
+   ]
+  },
+  {
+   "id": "gofry",
+   "nazwa": "Gofry",
+   "kategoria": "deser",
+   "ilustracja": "nalesniki",
+   "porcje": 3,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mąka pszenna",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "mleko",
+     "q": 300,
+     "u": "ml"
+    },
+    {
+     "n": "jajka",
+     "q": 2,
+     "u": "szt"
+    },
+    {
+     "n": "masło",
+     "q": 60,
+     "u": "g"
+    },
+    {
+     "n": "cukier",
+     "q": 1,
+     "u": "łyżka"
+    },
+    {
+     "n": "proszek do pieczenia",
+     "q": 1,
+     "u": "łyżeczka"
+    },
+    {
+     "n": "sól",
+     "q": 1,
+     "u": "szczypta"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Rozpuść masło. Wymieszaj mąkę, cukier, proszek i sól.",
+     "min": 3
+    },
+    {
+     "t": "Dodaj mleko, jajka i masło i wymieszaj na gładkie ciasto.",
+     "min": 3
+    },
+    {
+     "t": "Piecz w rozgrzanej gofrownicy, aż gofry będą złote i chrupiące.",
+     "min": 20
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "jajka",
+    "laktoza"
+   ]
+  },
+  {
+   "id": "deser-mascarpone-owoce",
+   "nazwa": "Deser z mascarpone i owocami",
+   "kategoria": "deser",
+   "ilustracja": "miska",
+   "porcje": 4,
+   "trudnosc": "łatwe",
+   "skladniki": [
+    {
+     "n": "mascarpone",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "jogurt grecki",
+     "q": 200,
+     "u": "g"
+    },
+    {
+     "n": "miód",
+     "q": 2,
+     "u": "łyżka"
+    },
+    {
+     "n": "owoce (np. borówki, maliny)",
+     "q": 250,
+     "u": "g"
+    },
+    {
+     "n": "herbatniki",
+     "q": 6,
+     "u": "szt"
+    }
+   ],
+   "kroki": [
+    {
+     "t": "Wymieszaj mascarpone z jogurtem i miodem.",
+     "min": 3
+    },
+    {
+     "t": "Pokrusz herbatniki.",
+     "min": 2
+    },
+    {
+     "t": "Układaj w szklankach warstwy: herbatniki, krem, owoce. Powtórz.",
+     "min": 6
+    }
+   ],
+   "dieta": [
+    "wegetariańskie"
+   ],
+   "alergeny": [
+    "gluten",
+    "laktoza"
+   ]
+  }
+ ],
+ "zamienniki": [
+  {
+   "skladnik": "mozzarella do pizzy i zapiekanek",
+   "zamiennik": "ser żółty typu gouda albo edam w tej samej ilości",
+   "uwaga": "Nie zastępuj fetą ani twarogiem: nie topią się i nie ciągną."
+  },
+  {
+   "skladnik": "mozzarella w kulce (caprese, sałatki)",
+   "zamiennik": "burrata",
+   "uwaga": "Ser żółty i feta zmieniają smak dania; lepiej wybrać inne danie."
+  },
+  {
+   "skladnik": "mozzarella w kulce na pizzę",
+   "zamiennik": "ta sama mozzarella, ale odsączona i osuszona",
+   "uwaga": "Mokra mozzarella rozmoczy ciasto."
+  },
+  {
+   "skladnik": "parmezan",
+   "zamiennik": "grana padano albo inny twardy, dojrzewający ser",
+   "uwaga": "Nie zastępuj mozzarellą w risotto i sosach: zrobią się gumowate."
+  },
+  {
+   "skladnik": "cheddar (mac and cheese, nachos)",
+   "zamiennik": "ser żółty o wyrazistym smaku, np. gouda dojrzewająca",
+   "uwaga": "Mozzarella da sos mdły i ciągnący."
+  },
+  {
+   "skladnik": "feta",
+   "zamiennik": "ser typu sałatkowego albo bałkańskiego",
+   "uwaga": "Twaróg jest mniej słony; jeśli go użyjesz, posól danie."
+  },
+  {
+   "skladnik": "halloumi",
+   "zamiennik": "ser do grillowania (np. typu grillowy)",
+   "uwaga": "Fety i mozzarelli nie grilluj na patelni: rozpłyną się."
+  },
+  {
+   "skladnik": "mascarpone",
+   "zamiennik": "serek kremowy naturalny wymieszany z odrobiną śmietanki 30%",
+   "uwaga": "Twaróg nie da aksamitnego kremu."
+  },
+  {
+   "skladnik": "ricotta",
+   "zamiennik": "twaróg zmiksowany na gładko z łyżką jogurtu",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "ser pleśniowy",
+   "zamiennik": "inny ser z niebieską pleśnią (gorgonzola, lazur)",
+   "uwaga": "Dla osób w ciąży bezpieczniejsze są sery z pasteryzowanego mleka."
+  },
+  {
+   "skladnik": "ser ementaler albo gruyère do zapiekania",
+   "zamiennik": "ser żółty typu gouda",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "mleko",
+   "zamiennik": "napój roślinny (owsiany, sojowy) w tej samej ilości; w omlecie także woda",
+   "uwaga": "W budyniu i beszamelu najlepiej działa napój sojowy albo owsiany bez cukru."
+  },
+  {
+   "skladnik": "masło do smażenia",
+   "zamiennik": "olej w tej samej ilości",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "masło do ciasta kruchego (szarlotka)",
+   "zamiennik": "margaryna do pieczenia w kostce",
+   "uwaga": "Olej nie zastąpi masła w kruchym cieście."
+  },
+  {
+   "skladnik": "oliwa",
+   "zamiennik": "olej rzepakowy w tej samej ilości",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "świeża bazylia",
+   "zamiennik": "suszona bazylia, około 1 łyżeczki",
+   "uwaga": "Do caprese tylko świeża."
+  },
+  {
+   "skladnik": "krojone pomidory z puszki",
+   "zamiennik": "passata pomidorowa w podobnej ilości albo 3–4 świeże pomidory",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "śmietanka 30% do sosów",
+   "zamiennik": "śmietana 18% (dodana na końcu, zahartowana) albo mleczko kokosowe",
+   "uwaga": "Do ubijania (tiramisu, sernik) tylko śmietanka 30% albo 36%."
+  },
+  {
+   "skladnik": "śmietana 18% do zup",
+   "zamiennik": "jogurt naturalny, dodany na końcu bez gotowania",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "jogurt naturalny",
+   "zamiennik": "skyr albo gęsty kefir",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "jogurt grecki",
+   "zamiennik": "jogurt naturalny odsączony przez sitko z gazą przez godzinę",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "pierś z kurczaka",
+   "zamiennik": "udka bez kości (smaż kilka minut dłużej) albo ciecierzyca z puszki w wersji wegetariańskiej",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "mięso mielone wołowe",
+   "zamiennik": "mięso mielone wieprzowo-wołowe albo czerwona soczewica (wersja bez mięsa)",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "ryż",
+   "zamiennik": "kasza bulgur albo kuskus (krócej się gotują)",
+   "uwaga": "Do risotto tylko ryż arborio albo carnaroli."
+  },
+  {
+   "skladnik": "makaron pszenny",
+   "zamiennik": "makaron bezglutenowy (kukurydziany, ryżowy)",
+   "uwaga": "Gotuj krócej, łatwo się rozgotowuje."
+  },
+  {
+   "skladnik": "bułka tarta",
+   "zamiennik": "pokruszone płatki kukurydziane albo mąka kukurydziana",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "tortille",
+   "zamiennik": "cienkie naleśniki albo chleb pita",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "miód",
+   "zamiennik": "syrop klonowy albo cukier",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "jajko w placuszkach i ciastach",
+   "zamiennik": "1 łyżka mielonego siemienia lnianego z 3 łyżkami wody (odstaw na 5 minut)",
+   "uwaga": "Nie działa w omlecie, jajecznicy ani beszamelu."
+  },
+  {
+   "skladnik": "żelatyna",
+   "zamiennik": "agar (około 1 łyżeczka na 500 ml, trzeba go zagotować)",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "sos sojowy",
+   "zamiennik": "sos sojowy bezglutenowy (tamari) dla osób bez glutenu",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "suche drożdże",
+   "zamiennik": "świeże drożdże, około 3 razy więcej wagowo",
+   "uwaga": ""
+  },
+  {
+   "skladnik": "sok z cytryny",
+   "zamiennik": "sok z limonki albo łyżeczka octu",
+   "uwaga": ""
+  }
+ ],
+ "porady": [
+  "Makaron al dente jest miękki z zewnątrz, ale lekko sprężysty w środku. Sprawdź, gryząc jedną nitkę minutę przed końcem gotowania.",
+  "Do wody na makaron dodaj około 1 łyżeczki soli na litr wody. Oleju nie trzeba.",
+  "Przypalony sos: nie mieszaj go, przelej górną, nieprzypaloną część do czystego garnka. Jeśli czuć gorycz, ugotuj sos od nowa.",
+  "Za słona zupa: dolej wody albo bulionu bez soli; możesz też ugotować w niej trochę ryżu albo ziemniaka.",
+  "Kurczak jest gotowy, gdy po przekrojeniu jest biały w środku, bez różowego koloru, a sok jest przezroczysty.",
+  "Surowego mięsa nie kroi się na tej samej desce co warzyw do sałatki bez umycia jej gorącą wodą z płynem.",
+  "Ugotowane dania przechowuj w lodówce w zamkniętym pojemniku do 2–3 dni. Wstaw je do lodówki, gdy ostygną, najpóźniej po 2 godzinach.",
+  "Ryż do smażenia najlepiej ugotować dzień wcześniej, bo zimny ryż się nie skleja.",
+  "Cebulę łatwiej pokroić bez łez, gdy nóż jest ostry, a cebula schłodzona w lodówce.",
+  "Ciepłą patelnię sprawdzisz, kropiąc na nią odrobinę wody: jeśli skwierczy i odparowuje, możesz smażyć.",
+  "Jajko jest świeże, jeśli w szklance wody opada na dno i leży płasko.",
+  "Czosnek przypala się bardzo szybko i robi się gorzki, więc dodawaj go na patelnię na krótko i na mniejszym ogniu.",
+  "Sos ze śmietaną hartuj: najpierw wymieszaj śmietanę z kilkoma łyżkami gorącej zupy, dopiero potem wlej do garnka, wtedy się nie zważy.",
+  "Mozzarella w kulce ma dużo wody. Do pizzy i zapiekanek lepsza jest mozzarella w bloku albo tarta; kulkę odsącz i osusz.",
+  "Mięso mielone jest gotowe, gdy w środku nie ma już różowego koloru.",
+  "Ciasto drożdżowe rośnie najlepiej w ciepłym miejscu bez przeciągów, przykryte ściereczką.",
+  "Piekarnik nagrzewaj zawsze przed włożeniem ciasta; w zimnym piekarniku ciasto opadnie.",
+  "Patyczek wbity w środek ciasta powinien wyjść suchy. Brownie to wyjątek: ma być lekko wilgotne.",
+  "Rozmrażaj mięso i ryby w lodówce, a nie na blacie.",
+  "Ser pleśniowy i sery z niepasteryzowanego mleka nie są polecane w ciąży."
+ ]
 }

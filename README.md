@@ -31,7 +31,11 @@ Działa to tylko przy `npm run dev`. Plik `.env.local` nie trafia do repozytoriu
 
 ## Co potrafi Ania
 
-- przepis na konkretne danie z bazy 30 przepisów (karta z ilustracją, czasem, dietą i alergenami)
+- przepis na konkretne danie z bazy 116 przepisów w 6 kategoriach (karta z ilustracją, czasem, dietą i alergenami);
+  konkretne rodzaje serów i zamienniki z uwagami, czego czym nie zastępować
+- **Pamięć** – Ania pamięta między rozmowami alergie, czego nie lubisz, sprzęt w kuchni, ugotowane i ulubione dania.
+  Przed każdym zapisem pyta o zgodę; pamięć jest tylko w bazie przeglądarki (localStorage) i można ją przejrzeć i usunąć
+  w panelu „Co Ania o mnie pamięta”
 - **Co mam w lodówce?** – wybór składników ikonami, aplikacja od razu liczy pasujące przepisy
 - **Książka przepisów** – wyszukiwarka z filtrami kategorii i „do 15 min”
 - **Tryb gotowania** – pełny ekran, duży tekst, lista składników do odhaczenia, minutniki z dźwiękiem, ekran nie gaśnie,
@@ -50,7 +54,8 @@ wiadomość → reguły w przeglądarce (dane osobowe, wulgaryzmy, próby ataku,
 
 | Plik | Zawartość |
 |---|---|
-| `src/data/przepisy.json` | baza wiedzy: przepisy, zamienniki składników, porady |
+| `src/data/przepisy.json` | baza wiedzy: przepisy, zamienniki składników z uwagami, porady |
+| `src/bot/pamiec.js` | pamięć o użytkowniku (zapis w przeglądarce, zgodność przepisów z alergiami i sprzętem) |
 | `src/bot/prompt.js` | prompt systemowy Ani |
 | `src/bot/straznicy.js` | reguły bezpieczeństwa działające przed modelem |
 | `src/bot/model.js` | połączenie z modelami AI i komunikaty błędów |
@@ -78,4 +83,5 @@ W ustawieniach jest **tryb testowy** ze skróconymi limitami sesji, a ikona pobi
 
 ## Użycie narzędzi AI
 
-Kod prototypu i część bazy przepisów przygotowano z pomocą asystenta AI (Claude), a zespół je sprawdził.
+Kod prototypu i 112 ze 116 przepisów przygotowano z pomocą asystenta AI (Claude), własnymi słowami, bez kopiowania tekstów z internetu.
+Alergeny i dieta są wyznaczane automatycznie ze składników i sprawdzane testami, ale każdy przepis powinien przejrzeć ktoś z zespołu.

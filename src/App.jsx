@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import AniaAvatar from './components/AniaAvatar.jsx'
 import Wiadomosc, { nastrojWiadomosci } from './components/Wiadomosc.jsx'
-import { KsiazkaPrzepisow, Lodowka } from './components/Arkusze.jsx'
+import { KsiazkaPrzepisow, Lodowka, PanelPamieci } from './components/Arkusze.jsx'
+import { dodajUgotowane, dodajUlubiony, dodajWpisy, niezgodnosci, usunPamiec, usunWpis, wartosci, wczytajPamiec, zapiszPamiec } from './bot/pamiec.js'
 import TrybGotowania from './components/TrybGotowania.jsx'
 import Ustawienia from './components/Ustawienia.jsx'
 import { ListaZakupow, ZapisRozmowy } from './components/Okna.jsx'
@@ -10,7 +11,7 @@ import { PREFERENCJE } from './bot/prompt.js'
 import { KLUCZ_DEWELOPERSKI } from './config.js'
 import bazaDomyslna from './data/przepisy.json'
 
-const pamiec = {
+const magazyn = {
   get(k, d) {
     try {
       const v = localStorage.getItem(k)
@@ -58,11 +59,26 @@ function Ikona({ d }) {
 }
 
 export default function App() {
-  const [ustawienia, setUstawienia] = useState(() => ({ ...USTAWIENIA_DOMYSLNE, ...pamiec.get('ania.ustawienia', {}) }))
+  const [ustawienia, setUstawienia] = useState(() => ({ ...USTAWIENIA_DOMYSLNE, ...magazyn.get('ania.ustawienia', {}) }))
   const [klucz, setKlucz] = useState(() => kluczSesji.get() || KLUCZ_DEWELOPERSKI)
   const baza = bazaDomyslna
   const bazaPoId = useMemo(() => Object.fromEntries(baza.przepisy.map((p) => [p.id, p])), [baza])
-  const czat = useCzat({ ustawienia, klucz, baza })
+  const [pamiec, setPamiecStan] = useState(wczytajPamiec)
+  const setPamiec = useCallback((zmiana) => setPamiecStan((p) => zapiszPamiec(typeof zmiana === 'function' ? zmiana(p) : zmiana)), [])
+  const prefs = useMemo(() => PREFERENCJE.filter((p) => ustawienia.preferencje.includes(p.id)), [ustawienia.preferencje])
+  const pasuje = useCallback((p) => niezgodnosci(p, pamiec, prefs).length === 0, [pamiec, prefs])
+  const opisOgraniczen = [
+    ...prefs.map((p) => p.nazwa),
+    ...(pamiec.zgoda === true ? wartosci(pamiec, 'alergia').map((a) => `bez: ${a}`) : []),
+    ...(pamiec.zgoda === true ? wartosci(pamiec, 'nie_lubi').map((a) => `bez: ${a}`) : []),
+  ].join(', ')
+  const katalog = useMemo(() => {
+    const zgodne = baza.przepisy.filter(pasuje)
+    const wynik = []
+    for (const k of ['śniadanie', 'zupa', 'obiad', 'kolacja', 'przekąska', 'deser']) wynik.push(...zgodne.filter((p) => p.kategoria === k).slice(0, 2))
+    return wynik
+  }, [baza, pasuje])
+  const czat = useCzat({ ustawienia, klucz, baza, pamiec: pamiec, onPamiec: setPamiec })
   const [okno, setOkno] = useState(null) // 'ustawienia' | 'zapis'
   const [zakupy, setZakupy] = useState(null)
   const [gotowanie, setGotowanie] = useState(null)
@@ -89,7 +105,7 @@ export default function App() {
 
   const zapiszUstawienia = (u, k) => {
     setUstawienia(u)
-    pamiec.set('ania.ustawienia', u)
+    magazyn.set('ania.ustawienia', u)
     const mialKlucz = !!klucz
     setKlucz(k)
     kluczSesji.set(u.zapamietajKlucz ? k : '')
@@ -101,7 +117,7 @@ export default function App() {
     const nowe = ustawienia.preferencje.includes(id) ? ustawienia.preferencje.filter((x) => x !== id) : [...ustawienia.preferencje, id]
     const u = { ...ustawienia, preferencje: nowe }
     setUstawienia(u)
-    pamiec.set('ania.ustawienia', u)
+    magazyn.set('ania.ustawienia', u)
     const nazwy = PREFERENCJE.filter((p) => nowe.includes(p.id)).map((p) => p.nazwa)
     czat.dodajSystem(nazwy.length ? `Zapamiętane: dieta ${nazwy.join(', ')}. Ania zaproponuje tylko pasujące dania.` : 'Usunięto preferencje dietetyczne.')
   }
@@ -115,13 +131,17 @@ export default function App() {
 
   const zamknijGotowanie = useCallback(
     (powod) => {
-      setGotowanie(null)
+      setGotowanie((g) => {
+        if (powod === 'koniec' && g) setPamiec((p) => dodajUgotowane(p, g.przepis))
+        return null
+      })
       if (powod === 'koniec') czat.dodajSystem('Smacznego! Jeśli przepis się udał, daj kciuk w górę pod odpowiedzią Ani.')
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [],
   )
-  const ostatnia = czat.wiadomosci[czat.wiadomosci.length - 1]
+  // podpowiedzi z ostatniej odpowiedzi Ani; karty pamięci i komunikaty systemowe ich nie zasłaniają
+  const ostatnia = [...czat.wiadomosci].reverse().find((m) => m.kto !== 'pamiec' && m.kto !== 'system')
   const ostatniaAni = [...czat.wiadomosci].reverse().find((m) => m.kto === 'ania')
   const nastroj = czat.pisanie === 'model' ? 'mysli' : ostatniaAni ? nastrojWiadomosci(ostatniaAni) : 'wita'
   const bezPytan = !czat.wiadomosci.some((m) => m.kto === 'ty')
@@ -160,6 +180,9 @@ export default function App() {
           <h1>Ania</h1>
           <span className="znaczek-ai">asystentka AI · nie człowiek</span>
         </div>
+        <button className="ikona" title="Co Ania o mnie pamięta" aria-label="Pamięć Ani" onClick={() => setOkno('pamiec')}>
+          <Ikona d={['M9.5 3a3.5 3.5 0 0 0-3.4 4.3A3.5 3.5 0 0 0 4 13a3.5 3.5 0 0 0 3 5.5A3 3 0 0 0 12 20V4.5A2.5 2.5 0 0 0 9.5 3z', 'M14.5 3a3.5 3.5 0 0 1 3.4 4.3A3.5 3.5 0 0 1 20 13a3.5 3.5 0 0 1-3 5.5A3 3 0 0 1 12 20', 'M12 4.5A2.5 2.5 0 0 1 14.5 3']} />
+        </button>
         <button className="ikona" title="Książka przepisów" aria-label="Książka przepisów" onClick={() => setOkno('ksiazka')}>
           <Ikona d={['M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z', 'M4 21V5', 'M8 7h7', 'M8 11h5']} />
         </button>
@@ -189,8 +212,17 @@ export default function App() {
             key={m.id}
             m={m}
             bazaPoId={bazaPoId}
-            przepisy={baza.przepisy}
-            onOcena={czat.ocen}
+            przepisy={katalog}
+            onOcena={(id, ocena) => {
+              czat.ocen(id, ocena)
+              if (ocena === 'dobra') for (const pid of m.przepisy || []) setPamiec((p) => dodajUlubiony(p, pid))
+            }}
+            onDecyzjaPamieci={(wiad, decyzja) => {
+              if (decyzja === 'tak') setPamiec((p) => dodajWpisy(p, wiad.propozycje))
+              if (decyzja === 'nigdy') setPamiec((p) => ({ ...p, zgoda: false }))
+              czat.zmien(wiad.id, { stan: decyzja })
+            }}
+            onPokazPamiec={() => setOkno('pamiec')}
             onPonow={czat.ponow}
             onUstawienia={() => setOkno('ustawienia')}
             onNowa={() => czat.nowaRozmowa('uzytkownik')}
@@ -271,17 +303,30 @@ export default function App() {
         otwarte={okno === 'lodowka'}
         onZamknij={() => setOkno(null)}
         przepisy={baza.przepisy}
-        preferencje={ustawienia.preferencje}
+        pasuje={pasuje}
         onSzukaj={(t, dopisek) => wyslij(t, true, dopisek)}
       />
       <KsiazkaPrzepisow
         otwarte={okno === 'ksiazka'}
         onZamknij={() => setOkno(null)}
         przepisy={baza.przepisy}
-        preferencje={ustawienia.preferencje}
+        pasuje={pasuje}
+        opisOgraniczen={opisOgraniczen}
         onWybierz={(p) => {
           setOkno(null)
           wyslij(`Poproszę przepis: ${p.nazwa}`, true)
+        }}
+      />
+      <PanelPamieci
+        otwarte={okno === 'pamiec'}
+        onZamknij={() => setOkno(null)}
+        pamiec={pamiec}
+        bazaPoId={bazaPoId}
+        onUsunWpis={(w) => setPamiec((p) => usunWpis(p, w))}
+        onZgoda={(tak) => setPamiec((p) => ({ ...p, zgoda: tak }))}
+        onWyczysc={() => {
+          setPamiecStan(usunPamiec())
+          czat.dodajSystem('Pamięć Ani została usunięta z tej przeglądarki.')
         }}
       />
       <TrybGotowania

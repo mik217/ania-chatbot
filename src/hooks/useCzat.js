@@ -5,6 +5,7 @@ import { BladCzatu, KOMUNIKATY_BLEDOW, opisModelu, zapytajModel } from '../bot/m
 import { przetworzOdpowiedz, tekstStrumienia } from '../bot/odpowiedz.js'
 import { zbudujPrompt } from '../bot/prompt.js'
 import { jestAtakiem, jestWulgarne, maskujDane, prosiOCzlowieka } from '../bot/straznicy.js'
+import { TYPY, powitanieZPamiecia, przygotujWpis, takiSam, zapomnijWpisy } from '../bot/pamiec.js'
 
 let licznikId = 0
 const noweId = () => `m${Date.now().toString(36)}${(licznikId++).toString(36)}`
@@ -13,15 +14,16 @@ const KANAREK = 'KK-' + losowy().toUpperCase()
 
 export const PODPOWIEDZI_STARTOWE = ['Co zrobić z tego, co mam?', 'Coś szybkiego do 15 minut', 'Co umiesz ugotować?']
 
-export function powitanie() {
+export function powitanie(pamiec) {
   return (
     'Cześć! Jestem Ania, Twoja asystentka kulinarna. Od razu uczciwie: jestem programem AI, a nie człowiekiem.\n' +
     'Podpowiem, co ugotować z tego, co masz w lodówce, albo dam przepis na konkretne danie. Przeliczę porcje, podsunę zamiennik składnika i poprowadzę Cię krok po kroku z minutnikiem.\n' +
-    'Znam się tylko na gotowaniu, za to porządnie. Wybierz coś poniżej albo po prostu napisz, co dziś jemy.'
+    'Znam się tylko na gotowaniu, za to porządnie. Wybierz coś poniżej albo po prostu napisz, co dziś jemy.' +
+    (pamiec ? powitanieZPamiecia(pamiec) : '')
   )
 }
 
-export function useCzat({ ustawienia, klucz, baza }) {
+export function useCzat({ ustawienia, klucz, baza, pamiec, onPamiec }) {
   const [wiadomosci, setWiadomosci] = useState([])
   const [pisanie, setPisanie] = useState(null) // null | 'czeka' | 'model'
   const r = useRef(null)
@@ -32,7 +34,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
     }
   }
   const aktualne = useRef({})
-  aktualne.current = { ustawienia, klucz, baza }
+  aktualne.current = { ustawienia, klucz, baza, pamiec, onPamiec }
   const bazaPoId = useRef({})
   bazaPoId.current = Object.fromEntries(baza.przepisy.map((p) => [p.id, p]))
 
@@ -69,7 +71,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
       if (powod !== 'bezczynnosc') setWiadomosci([])
       if (powod === 'bezczynnosc')
         dodajSystem(`Rozmowa zakończyła się po ${limity().bezczynnoscMin} min bez aktywności i Ania już jej nie pamięta. Zaczynamy od nowa, a Twoje preferencje zostały.`)
-      dodajAnie(powitanie(), { zrodlo: 'powitanie', start: true })
+      dodajAnie(powitanie(aktualne.current.pamiec), { zrodlo: 'powitanie', start: true })
     },
     [dodajAnie, dodajSystem],
   )
@@ -96,6 +98,30 @@ export function useCzat({ ustawienia, klucz, baza }) {
     if (r.current.niepowodzenia >= KONFIG.limitNiepowodzen) pokazKatalog()
   }, [pokazKatalog])
 
+  // propozycje zapisu w pamięci i prośby o zapomnienie, które model oznaczył w odpowiedzi
+  const obsluzPamiec = useCallback(
+    (o) => {
+      const { pamiec: pm, onPamiec: zapisz } = aktualne.current
+      if (!pm || !zapisz) return
+      const doZapomnienia = o.zapomnij.map((z) => przygotujWpis(z.typ, z.wartosc)).filter(Boolean)
+      if (doZapomnienia.length) {
+        const nowa = zapomnijWpisy(pm, doZapomnienia)
+        if (nowa.wpisy.length !== pm.wpisy.length) {
+          zapisz(nowa)
+          dodajSystem(`Ania zapomniała: ${doZapomnienia.map((w) => w.wartosc).join(', ')}.`)
+        }
+      }
+      if (pm.zgoda === false) return
+      const nowe = []
+      for (const z of o.pamietaj) {
+        const w = przygotujWpis(z.typ, z.wartosc)
+        if (w && !pm.wpisy.some((x) => takiSam(x, w)) && !nowe.some((x) => takiSam(x, w))) nowe.push(w)
+      }
+      if (nowe.length) dodaj({ kto: 'pamiec', propozycje: nowe, stan: 'czeka', pierwszyRaz: pm.zgoda !== true, etykiety: TYPY })
+    },
+    [dodaj, dodajSystem],
+  )
+
   const zapytaj = useCallback(
     async (tresc) => {
       const s = r.current
@@ -106,10 +132,11 @@ export function useCzat({ ustawienia, klucz, baza }) {
       try {
         const kontekst = s.historia.slice(-KONFIG.maksWiadomosciWKontekscie)
         while (kontekst.length && kontekst[0].role !== 'user') kontekst.shift()
-        const { ustawienia: u, klucz: k, baza: b } = aktualne.current
+        const { ustawienia: u, klucz: k, baza: b, pamiec: pm } = aktualne.current
         const systemPrompt = zbudujPrompt({
           baza: b,
           preferencje: u.preferencje,
+          pamiec: pm,
           ostatnieWiadomosci: s.historia.slice(-4).map((m) => m.content),
           kanarek: KANAREK,
         })
@@ -147,6 +174,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
         }
         if (idOdp) zmien(idOdp, koncowe)
         else dodaj({ kto: 'ania', zrodlo: `model: ${dostawca.nazwa} / ${model}`, ocenialna: true, ...koncowe })
+        obsluzPamiec(o)
         if (o.brak) zarejestrujNiepowodzenie()
         else if (o.przepisy.length) s.niepowodzenia = 0
       } catch (e) {
@@ -160,7 +188,7 @@ export function useCzat({ ustawienia, klucz, baza }) {
         setPisanie(s.bufor.length ? 'czeka' : null)
       }
     },
-    [dodaj, dodajAnie, zmien, zarejestrujNiepowodzenie],
+    [dodaj, dodajAnie, zmien, zarejestrujNiepowodzenie, obsluzPamiec],
   )
 
   const wyslijBufor = useCallback(async () => {
@@ -262,5 +290,5 @@ export function useCzat({ ustawienia, klucz, baza }) {
   }
   const log = () => r.current.log
 
-  return { wiadomosci, pisanie, wyslij, piszeUzytkownik, nowaRozmowa, ponow, ocen, dodajSystem, log, metadane }
+  return { wiadomosci, pisanie, wyslij, piszeUzytkownik, nowaRozmowa, ponow, ocen, dodajSystem, zmien, log, metadane }
 }

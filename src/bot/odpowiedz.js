@@ -1,6 +1,6 @@
 // Odczytywanie znaczników technicznych z odpowiedzi modelu i czyszczenie tekstu.
 
-const RE_ZNACZNIK = /\[(PRZEPIS|BRAK|CZ[LŁ]OWIEK|PODPOWIEDZI)[^\]]*\]/gi
+const RE_ZNACZNIK = /\[(PRZEPIS|BRAK|CZ[LŁ]OWIEK|PODPOWIEDZI|PAMI[EĘ]TAJ|ZAPOMNIJ)[^\]]*\]/gi
 
 export function oczyscMarkdown(t) {
   return t
@@ -36,7 +36,10 @@ export function przetworzOdpowiedz(surowa, bazaPoId, kanarek) {
         .filter((s) => s && s.length <= 60)
         .slice(0, 3)
     : []
+  const pary = (re) => [...surowa.matchAll(re)].map((m) => ({ typ: m[1].trim(), wartosc: m[2].trim() }))
   return {
+    pamietaj: pary(/\[PAMI[EĘ]TAJ:([^\]|]*)\|([^\]]*)\]/gi),
+    zapomnij: pary(/\[ZAPOMNIJ:([^\]|]*)\|([^\]]*)\]/gi),
     tekst: oczyscMarkdown(surowa.replace(RE_ZNACZNIK, '')).trim(),
     przepisy,
     podpowiedzi,

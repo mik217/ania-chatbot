@@ -18,7 +18,63 @@ function Kciuk({ dol, ...props }) {
 
 export const nastrojWiadomosci = (m) => (m.przepisy?.length ? 'radosc' : m.brak || m.katalog ? 'oops' : 'wita')
 
-export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onUstawienia, onNowa, onWyslij, onListaZakupow, onGotuj, start }) {
+function PropozycjaPamieci({ m, onDecyzja, onPokazPamiec }) {
+  const opis = m.propozycje.map((w) => `${m.etykiety?.[w.typ] || w.typ}: ${w.wartosc}`)
+  return (
+    <div className="wiersz ania">
+      <span className="ikona-pamieci" aria-hidden="true">
+        🧠
+      </span>
+      <div className="karta-pamieci">
+        <b>Zapamiętać na kolejne rozmowy?</b>
+        <ul>
+          {opis.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+        {m.stan === 'czeka' ? (
+          <>
+            {m.pierwszyRaz && (
+              <p className="uwaga-mala">
+                Ania zapisze to tylko w tej przeglądarce, nie na serwerze. W każdej chwili możesz to przejrzeć i usunąć w panelu pamięci (ikona 🧠 u góry).
+              </p>
+            )}
+            <div className="karta-akcje">
+              <button className="przycisk maly" onClick={() => onDecyzja(m, 'tak')}>
+                Zapamiętaj
+              </button>
+              <button className="przycisk drugi maly" onClick={() => onDecyzja(m, 'nie')}>
+                Nie teraz
+              </button>
+              <button className="link-przycisk maly" onClick={() => onDecyzja(m, 'nigdy')}>
+                Nie zapamiętuj niczego
+              </button>
+            </div>
+          </>
+        ) : (
+          <p className="uwaga-mala">
+            {m.stan === 'tak' ? (
+              <>
+                Zapamiętane.{' '}
+                <button className="link-przycisk" onClick={onPokazPamiec}>
+                  Zobacz pamięć
+                </button>
+              </>
+            ) : m.stan === 'nigdy' ? (
+              'Dobrze, Ania nie będzie niczego zapamiętywać. Możesz to zmienić w panelu pamięci.'
+            ) : (
+              'Nie zapisano.'
+            )}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default function Wiadomosc({ m, bazaPoId, przepisy, onOcena, onPonow, onUstawienia, onNowa, onWyslij, onListaZakupow, onGotuj, start, onDecyzjaPamieci, onPokazPamiec }) {
+  if (m.kto === 'pamiec') return <PropozycjaPamieci m={m} onDecyzja={onDecyzjaPamieci} onPokazPamiec={onPokazPamiec} />
+
   if (m.kto === 'system')
     return (
       <div className="systemowa">

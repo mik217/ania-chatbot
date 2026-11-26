@@ -1,6 +1,7 @@
 // Prompt systemowy Ani. Zasady pochodzą z „Pracowni promptu systemowego” zespołu,
 // osobowość i znaczniki techniczne dopisano na potrzeby prototypu.
 import { czasPrzepisu, fmtIlosc, formaJednostki } from './jednostki.js'
+import { niezgodnosci, opisPamieciDlaPromptu } from './pamiec.js'
 
 export const PREFERENCJE = [
   { id: 'wegetarianska', nazwa: 'wegetariańska', pasuje: (p) => p.dieta.includes('wegetariańskie') },
@@ -19,7 +20,9 @@ const ZASADY = [
   ['Gdy rozmówca poda składniki, zaproponuj najwyżej dwa dania i zapytaj, które wybiera', 'krótki wybór pozwala szybko zdecydować'],
   ['Uwzględniaj dietę i alergie podane przez rozmówcę w całej rozmowie', 'danie niezgodne z dietą albo z alergenem może zaszkodzić'],
   ['Gdy rozmówca chce inną liczbę porcji, przelicz ilości proporcjonalnie do liczby porcji z przepisu', 'rozmówca gotuje dla innej liczby osób niż w przepisie'],
-  ['Gdy rozmówcy brakuje składnika, podaj zamiennik tylko z części „Zamienniki składników”; jeśli go tam nie ma, powiedz to wprost', 'zmyślony zamiennik może zepsuć danie'],
+  ['Gdy rozmówcy brakuje składnika, podaj zamiennik tylko z części „Zamienniki składników” i przekaż uwagę przy zamienniku; jeśli go tam nie ma, powiedz to wprost', 'zmyślony zamiennik może zepsuć danie'],
+  ['Rodzaj składnika podany w przepisie (np. mozzarella, parmezan, cheddar, feta, mascarpone) jest ważny: nie mów, że można go zastąpić dowolnym innym serem, jeśli nie ma tego w zamiennikach', 'różne sery inaczej się topią i smakują, np. feta nie roztopi się na pizzy'],
+  ['Nie proponuj dań oznaczonych jako niezgodne z dietą, alergiami, upodobaniami albo sprzętem rozmówcy', 'danie z alergenem może zaszkodzić, a danie bez potrzebnego sprzętu się nie uda'],
   ['Na ogólne pytania kulinarne (techniki, przechowywanie) odpowiadaj krótko, w pierwszej kolejności na podstawie części „Porady”', 'rozmówca potrzebuje pewnej, krótkiej wskazówki'],
   ['Gdy rozmówca szuka dania na określony czas, bierz pod uwagę łączny czas z zatwierdzonych informacji', 'rozmówca ma ograniczony czas na gotowanie'],
 ]
@@ -57,11 +60,9 @@ const PRZYKLADY = [
   ['Mam jajka, cebulę i mleko. Co mogę z tego zrobić?', 'Super zestaw! Wychodzi z tego omlet z cebulą, gotowy w około 10 minut. Podać przepis? [PODPOWIEDZI: Tak, poproszę | A coś innego?]'],
 ]
 
-export function opisPrzepisu(p, prefs) {
+export function opisPrzepisu(p, powody = []) {
   const czas = czasPrzepisu(p)
-  const zgodnosc = prefs.length
-    ? ` Zgodny z preferencjami rozmówcy: ${prefs.every((pr) => pr.pasuje(p)) ? 'tak' : 'NIE (' + prefs.filter((pr) => !pr.pasuje(p)).map((pr) => pr.nazwa).join(', ') + ')'}.`
-    : ''
+  const zgodnosc = powody.length ? ` NIEZGODNY Z ROZMÓWCĄ (${powody.join('; ')}).` : ''
   const skladniki = p.skladniki
     .map((s) => (s.q == null ? `${s.n} (${s.u})` : `${fmtIlosc(s.q)} ${formaJednostki(s.u, s.q)} ${s.n}`))
     .join(', ')
@@ -74,7 +75,7 @@ export function opisPrzepisu(p, prefs) {
 }
 
 // Mała baza trafia do promptu w całości. Duża: proste wyszukiwanie po słowach (namiastka RAG).
-export function wybierzPrzepisy(baza, ostatnieWiadomosci, limit = 8) {
+export function wybierzPrzepisy(baza, ostatnieWiadomosci, limit = 8, pasuje = () => true) {
   if (baza.przepisy.length <= limit) return baza.przepisy
   const tekst = ostatnieWiadomosci.join(' ').toLowerCase()
   const slowa = new Set(tekst.split(/[^\p{L}]+/u).filter((w) => w.length > 3).map((w) => w.slice(0, 5)))
@@ -84,18 +85,29 @@ export function wybierzPrzepisy(baza, ostatnieWiadomosci, limit = 8) {
       .toLowerCase()
       .split(/[^\p{L}]+/u)
       .filter((w) => w.length > 3 && slowa.has(w.slice(0, 5))).length
-  return [...baza.przepisy].sort((a, b) => ocen(b) - ocen(a)).slice(0, limit)
+  // najpierw najlepiej pasujące do rozmowy, przy remisie te zgodne z dietą i pamięcią
+  return [...baza.przepisy].sort((a, b) => ocen(b) - ocen(a) || pasuje(b) - pasuje(a)).slice(0, limit)
 }
 
-export function zbudujPrompt({ baza, preferencje, ostatnieWiadomosci, kanarek }) {
+export function zbudujPrompt({ baza, preferencje, pamiec, ostatnieWiadomosci, kanarek }) {
   const prefs = PREFERENCJE.filter((p) => preferencje.includes(p.id))
-  const wybrane = wybierzPrzepisy(baza, ostatnieWiadomosci)
+  const powody = (p) => niezgodnosci(p, pamiec, prefs)
+  const bazaPoId = Object.fromEntries(baza.przepisy.map((p) => [p.id, p]))
+  const wybrane = wybierzPrzepisy(baza, ostatnieWiadomosci, 8, (p) => (powody(p).length ? 0 : 1))
+  const opisPamieci = pamiec.zgoda === true ? opisPamieciDlaPromptu(pamiec, bazaPoId) : []
   const pozostale = baza.przepisy
     .filter((p) => !wybrane.includes(p))
     .map((p) => {
       const czas = czasPrzepisu(p)
-      const zgodny = prefs.length ? (prefs.every((pr) => pr.pasuje(p)) ? '' : ', NIEZGODNY z preferencjami') : ''
-      return `- [${p.id}] ${p.nazwa} (${p.kategoria}, ${czas == null ? 'czas nieznany' : czas + ' min'}, ${p.dieta.join('/') || 'mięsne/rybne'}${zgodny}): ${p.skladniki.map((x) => x.n).join(', ')}`
+      const pw = powody(p)
+      const zgodny = pw.length ? `, NIEZGODNY: ${pw.join('; ')}` : ''
+      // krótki opis: tylko główne składniki (bez soli, przypraw i wody), bez dopisków w nawiasach
+      const glowne = p.skladniki
+        .filter((x) => x.q != null || !/smaku|podania|posypania|smażenia|wody/.test(x.u))
+        .map((x) => x.n.replace(/\s*\(.*\)/, ''))
+        .filter((n) => !/^(sól|pieprz|woda|ciepła woda|olej|oliwa|cukier)$/.test(n))
+      const dieta = p.dieta.filter((d) => d !== 'bezglutenowe').slice(-1)[0] || 'mięsne/rybne'
+      return `- [${p.id}] ${p.nazwa} (${p.kategoria}, ${czas == null ? '?' : czas + ' min'}, ${dieta}${p.dieta.includes('bezglutenowe') ? ', bez glutenu' : ''}${zgodny}): ${glowne.join(', ')}`
     })
   return [
     '# Kim jesteś',
@@ -138,6 +150,8 @@ export function zbudujPrompt({ baza, preferencje, ostatnieWiadomosci, kanarek })
     '- Gdy podajesz pełny przepis z zatwierdzonych informacji, dopisz na końcu [PRZEPIS:identyfikator], np. [PRZEPIS:omlet-z-cebula].',
     '- Gdy rozmówca chciał czegoś związanego z gotowaniem, a nie mogłaś tego spełnić (brak przepisu, brak informacji, nie rozumiesz prośby), dopisz [BRAK]. Nie dopisuj go przy pytaniach spoza tematu gotowania.',
     '- Gdy rozmówca prosi o kontakt z człowiekiem, dopisz [CZLOWIEK].',
+    '- Gdy rozmówca powie o sobie coś trwałego, co przyda się w kolejnych rozmowach, dopisz [PAMIETAJ: typ | wartość]. Typy: alergia (alergia albo nietolerancja pokarmowa, np. „orzechy”, „laktoza”), nie_lubi (składnik, np. „grzyby”), lubi (np. „kuchnia włoska”), sprzet (np. „brak piekarnika”, „ma blender”), poziom (np. „początkujący”). Wartość ma 1–4 słowa. Aplikacja zapyta rozmówcę o zgodę przed zapisaniem, więc nie pisz, że już zapamiętałaś: napisz, że możesz zapamiętać. Nie zapisuj imion, adresów, chorób ani innych danych osobowych. Nie powtarzaj tego, co już jest w części „Co pamiętasz o rozmówcy”.',
+    '- Gdy rozmówca prosi, żeby czegoś o nim zapomnieć albo coś się zmieniło (np. „już nie mam alergii na laktozę”), dopisz [ZAPOMNIJ: typ | wartość].',
     '- Na samym końcu każdej odpowiedzi dopisz [PODPOWIEDZI: … | … | …]: 2 albo 3 bardzo krótkie (do 4 słów) odpowiedzi, które rozmówca najpewniej chciałby kliknąć jako następną wiadomość, napisane jego słowami.',
     '',
     '# Preferencje rozmówcy ustawione w aplikacji',
@@ -145,15 +159,20 @@ export function zbudujPrompt({ baza, preferencje, ostatnieWiadomosci, kanarek })
       ? `Dieta: ${prefs.map((p) => p.nazwa).join(', ')}. Nie proponuj dań oznaczonych „Zgodny z preferencjami rozmówcy: NIE”. Jeśli rozmówca prosi o takie danie, powiedz o tym i zaproponuj danie zgodne z preferencjami.`
       : 'Brak. Uwzględniaj to, co rozmówca napisze w rozmowie.',
     '',
+    '# Co pamiętasz o rozmówcy (z poprzednich rozmów, za jego zgodą)',
+    ...(opisPamieci.length
+      ? [...opisPamieci, 'Uwzględniaj to bez przypominania za każdym razem. Możesz nawiązać do ostatnio ugotowanego dania (np. zapytać, jak wyszło) albo zaproponować coś z ulubionych.']
+      : ['Nic. Nie udawaj, że pamiętasz poprzednie rozmowy.']),
+    '',
     '# Zatwierdzone informacje',
     'Przepisy (identyfikator w nawiasie kwadratowym):',
-    wybrane.map((p) => opisPrzepisu(p, prefs)).join('\n\n'),
+    wybrane.map((p) => opisPrzepisu(p, powody(p))).join('\n\n'),
     pozostale.length
       ? '\nPozostałe przepisy w bazie (tylko krótki opis). Możesz je proponować, ale pełnego przepisu z ilościami i krokami nie podawaj, dopóki nie zobaczysz go powyżej w pełnym opisie. Gdy rozmówca wybierze jeden z nich, a nie masz pełnego opisu, odpowiedz krótko, że już podajesz, i dopisz [PRZEPIS:identyfikator]: aplikacja pokaże pełną kartę przepisu.\n' + pozostale.join('\n')
       : '',
     '',
     'Zamienniki składników:',
-    ...(baza.zamienniki || []).map((z) => `- ${z.skladnik}: ${z.zamiennik}`),
+    ...(baza.zamienniki || []).map((z) => `- ${z.skladnik}: ${z.zamiennik}${z.uwaga ? ` (uwaga: ${z.uwaga})` : ''}`),
     '',
     'Porady:',
     ...(baza.porady || []).map((z) => `- ${z}`),

@@ -137,10 +137,80 @@ const RYSUNKI = {
       <ellipse cx="33" cy="34" rx="3" ry="5" fill="#fff" opacity=".35" />
     </>
   ),
+  pizza: (
+    <>
+      {TALERZ}
+      <circle cx="40" cy="44" r="22" fill="#e8b36b" />
+      <circle cx="40" cy="44" r="18" fill="#e4572e" />
+      <circle cx="33" cy="40" r="5" fill="#fff4dc" />
+      <circle cx="46" cy="38" r="4.5" fill="#fff4dc" />
+      <circle cx="44" cy="50" r="5" fill="#fff4dc" />
+      <circle cx="33" cy="51" r="3.5" fill="#fff4dc" />
+      <path d="M37 45c2-2 4-2 5 0M48 44c1-2 3-2 4 0" stroke="#4c9a5f" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+    </>
+  ),
+  pierogi: (
+    <>
+      {TALERZ}
+      <path d="M18 48c2-10 20-10 22 0z" fill="#f7e2b8" stroke="#e8c98c" strokeWidth="1.2" />
+      <path d="M38 46c2-10 20-10 22 0z" fill="#f7e2b8" stroke="#e8c98c" strokeWidth="1.2" />
+      <path d="M28 40c2-10 20-10 22 0z" fill="#f7e2b8" stroke="#e8c98c" strokeWidth="1.2" />
+      <path d="M22 44l1 2M28 43l1 2M42 42l1 2M48 41l1 2M32 36l1 2M38 35l1 2" stroke="#e8c98c" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="30" cy="50" r="2" fill="#c98a3a" />
+      <circle cx="50" cy="49" r="2" fill="#c98a3a" />
+    </>
+  ),
+  kotlet: (
+    <>
+      {TALERZ}
+      <path d="M20 46c0-9 8-14 16-12s10 8 7 14-23 7-23-2z" fill="#d98a3a" />
+      <path d="M24 42l3-2M30 39l3-1M27 46l3-2M35 43l3-2" stroke="#b86a24" strokeWidth="1.6" strokeLinecap="round" />
+      <ellipse cx="52" cy="46" rx="8" ry="5" fill="#f0b552" />
+      <ellipse cx="52" cy="40" rx="6" ry="4" fill="#fff8e7" />
+      <path d="M50 38l2 1" stroke="#4c9a5f" strokeWidth="2" strokeLinecap="round" />
+      <circle cx="47" cy="52" r="3" fill="#9fd36b" />
+      <circle cx="56" cy="51" r="3" fill="#9fd36b" />
+    </>
+  ),
+  ryba: (
+    <>
+      {TALERZ}
+      <path d="M18 45c6-9 20-11 30-4l10-6v16l-10-6c-10 7-24 5-30-4z" fill="#f2a07b" />
+      <circle cx="25" cy="43" r="1.8" fill="#3d322c" />
+      <path d="M32 38c2 4 2 10 0 14M38 37c2 5 2 11 0 15" stroke="#e08a63" strokeWidth="1.5" fill="none" />
+      <path d="M54 52c3-1 6 0 8 2" stroke="#4c9a5f" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+      <circle cx="60" cy="42" r="4" fill="#ffd166" />
+    </>
+  ),
+  burger: (
+    <>
+      {TALERZ}
+      <path d="M22 38c0-9 8-14 18-14s18 5 18 14z" fill="#e8a33c" />
+      <circle cx="33" cy="30" r="1" fill="#fff4dc" />
+      <circle cx="41" cy="28" r="1" fill="#fff4dc" />
+      <circle cx="47" cy="32" r="1" fill="#fff4dc" />
+      <path d="M20 40h40" stroke="#7cc36b" strokeWidth="4" strokeLinecap="round" />
+      <path d="M22 43h36l-2 3H24z" fill="#ffd166" />
+      <rect x="21" y="45" width="38" height="5" rx="2.5" fill="#6b3b22" />
+      <path d="M22 51h36c0 3-3 5-6 5H28c-3 0-6-2-6-5z" fill="#e8a33c" />
+    </>
+  ),
+  ciasto: (
+    <>
+      {TALERZ}
+      <path d="M20 48l20-22 22 22z" fill="#f2d49b" />
+      <path d="M20 48h42v6H20z" fill="#e8b36b" />
+      <path d="M20 48l20-22 22 22" fill="none" stroke="#c98a3a" strokeWidth="2" />
+      <path d="M26 42h30" stroke="#f7a1b8" strokeWidth="3" />
+      <circle cx="40" cy="27" r="3.5" fill="#e63946" />
+      <path d="M40 24c1-3 3-4 5-4" stroke="#4c9a5f" strokeWidth="1.5" fill="none" />
+    </>
+  ),
 }
 
 export const KOLORY_KATEGORII = {
   śniadanie: '#ffe8b0',
+  zupa: '#ffe0b8',
   obiad: '#ffd6c7',
   kolacja: '#d8ecd9',
   przekąska: '#e3ddf5',
